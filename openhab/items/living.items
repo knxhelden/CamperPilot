@@ -1,0 +1,4 @@
+Group Living_Contact_Door "Aufbautür" <none> (Living) ["Door"]
+Contact Living_Contact_Door_OpenState "Status" <none> (Living_Contact_Door) ["Point"]
+
+Group Living_Sensor_Climate "Klimasensor" <none> (Living) ["Sensor"]

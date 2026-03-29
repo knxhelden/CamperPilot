@@ -1,0 +1,19 @@
+/**********************************************/
+/****************** FAHRZEUG ******************/
+/**********************************************/
+
+// Gebäude
+Group Camper "Wohnmobil" <none> ["Location"]
+Group Cabin "Fahrerhaus" <none> (Camper) ["Location"] { widgetOrder="1" }
+Group Living "Wohnen" <none> (Camper) ["Location"] { widgetOrder="2" }
+Group Shower "Dusche" <none> (Camper) ["Location"] { widgetOrder="3" }
+Group Toilet "Toilette" <none> (Camper) ["Location"] { widgetOrder="4" }
+Group Sleeping "Schlafen" <none> (Camper) ["Location"] { widgetOrder="5" }
+Group Storage "Gepäckfach" <none> (Camper) ["Location"] { widgetOrder="6" }
+
+
+/*********************************************/
+/****************** GEWERKE ******************/
+/*********************************************/
+
+Group:Switch:SUM Contacts "Kontakte [(%d)]" <contact>
