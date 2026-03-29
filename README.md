@@ -56,9 +56,6 @@ It combines:
 | **Waveshare Cat-1 / GNSS HAT** | LTE connectivity + GPS position |
 | **DROK DC-DC Buck Converter (12V/24V → 5V)** | Power supply step-down converter for system voltage |
 
-Power converter used:
-- https://www.amazon.de/dp/B09B833LJ4?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
-
 ---
 
 ## 💻 Software Stack
