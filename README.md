@@ -1,42 +1,76 @@
-# Camper Pilot
+# 🚐 Camper Pilot
 
-A Raspberry Pi based smart home and monitoring platform for camper vans and motorhomes.
+> A Raspberry Pi–powered smart monitoring and automation platform for camper vans and motorhomes.
 
-## Hardware
+![Status](https://img.shields.io/badge/Project-DIY%20Prototype-2ea44f)
+![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%204-c51a4a)
+![Automation](https://img.shields.io/badge/Automation-openHAB-ff8c00)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-- Raspberry Pi 4 as core platform
-- SONOFF Zigbee 3.0 USB-Dongle Plus (ZBDongle-P) for Zigbee
-- SONOFF Zigbee contact and climate sensors
-- Waveshare Cat-1 / GNSS HAT for connectivity and tracking
-- INA219 for initial voltage/current measurement experiments
-- MPU6050 for inclination / leveling support
+---
 
-## Software
+## ✨ Overview
 
-- openHAB as automation system
-- Mosquitto as MQTT Broker
+**Camper Pilot** helps turn a camper into a connected, monitorable, and safer living space.
 
-## Planned Use Cases
+It combines:
+- 🧠 **Local automation** (openHAB)
+- 📡 **Sensor connectivity** (Zigbee + MQTT)
+- 🛰️ **Tracking and telemetry** (GNSS + LTE)
+- 🔋 **Utility monitoring** (power and environment)
 
-This project is intended to support the following real-world camper scenarios:
+---
 
-- Check whether doors or windows are open
-- Monitor indoor climate while the vehicle is parked
-- Trigger alarm notifications when intrusion is detected
-- Determine the current GPS position of the vehicle
-- View system status locally on a screen inside the camper
-- Receive remote notifications through LTE connectivity
-- Monitor battery-related values and other utilities
-- Align the vehicle on ramps until it is level
+## 🧰 Hardware
 
-## Disclaimer
+| Component | Purpose |
+|---|---|
+| **Raspberry Pi 4** | Main platform and automation host |
+| **SONOFF Zigbee 3.0 USB-Dongle Plus (ZBDongle-P)** | Zigbee coordinator |
+| **SONOFF Zigbee contact & climate sensors** | Door/window state + indoor conditions |
+| **Waveshare Cat-1 / GNSS HAT** | LTE connectivity + GPS position |
+| **INA219** | Early-stage voltage/current measurement |
+| **MPU6050** | Inclination sensing for leveling support |
 
-This project is a private DIY / maker project for smart monitoring and automation inside a camper vehicle. It is not a certified security or safety system.
+---
 
-Any integration related to gas detection, alarming, or safety-relevant monitoring must be validated carefully before real-world use.
+## 💻 Software Stack
 
-## Contributing
+- 🏠 **openHAB** — central automation system
+- 📨 **Mosquitto** — MQTT message broker
 
-Ideas, improvements, and pull requests are welcome.
+---
 
-If you build something similar, feel free to fork the repository, adapt the setup to your own vehicle, and improve the documentation.
+## 🗺️ Planned Use Cases
+
+The platform is designed for practical camper scenarios:
+
+- 🚪 Check whether doors or windows are open
+- 🌡️ Monitor indoor climate while parked
+- 🚨 Trigger intrusion-related alerts
+- 📍 Determine current GPS location
+- 🖥️ Display local system status on an in-camper screen
+- 📲 Receive remote notifications over LTE
+- 🔋 Observe battery and utility values
+- ⚖️ Support vehicle leveling on ramps
+
+---
+
+## ⚠️ Disclaimer
+
+This is a **private DIY / maker project** for smart monitoring and automation in camper vehicles.
+
+It is **not** a certified safety, security, or alarm system.
+
+> Any gas detection, alarming, or other safety-critical functionality must be validated thoroughly before real-world deployment.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome:
+- 💡 Ideas
+- 🛠️ Improvements
+- 🔀 Pull requests
+
+If you build something similar, feel free to fork this repository, adapt it to your own vehicle, and improve the docs.
