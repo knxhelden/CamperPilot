@@ -5,7 +5,7 @@ A Raspberry Pi based smart home and monitoring platform for camper vans and moto
 ## Hardware
 
 - Raspberry Pi 4 as core platform
-- SONOFF ZBDongle-E for Zigbee
+- SONOFF Zigbee 3.0 USB-Dongle Plus (ZBDongle-P) for Zigbee
 - SONOFF Zigbee contact and climate sensors
 - Waveshare Cat-1 / GNSS HAT for connectivity and tracking
 - INA219 for initial voltage/current measurement experiments
