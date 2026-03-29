@@ -1,4 +1,4 @@
-# Smart Motorhome
+# Camper Pilot
 
 A Raspberry Pi based smart home and monitoring platform for camper vans and motorhomes.
 
