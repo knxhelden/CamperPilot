@@ -16,6 +16,19 @@ A Raspberry Pi based smart home and monitoring platform for camper vans and moto
 - openHAB as automation system
 - Mosquitto as MQTT Broker
 
+## Planned Use Cases
+
+This project is intended to support the following real-world camper scenarios:
+
+- Check whether doors or windows are open
+- Monitor indoor climate while the vehicle is parked
+- Trigger alarm notifications when intrusion is detected
+- Determine the current GPS position of the vehicle
+- View system status locally on a screen inside the camper
+- Receive remote notifications through LTE connectivity
+- Monitor battery-related values and other utilities
+- Align the vehicle on ramps until it is level
+
 ## Disclaimer
 
 This project is a private DIY / maker project for smart monitoring and automation inside a camper vehicle. It is not a certified security or safety system.
