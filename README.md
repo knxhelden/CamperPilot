@@ -23,14 +23,41 @@ It combines:
 
 ## 🧰 Hardware
 
+### GPIO-connected components
+
+| Component | Purpose |
+|---|---|
+| **INA219** | Early-stage voltage/current measurement |
+| **MPU6050** | Inclination sensing for leveling support |
+
+### Wiring (Raspberry Pi GPIO)
+
+#### INA219
+
+- VCC → 3.3V
+- GND → GND
+- SDA → GPIO2 / Pin 3
+- SCL → GPIO3 / Pin 5
+
+#### MPU6050
+
+- VCC → 3.3V
+- GND → GND
+- SDA → GPIO2 / Pin 3
+- SCL → GPIO3 / Pin 5
+
+### Other components
+
 | Component | Purpose |
 |---|---|
 | **Raspberry Pi 4** | Main platform and automation host |
 | **SONOFF Zigbee 3.0 USB-Dongle Plus (ZBDongle-P)** | Zigbee coordinator |
 | **SONOFF Zigbee contact & climate sensors** | Door/window state + indoor conditions |
 | **Waveshare Cat-1 / GNSS HAT** | LTE connectivity + GPS position |
-| **INA219** | Early-stage voltage/current measurement |
-| **MPU6050** | Inclination sensing for leveling support |
+| **DROK DC-DC Buck Converter (12V/24V → 5V)** | Power supply step-down converter for system voltage |
+
+Power converter used:
+- https://www.amazon.de/dp/B09B833LJ4?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
 
 ---
 
