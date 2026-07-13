@@ -57,117 +57,14 @@ More detailed architecture and hardware documentation will be added under [`docs
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Installation
 
-CamperPilot is currently installed manually. A setup script for automated installation and configuration is planned.
+Start with the openHABian base installation:
 
-### 1. Install openHABian
+* [Install CamperPilot](docs/installation.md)
+* [Configure remote access with Tailscale](docs/remote-access.md)
 
-Install openHABian on a Raspberry Pi 4 using the official openHABian Raspberry Pi image.
-
-After writing the image to an SD card:
-
-1. Insert the SD card into the Raspberry Pi.
-2. Connect the Raspberry Pi to the network.
-3. Start the Raspberry Pi.
-4. Wait for the initial openHABian installation to finish.
-5. Connect to the system using SSH.
-6. Open the openHABian configuration tool:
-
-```bash
-sudo openhabian-config
-```
-
-During the initial setup, configure at least:
-
-* hostname
-* user password
-* system updates
-* time zone
-* network connection
-
-A dedicated CamperPilot hostname such as the following is recommended:
-
-```text
-camperpilot
-```
-
----
-
-### 2. Configure openHAB
-
-After the openHABian installation has completed, open the openHAB web interface:
-
-```text
-http://camperpilot:8080
-```
-
-Complete the initial openHAB setup and create the administrator account.
-
-Bindings, Things, Items, Rules and dashboards are currently configured manually.
-
-In a later project stage, the CamperPilot setup script will install the required openHAB configuration files automatically.
-
----
-
-### 3. Configure Tailscale Remote Access
-
-CamperPilot uses Tailscale for secure remote maintenance.
-
-Tailscale allows access to the Raspberry Pi even when the camper's mobile router does not provide a public IPv4 address.
-
-Tailscale can be installed through the openHABian configuration tool:
-
-```bash
-sudo openhabian-config
-```
-
-Select the Tailscale VPN setup option and connect the Raspberry Pi to the desired Tailscale network.
-
-After installation, verify the connection:
-
-```bash
-tailscale status
-```
-
-The Raspberry Pi should then be reachable through its Tailscale IP address or its MagicDNS hostname.
-
-No port forwarding or dynamic DNS configuration is required.
-
----
-
-### 4. Install CamperPilot Configuration
-
-The CamperPilot-specific installation is currently performed manually.
-
-This includes:
-
-* openHAB Things
-* openHAB Items
-* openHAB Rules
-* transformations
-* MQTT configuration
-* system scripts
-* systemd services
-* required permissions and sudoers entries
-
-The long-term goal is to provide a setup script such as:
-
-```bash
-sudo ./camperpilot-setup.sh
-```
-
-The script will eventually:
-
-1. verify the operating system and Raspberry Pi model
-2. install required packages
-3. install openHAB configuration files
-4. install CamperPilot system scripts
-5. configure services and permissions
-6. prepare MQTT and hardware integrations
-7. validate the installation
-
-The setup script is not yet available.
+CamperPilot-specific configuration and the automated setup script are still under development.
 
 ---
 
@@ -203,17 +100,15 @@ CamperPilot is under active development.
 
 ## 📁 Documentation
 
-Detailed documentation will be maintained separately:
-
 | Document                                         | Description                               |
 | ------------------------------------------------ | ----------------------------------------- |
-| [`docs/installation.md`](docs/installation.md)   | Complete installation instructions        |
-| [`docs/remote-access.md`](docs/remote-access.md) | Tailscale setup and remote maintenance    |
+| [`docs/installation.md`](docs/installation.md)   | Base system installation                  |
+| [`docs/remote-access.md`](docs/remote-access.md) | Secure remote access using Tailscale      |
 | [`docs/hardware.md`](docs/hardware.md)           | Hardware components and wiring            |
-| [`docs/openhab.md`](docs/openhab.md)             | openHAB bindings, Things, Items and Rules |
+| [`docs/openhab.md`](docs/openhab.md)             | openHAB bindings, Things, Items and rules |
 | [`docs/architecture.md`](docs/architecture.md)   | System architecture and design decisions  |
 
-Some documents may still be under development.
+Some documents are still under development.
 
 ---
 
