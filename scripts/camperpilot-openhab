@@ -1,0 +1,2 @@
+openhab ALL=(root) NOPASSWD: /usr/local/sbin/camperpilot-poweroff
+openhab ALL=(root) NOPASSWD: /usr/local/sbin/camperpilot-reboot

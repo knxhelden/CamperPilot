@@ -2,7 +2,7 @@
 
 This guide installs the CamperPilot base system on a Raspberry Pi 4.
 
-The CamperPilot setup script and project-specific openHAB configuration are not yet available.
+The current CamperPilot installer installs the system scripts and required sudoers configuration. Project-specific openHAB configuration will be added later.
 
 ---
 
@@ -56,7 +56,7 @@ Installation progress can be viewed at:
 http://openhabian:81
 ```
 
-If the hostname cannot be resolved, use the IP address assigned by the router:
+Alternatively, use the IP address assigned by the router:
 
 ```text
 http://<IP-ADDRESS>:81
@@ -105,7 +105,7 @@ Username: openhabian
 Password: openhabian
 ```
 
-Change the default password during the following basic configuration.
+Change the default password during the base configuration.
 
 ---
 
@@ -117,7 +117,7 @@ Start the openHABian configuration tool:
 sudo openhabian-config
 ```
 
-Configure at least the following settings:
+Configure at least the following settings.
 
 ### Hostname
 
@@ -134,7 +134,7 @@ Recommended hostname:
 camperpilot
 ```
 
-Restart the Raspberry Pi after changing the hostname:
+Restart the Raspberry Pi:
 
 ```bash
 sudo reboot
@@ -174,7 +174,7 @@ Change at least the password of the `openhabian` system user.
 
 ---
 
-## 6. Verify the Installation
+## 6. Verify the Base Installation
 
 Check the hostname:
 
@@ -222,11 +222,59 @@ http://camperpilot:8080
 
 ## 7. Configure Remote Access
 
-After the local installation works, configure secure remote access using Tailscale:
+Configure secure remote access using Tailscale:
 
 [`Remote Access with Tailscale`](remote-access.md)
 
 No ports should be forwarded from the mobile router to CamperPilot.
+
+---
+
+## 8. Install CamperPilot
+
+Download the current installer:
+
+```bash
+curl -fsSL \
+  https://raw.githubusercontent.com/knxhelden/CamperPilot/main/install.sh \
+  -o /tmp/camperpilot-install.sh
+```
+
+Make it executable:
+
+```bash
+chmod +x /tmp/camperpilot-install.sh
+```
+
+Run the installer:
+
+```bash
+/tmp/camperpilot-install.sh
+```
+
+The installer downloads the current CamperPilot repository and installs:
+
+```text
+/usr/local/sbin/camperpilot-poweroff
+/usr/local/sbin/camperpilot-reboot
+/etc/sudoers.d/camperpilot-openhab
+```
+
+The system scripts are installed with:
+
+```text
+Owner:       root:root
+Permissions: 750
+```
+
+The sudoers configuration is installed with:
+
+```text
+Owner:       root:root
+Permissions: 440
+```
+
+The installer can be executed again to update the installed files.
 
 ---
 
@@ -240,5 +288,6 @@ The base installation is complete when:
 * the default password has been changed
 * the correct time zone is configured
 * Tailscale remote access works
+* the CamperPilot installer completes successfully
 
-CamperPilot-specific bindings, Things, Items, rules and system scripts will later be installed using the planned setup script.
+The current installer only installs the system scripts and sudoers configuration. Bindings, Things, Items, rules and additional system components will be added incrementally.

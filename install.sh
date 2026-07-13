@@ -1,0 +1,128 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+IFS=$'\n\t'
+
+readonly SOURCE_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+readonly TARGET_SCRIPT_DIR="/usr/local/sbin"
+readonly TARGET_SUDOERS_DIR="/etc/sudoers.d"
+
+readonly SCRIPTS=(
+  "camperpilot-poweroff"
+  "camperpilot-reboot"
+)
+
+readonly SUDOERS_FILE="camperpilot-openhab"
+
+log() {
+  printf '[CamperPilot] %s\n' "$*"
+}
+
+fail() {
+  printf '[CamperPilot] ERROR: %s\n' "$*" >&2
+  exit 1
+}
+
+on_error() {
+  local exit_code=$?
+  printf '[CamperPilot] ERROR: Installation failed in line %s (exit code %s).\n' \
+    "${BASH_LINENO[0]}" "$exit_code" >&2
+  exit "$exit_code"
+}
+
+trap on_error ERR
+
+require_root() {
+  if [[ ${EUID} -ne 0 ]]; then
+    fail "Run this installer as root: sudo ./install.sh"
+  fi
+}
+
+require_command() {
+  command -v "$1" >/dev/null 2>&1 || fail "Required command not found: $1"
+}
+
+validate_source_file() {
+  local file="$1"
+
+  [[ -f "$file" ]] || fail "Required file not found: $file"
+
+  if grep -q $'\r' "$file"; then
+    fail "Windows line endings detected in $file. Convert the file to Unix LF."
+  fi
+}
+
+verify_installed_file() {
+  local file="$1"
+  local expected_mode="$2"
+  local actual_owner
+  local actual_mode
+
+  actual_owner="$(stat -c '%U:%G' "$file")"
+  actual_mode="$(stat -c '%a' "$file")"
+
+  [[ "$actual_owner" == "root:root" ]] \
+    || fail "Unexpected owner for $file: $actual_owner"
+
+  [[ "$actual_mode" == "$expected_mode" ]] \
+    || fail "Unexpected permissions for $file: $actual_mode"
+}
+
+main() {
+  require_root
+  require_command install
+  require_command stat
+  require_command visudo
+  require_command grep
+  require_command id
+
+  id openhab >/dev/null 2>&1 \
+    || fail "The system user 'openhab' does not exist."
+
+  for script_name in "${SCRIPTS[@]}"; do
+    validate_source_file "${SOURCE_DIR}/${script_name}"
+  done
+
+  validate_source_file "${SOURCE_DIR}/${SUDOERS_FILE}"
+
+  log "Validating sudoers configuration..."
+  visudo -cf "${SOURCE_DIR}/${SUDOERS_FILE}"
+
+  log "Installing system scripts..."
+  install -d -o root -g root -m 0755 "$TARGET_SCRIPT_DIR"
+
+  for script_name in "${SCRIPTS[@]}"; do
+    install \
+      -o root \
+      -g root \
+      -m 0750 \
+      "${SOURCE_DIR}/${script_name}" \
+      "${TARGET_SCRIPT_DIR}/${script_name}"
+  done
+
+  log "Installing sudoers configuration..."
+  install -d -o root -g root -m 0755 "$TARGET_SUDOERS_DIR"
+
+  install \
+    -o root \
+    -g root \
+    -m 0440 \
+    "${SOURCE_DIR}/${SUDOERS_FILE}" \
+    "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
+
+  log "Validating complete sudoers configuration..."
+  visudo -c
+
+  for script_name in "${SCRIPTS[@]}"; do
+    verify_installed_file "${TARGET_SCRIPT_DIR}/${script_name}" "750"
+  done
+
+  verify_installed_file "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}" "440"
+
+  log "Installation completed successfully."
+  log "Installed:"
+  log "  ${TARGET_SCRIPT_DIR}/camperpilot-poweroff"
+  log "  ${TARGET_SCRIPT_DIR}/camperpilot-reboot"
+  log "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
+}
+
+main "$@"
