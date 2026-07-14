@@ -3,7 +3,10 @@ set -Eeuo pipefail
 IFS=$'\n\t'
 
 readonly SOURCE_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-readonly SOURCE_SCRIPT_DIR="${SOURCE_DIR}/scripts"
+readonly LOCAL_REPO_DIR="${SOURCE_DIR}/CamperPilot"
+readonly REPOSITORY_URL="${CAMPERPILOT_REPOSITORY_URL:-https://github.com/knxhelden/CamperPilot.git}"
+readonly REPOSITORY_BRANCH="${CAMPERPILOT_REPOSITORY_BRANCH:-main}"
+readonly SOURCE_SCRIPT_DIR="${LOCAL_REPO_DIR}/scripts"
 readonly TARGET_SCRIPT_DIR="/usr/local/sbin"
 readonly TARGET_SUDOERS_DIR="/etc/sudoers.d"
 
@@ -52,6 +55,26 @@ validate_source_file() {
   fi
 }
 
+download_repository() {
+  if [[ -d "${LOCAL_REPO_DIR}/.git" ]]; then
+    log "Updating CamperPilot repository in ${LOCAL_REPO_DIR}..."
+    git -C "${LOCAL_REPO_DIR}" fetch --depth 1 origin "${REPOSITORY_BRANCH}"
+    git -C "${LOCAL_REPO_DIR}" checkout -B "${REPOSITORY_BRANCH}" "FETCH_HEAD"
+    return
+  fi
+
+  if [[ -e "${LOCAL_REPO_DIR}" ]]; then
+    fail "Target path already exists and is not a Git repository: ${LOCAL_REPO_DIR}"
+  fi
+
+  log "Downloading CamperPilot repository to ${LOCAL_REPO_DIR}..."
+  git clone \
+    --depth 1 \
+    --branch "${REPOSITORY_BRANCH}" \
+    "${REPOSITORY_URL}" \
+    "${LOCAL_REPO_DIR}"
+}
+
 verify_installed_file() {
   local file="$1"
   local expected_mode="$2"
@@ -69,6 +92,10 @@ verify_installed_file() {
 }
 
 main() {
+  require_command git
+
+  download_repository
+
   require_root
   require_command install
   require_command stat
