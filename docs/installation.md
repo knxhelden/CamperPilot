@@ -249,10 +249,10 @@ chmod +x /tmp/camperpilot-install.sh
 Run the installer:
 
 ```bash
-/tmp/camperpilot-install.sh
+sudo /tmp/camperpilot-install.sh
 ```
 
-The installer downloads the current CamperPilot repository and installs:
+The installer downloads the current CamperPilot repository into a `CamperPilot` subdirectory next to the installer and installs:
 
 ```text
 /usr/local/sbin/camperpilot-poweroff
@@ -274,7 +274,7 @@ Owner:       root:root
 Permissions: 440
 ```
 
-The installer can be executed again to update the installed files.
+The installer can be executed again to update the local `CamperPilot` checkout and refresh the installed files. Manual copying from the `scripts/` directory is not required.
 
 ---
 

@@ -1,26 +1,12 @@
 # CamperPilot System Scripts
 
-This directory contains system-level scripts used by CamperPilot and openHAB.
+This directory contains the system-level helper files installed by `install.sh`.
+Manual installation from this directory is not required.
 
-The scripts must be installed in:
+| File                   | Purpose                                                                 |
+| ---------------------- | ----------------------------------------------------------------------- |
+| `camperpilot-poweroff` | Shutdown helper that logs the request, syncs the filesystem and powers off the Raspberry Pi. |
+| `camperpilot-reboot`   | Reboot helper that logs the request, syncs the filesystem and restarts the Raspberry Pi. |
+| `camperpilot-openhab`  | sudoers configuration that allows the `openhab` user to run the two helper scripts without a password. |
 
-```text
-/usr/local/sbin/
-```
-
-Available scripts:
-
-| Script                 | Purpose                           |
-| ---------------------- | --------------------------------- |
-| `camperpilot-poweroff` | Safely shuts down the CamperPilot |
-| `camperpilot-reboot`   | Safely reboots the CamperPilot    |
-
-Install the scripts:
-
-```bash
-sudo cp camperpilot-poweroff camperpilot-reboot /usr/local/sbin/
-sudo chown root:root /usr/local/sbin/camperpilot-*
-sudo chmod 755 /usr/local/sbin/camperpilot-*
-```
-
-The scripts intentionally use no file extension, as they are installed as executable system commands.
+The installer copies the helper scripts to `/usr/local/sbin/` and the sudoers configuration to `/etc/sudoers.d/` with the required owner and permissions.
