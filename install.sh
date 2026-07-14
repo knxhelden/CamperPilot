@@ -3,6 +3,7 @@ set -Eeuo pipefail
 IFS=$'\n\t'
 
 readonly SOURCE_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+readonly SOURCE_SCRIPT_DIR="${SOURCE_DIR}/scripts"
 readonly TARGET_SCRIPT_DIR="/usr/local/sbin"
 readonly TARGET_SUDOERS_DIR="/etc/sudoers.d"
 
@@ -79,13 +80,13 @@ main() {
     || fail "The system user 'openhab' does not exist."
 
   for script_name in "${SCRIPTS[@]}"; do
-    validate_source_file "${SOURCE_DIR}/${script_name}"
+    validate_source_file "${SOURCE_SCRIPT_DIR}/${script_name}"
   done
 
-  validate_source_file "${SOURCE_DIR}/${SUDOERS_FILE}"
+  validate_source_file "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}"
 
   log "Validating sudoers configuration..."
-  visudo -cf "${SOURCE_DIR}/${SUDOERS_FILE}"
+  visudo -cf "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}"
 
   log "Installing system scripts..."
   install -d -o root -g root -m 0755 "$TARGET_SCRIPT_DIR"
@@ -95,7 +96,7 @@ main() {
       -o root \
       -g root \
       -m 0750 \
-      "${SOURCE_DIR}/${script_name}" \
+      "${SOURCE_SCRIPT_DIR}/${script_name}" \
       "${TARGET_SCRIPT_DIR}/${script_name}"
   done
 
@@ -106,7 +107,7 @@ main() {
     -o root \
     -g root \
     -m 0440 \
-    "${SOURCE_DIR}/${SUDOERS_FILE}" \
+    "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}" \
     "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
 
   log "Validating complete sudoers configuration..."
