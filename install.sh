@@ -137,8 +137,8 @@ main() {
     "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}" \
     "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
 
-  log "Validating complete sudoers configuration..."
-  visudo -c
+  log "Validating installed sudoers configuration..."
+  visudo -cf "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
 
   for script_name in "${SCRIPTS[@]}"; do
     verify_installed_file "${TARGET_SCRIPT_DIR}/${script_name}" "750"
