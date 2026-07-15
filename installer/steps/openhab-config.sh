@@ -154,13 +154,6 @@ install_openhab_thing_file() {
 
   if [[ "${thing_file}" == "zigbee.things" ]]; then
     render_zigbee_thing_file "${source_file}" "${target_file}"
-  local zigbee_port
-
-  if grep -q "${ZIGBEE_PORT_PLACEHOLDER}" "${source_file}"; then
-    zigbee_port="$(resolve_zigbee_port)"
-    sed "s|${ZIGBEE_PORT_PLACEHOLDER}|${zigbee_port}|g" "${source_file}" \
-      | install -o openhab -g openhab -m 0644 /dev/stdin "${target_file}"
-    log_success "Installed ${thing_file} with Zigbee port ${zigbee_port}"
     return
   fi
 
