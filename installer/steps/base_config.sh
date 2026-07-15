@@ -36,33 +36,36 @@ read_openhabian_password() {
   local password_confirmation
 
   if [[ ! -t 0 ]]; then
-    fail "Cannot read the openhabian password without an interactive terminal."
+    return 1
   fi
 
   while true; do
-    read -r -s -p "New password for openhabian: " password
-    printf '\n' >&2
-    read -r -s -p "Repeat password for openhabian: " password_confirmation
+    read -r -s -p "New password for openhabian (leave empty to keep current password): " password
     printf '\n' >&2
 
     if [[ -z "$password" ]]; then
-      log_warning "Password must not be empty."
-      continue
+      return 1
     fi
+
+    read -r -s -p "Repeat password for openhabian: " password_confirmation
+    printf '\n' >&2
 
     if [[ "$password" == "$password_confirmation" ]]; then
       printf '%s\n' "$password"
-      return
+      return 0
     fi
 
-    log_warning "Passwords do not match. Please try again."
+    log_warning "Passwords do not match. Please try again, or leave empty to keep the current password."
   done
 }
 
 configure_openhabian_password() {
   local password
 
-  password="$(read_openhabian_password)"
+  if ! password="$(read_openhabian_password)"; then
+    log_success "Keeping current password for openhabian user."
+    return
+  fi
 
   log_success "Setting password for openhabian user..."
   printf 'openhabian:%s\n' "$password" | chpasswd
