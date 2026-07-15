@@ -134,6 +134,16 @@ sudo /tmp/camperpilot_installer.sh
 
 Choose **Install** from the installer menu.
 
+### Zigbee coordinator port
+
+During installation, the `openhab/things/zigbee.things` source file is provisioned with the local Zigbee serial port before it is copied to `/etc/openhab/things/zigbee.things`. By default, the installer expects exactly one device under `/dev/serial/by-id` and uses that stable device path automatically.
+
+If multiple serial devices are connected, or if the coordinator uses a different path, provide the port explicitly:
+
+```bash
+sudo env CAMPERPILOT_ZIGBEE_PORT=/dev/serial/by-id/<zigbee-device> /tmp/camperpilot_installer.sh install
+```
+
 You can also pass an action directly to the installer:
 
 ```bash
