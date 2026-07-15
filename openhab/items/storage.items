@@ -1,5 +1,0 @@
-Group Storage_Contact_RightDoor "Rechte Tür" <none> (Storage) ["Door"]
-Contact Storage_Contact_RightDoor_OpenState "Status" <none> (Storage_Contact_RightDoor) ["Point"]
-
-Group Storage_Contact_LeftDoor "Linke Tür" <none> (Storage) ["Door"]
-Contact Storage_Contact_LeftDoor_OpenState "Status" <none> (Storage_Contact_LeftDoor) ["Point"]

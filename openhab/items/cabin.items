@@ -1,5 +1,0 @@
-Group Cabin_Contact_DriverDoor "Fahrertür" <none> (Cabin) ["Door"]
-Contact Cabin_Contact_DriverDoor_OpenState "Status" <none> (Cabin_Contact_DriverDoor) ["Point"]
-
-Group Cabin_Contact_PassengerDoor "Beifahrertür" <none> (Cabin) ["Door"]
-Contact Cabin_Contact_PassengerDoor_OpenState "Status" <none> (Cabin_Contact_PassengerDoor) ["Point"]
