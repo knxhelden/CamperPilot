@@ -215,6 +215,10 @@ install_camperpilot() {
   require_command stat
   require_command visudo
   require_command grep
+  require_command find
+  require_command sed
+  require_command od
+  require_command tr
   require_command id
   require_command hostnamectl
   require_command timedatectl
@@ -238,6 +242,7 @@ install_camperpilot() {
   log_success "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/services/addons.cfg"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/systeminfo.things"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/zigbee.things"
 }
 
 uninstall_camperpilot() {
