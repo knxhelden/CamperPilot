@@ -266,7 +266,7 @@ sudo /tmp/camperpilot-install.sh install
 sudo /tmp/camperpilot-install.sh uninstall
 ```
 
-The installer downloads the current CamperPilot repository into a `CamperPilot` subdirectory next to the installer and installs:
+The installer downloads the current CamperPilot repository into a `CamperPilot` subdirectory next to the installer. The main installer dispatches to dedicated step files under `installer/steps/` for system scripts and sudoers configuration. It installs:
 
 ```text
 /usr/local/sbin/camperpilot-poweroff

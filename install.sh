@@ -54,12 +54,6 @@ on_error() {
 
 trap on_error ERR
 
-require_root() {
-  if [[ ${EUID} -ne 0 ]]; then
-    fail "Run this installer as root: sudo ./install.sh"
-  fi
-}
-
 require_command() {
   command -v "$1" >/dev/null 2>&1 || fail "Required command not found: $1"
 }
@@ -71,6 +65,40 @@ validate_source_file() {
 
   if grep -q $'\r' "$file"; then
     fail "Windows line endings detected in $file. Convert the file to Unix LF."
+  fi
+}
+
+verify_installed_file() {
+  local file="$1"
+  local expected_mode="$2"
+  local actual_owner
+  local actual_mode
+
+  actual_owner="$(stat -c '%U:%G' "$file")"
+  actual_mode="$(stat -c '%a' "$file")"
+
+  [[ "$actual_owner" == "root:root" ]] \
+    || fail "Unexpected owner for $file: $actual_owner"
+
+  [[ "$actual_mode" == "$expected_mode" ]] \
+    || fail "Unexpected permissions for $file: $actual_mode"
+}
+
+uninstall_file() {
+  local file="$1"
+
+  if [[ -e "$file" ]]; then
+    rm -f -- "$file"
+    log_success "Removed $file"
+    return
+  fi
+
+  log_warning "Already absent: $file"
+}
+
+require_root() {
+  if [[ ${EUID} -ne 0 ]]; then
+    fail "Run this installer as root: sudo ./install.sh"
   fi
 }
 
@@ -92,6 +120,21 @@ download_repository() {
     --branch "${REPOSITORY_BRANCH}" \
     "${REPOSITORY_URL}" \
     "${LOCAL_REPO_DIR}"
+}
+
+load_installer_steps() {
+  local installer_dir="${SOURCE_DIR}/installer"
+
+  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" || ! -f "${installer_dir}/steps/sudoers.sh" ]]; then
+    require_command git
+    download_repository
+    installer_dir="${LOCAL_REPO_DIR}/installer"
+  fi
+
+  # shellcheck source=installer/steps/system_scripts.sh
+  source "${installer_dir}/steps/system_scripts.sh"
+  # shellcheck source=installer/steps/sudoers.sh
+  source "${installer_dir}/steps/sudoers.sh"
 }
 
 show_main_menu() {
@@ -147,26 +190,11 @@ HELP
   esac
 }
 
-verify_installed_file() {
-  local file="$1"
-  local expected_mode="$2"
-  local actual_owner
-  local actual_mode
-
-  actual_owner="$(stat -c '%U:%G' "$file")"
-  actual_mode="$(stat -c '%a' "$file")"
-
-  [[ "$actual_owner" == "root:root" ]] \
-    || fail "Unexpected owner for $file: $actual_owner"
-
-  [[ "$actual_mode" == "$expected_mode" ]] \
-    || fail "Unexpected permissions for $file: $actual_mode"
-}
-
 install_camperpilot() {
   require_command git
 
   download_repository
+  load_installer_steps
 
   require_root
   require_command install
@@ -178,45 +206,8 @@ install_camperpilot() {
   id openhab >/dev/null 2>&1 \
     || fail "The system user 'openhab' does not exist."
 
-  for script_name in "${SCRIPTS[@]}"; do
-    validate_source_file "${SOURCE_SCRIPT_DIR}/${script_name}"
-  done
-
-  validate_source_file "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}"
-
-  log_success "Validating sudoers configuration..."
-  visudo -cf "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}"
-
-  log_success "Installing system scripts..."
-  install -d -o root -g root -m 0755 "$TARGET_SCRIPT_DIR"
-
-  for script_name in "${SCRIPTS[@]}"; do
-    install \
-      -o root \
-      -g root \
-      -m 0750 \
-      "${SOURCE_SCRIPT_DIR}/${script_name}" \
-      "${TARGET_SCRIPT_DIR}/${script_name}"
-  done
-
-  log_success "Installing sudoers configuration..."
-  install -d -o root -g root -m 0755 "$TARGET_SUDOERS_DIR"
-
-  install \
-    -o root \
-    -g root \
-    -m 0440 \
-    "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}" \
-    "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
-
-  log_success "Validating installed sudoers configuration..."
-  visudo -cf "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
-
-  for script_name in "${SCRIPTS[@]}"; do
-    verify_installed_file "${TARGET_SCRIPT_DIR}/${script_name}" "750"
-  done
-
-  verify_installed_file "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}" "440"
+  install_system_scripts
+  install_sudoers_configuration
 
   log_success "Installation completed successfully."
   log_success "Installed:"
@@ -225,29 +216,16 @@ install_camperpilot() {
   log_success "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
 }
 
-uninstall_file() {
-  local file="$1"
-
-  if [[ -e "$file" ]]; then
-    rm -f -- "$file"
-    log_success "Removed $file"
-    return
-  fi
-
-  log_warning "Already absent: $file"
-}
-
 uninstall_camperpilot() {
+  load_installer_steps
+
   require_root
   require_command rm
 
   log_success "Uninstalling CamperPilot system files..."
 
-  for script_name in "${SCRIPTS[@]}"; do
-    uninstall_file "${TARGET_SCRIPT_DIR}/${script_name}"
-  done
-
-  uninstall_file "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
+  uninstall_system_scripts
+  uninstall_sudoers_configuration
 
   log_success "Uninstallation completed successfully."
 }
