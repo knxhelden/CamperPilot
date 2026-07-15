@@ -189,7 +189,31 @@ install_openhab_config_things() {
 }
 
 install_openhab_config_items() {
+  local item_file
+  local item_files=(
+    "structure.items"
+    "system.items"
+  )
+
+  for item_file in "${item_files[@]}"; do
+    validate_source_file "${SOURCE_OPENHAB_CONFIG_DIR}/items/${item_file}"
+  done
+
   log_success "Installing openHAB items configuration..."
+  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/items"
+
+  for item_file in "${item_files[@]}"; do
+    install \
+      -o openhab \
+      -g openhab \
+      -m 0644 \
+      "${SOURCE_OPENHAB_CONFIG_DIR}/items/${item_file}" \
+      "${TARGET_OPENHAB_CONFIG_DIR}/items/${item_file}"
+  done
+
+  for item_file in "${item_files[@]}"; do
+    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/items/${item_file}" "644" "openhab:openhab"
+  done
 }
 
 install_openhab_config_automation() {
