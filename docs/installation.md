@@ -134,14 +134,26 @@ sudo /tmp/camperpilot_installer.sh
 
 Choose **Install** from the installer menu.
 
-### Zigbee coordinator port
+### Zigbee coordinator configuration
 
-During installation, the `openhab/things/zigbee.things` source file is provisioned with the local Zigbee serial port before it is copied to `/etc/openhab/things/zigbee.things`. By default, the installer expects exactly one device under `/dev/serial/by-id` and uses that stable device path automatically.
+During installation, the `openhab/things/zigbee.things` source file is provisioned with target-system values before it is copied to `/etc/openhab/things/zigbee.things`.
 
-If multiple serial devices are connected, or if the coordinator uses a different path, provide the port explicitly:
+The installer individualizes these values:
+
+* `zigbee_port`: automatically detected when exactly one device exists under `/dev/serial/by-id`.
+* `zigbee_panid`: reused from an existing installed `zigbee.things`, or generated for a new installation.
+* `zigbee_extendedpanid`: reused from an existing installed `zigbee.things`, or generated for a new installation.
+* `zigbee_networkkey`: reused from an existing installed `zigbee.things`, or generated for a new installation.
+
+The generated network values should stay stable after devices have been paired. If you already have a Zigbee network, set the existing values explicitly during installation:
 
 ```bash
-sudo env CAMPERPILOT_ZIGBEE_PORT=/dev/serial/by-id/<zigbee-device> /tmp/camperpilot_installer.sh install
+sudo env \
+  CAMPERPILOT_ZIGBEE_PORT=/dev/serial/by-id/<zigbee-device> \
+  CAMPERPILOT_ZIGBEE_PAN_ID=<pan-id> \
+  CAMPERPILOT_ZIGBEE_EXTENDED_PAN_ID=<extended-pan-id> \
+  CAMPERPILOT_ZIGBEE_NETWORK_KEY=<network-key> \
+  /tmp/camperpilot_installer.sh install
 ```
 
 You can also pass an action directly to the installer:
