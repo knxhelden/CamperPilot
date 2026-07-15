@@ -2,18 +2,7 @@
 
 This guide installs the CamperPilot base system on a Raspberry Pi 4.
 
-The current CamperPilot installer installs the system scripts and required sudoers configuration. Project-specific openHAB configuration will be added later.
-
----
-
-## Requirements
-
-* Raspberry Pi 4 with at least 2 GB RAM
-* 64-bit capable microSD card, preferably an endurance model
-* Stable Raspberry Pi power supply
-* Ethernet connection for the initial installation
-* Computer with Raspberry Pi Imager
-* Access to the local network router
+The current CamperPilot installer configures the base hostname, time zone and `openhabian` password, then installs the system scripts and required sudoers configuration. Project-specific openHAB configuration will be added later.
 
 ---
 
@@ -105,122 +94,11 @@ Username: openhabian
 Password: openhabian
 ```
 
-Change the default password during the base configuration.
+Change the default password during the CamperPilot installation.
 
 ---
 
-## 5. Configure the Base System
-
-Start the openHABian configuration tool:
-
-```bash
-sudo openhabian-config
-```
-
-Configure at least the following settings.
-
-### Hostname
-
-Select:
-
-```text
-30 | System Settings
-31 | Change hostname
-```
-
-Recommended hostname:
-
-```text
-camperpilot
-```
-
-Restart the Raspberry Pi:
-
-```bash
-sudo reboot
-```
-
-The system should then be available at:
-
-```text
-http://camperpilot:8080
-```
-
-### Time Zone
-
-Select:
-
-```text
-30 | System Settings
-33 | Set system timezone
-```
-
-For Germany:
-
-```text
-Europe/Berlin
-```
-
-### Passwords
-
-Select:
-
-```text
-30 | System Settings
-34 | Change passwords
-```
-
-Change at least the password of the `openhabian` system user.
-
----
-
-## 6. Verify the Base Installation
-
-Check the hostname:
-
-```bash
-hostname
-```
-
-Expected result:
-
-```text
-camperpilot
-```
-
-Check whether openHAB is running:
-
-```bash
-sudo systemctl is-active openhab
-```
-
-Expected result:
-
-```text
-active
-```
-
-Check whether the operating system is running in 64-bit mode:
-
-```bash
-getconf LONG_BIT
-```
-
-Expected result:
-
-```text
-64
-```
-
-Open the openHAB interface:
-
-```text
-http://camperpilot:8080
-```
-
----
-
-## 7. Configure Remote Access
+## 5. Configure Remote Access
 
 Configure secure remote access using Tailscale:
 
@@ -230,64 +108,67 @@ No ports should be forwarded from the mobile router to CamperPilot.
 
 ---
 
-## 8. Install CamperPilot
+## 6. Install CamperPilot
+
+The installer installs everything required for CamperPilot. Run the following commands on the Raspberry Pi.
 
 Download the current installer:
 
 ```bash
 curl -fsSL \
-  https://raw.githubusercontent.com/knxhelden/CamperPilot/main/install.sh \
-  -o /tmp/camperpilot-install.sh
+  https://raw.githubusercontent.com/knxhelden/CamperPilot/main/installer/camperpilot_installer.sh \
+  -o /tmp/camperpilot_installer.sh
 ```
 
 Make it executable:
 
 ```bash
-chmod +x /tmp/camperpilot-install.sh
+chmod +x /tmp/camperpilot_installer.sh
 ```
 
 Run the installer:
 
 ```bash
-sudo /tmp/camperpilot-install.sh
+sudo /tmp/camperpilot_installer.sh
 ```
 
-The installer downloads the current CamperPilot repository into a `CamperPilot` subdirectory next to the installer and installs:
+Choose **Install** from the installer menu.
 
-```text
-/usr/local/sbin/camperpilot-poweroff
-/usr/local/sbin/camperpilot-reboot
-/etc/sudoers.d/camperpilot-openhab
+### Zigbee coordinator configuration
+
+During installation, the `openhab/things/zigbee.things` source file is provisioned with target-system values before it is copied to `/etc/openhab/things/zigbee.things`.
+
+The installer individualizes these values:
+
+* `zigbee_port`: automatically detected when exactly one device exists under `/dev/serial/by-id`.
+* `zigbee_panid`: reused from an existing installed `zigbee.things`, or generated for a new installation.
+* `zigbee_extendedpanid`: reused from an existing installed `zigbee.things`, or generated for a new installation.
+* `zigbee_networkkey`: reused from an existing installed `zigbee.things`, or generated for a new installation.
+
+The generated network values should stay stable after devices have been paired. If you already have a Zigbee network, set the existing values explicitly during installation:
+
+```bash
+sudo env \
+  CAMPERPILOT_ZIGBEE_PORT=/dev/serial/by-id/<zigbee-device> \
+  CAMPERPILOT_ZIGBEE_PAN_ID=<pan-id> \
+  CAMPERPILOT_ZIGBEE_EXTENDED_PAN_ID=<extended-pan-id> \
+  CAMPERPILOT_ZIGBEE_NETWORK_KEY=<network-key> \
+  /tmp/camperpilot_installer.sh install
 ```
 
-The system scripts are installed with:
+You can also pass an action directly to the installer:
 
-```text
-Owner:       root:root
-Permissions: 750
+```bash
+sudo /tmp/camperpilot_installer.sh install
+sudo /tmp/camperpilot_installer.sh --install
+sudo /tmp/camperpilot_installer.sh uninstall
+sudo /tmp/camperpilot_installer.sh --uninstall
+sudo /tmp/camperpilot_installer.sh -h
+sudo /tmp/camperpilot_installer.sh --help
 ```
 
-The sudoers configuration is installed with:
+Available actions:
 
-```text
-Owner:       root:root
-Permissions: 440
-```
-
-The installer can be executed again to update the local `CamperPilot` checkout and refresh the installed files. Manual copying from the `scripts/` directory is not required.
-
----
-
-## Installation Status
-
-The base installation is complete when:
-
-* openHAB is accessible
-* SSH access works
-* the hostname is `camperpilot`
-* the default password has been changed
-* the correct time zone is configured
-* Tailscale remote access works
-* the CamperPilot installer completes successfully
-
-The current installer only installs the system scripts and sudoers configuration. Bindings, Things, Items, rules and additional system components will be added incrementally.
+* `install` or `--install`: install CamperPilot without opening the menu.
+* `uninstall` or `--uninstall`: remove CamperPilot again without opening the menu.
+* `-h` or `--help`: show the installer help text.

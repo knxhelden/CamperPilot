@@ -1,13 +1,13 @@
 Thing zigbee:coordinator_ember:stick "Zigbee USB Stick" [
-    zigbee_port="/dev/serial/by-id/usb-Itead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_V2_208fbecd93f3ef11a349c61b6d9880ab-if00-port0",
+    zigbee_port="__CAMPERPILOT_ZIGBEE_PORT__",
     zigbee_baud=115200,
     zigbee_flowcontrol=2,
     zigbee_childtimeout=86400,
     zigbee_concentrator=0,
     zigbee_meshupdateperiod=86400,
-    zigbee_panid=29474,
-    zigbee_extendedpanid="CAF07299F8FEF14D",
-    zigbee_networkkey="49E6B4CCA44CB7F5924E4E6024ABFC08",
+    zigbee_panid=__CAMPERPILOT_ZIGBEE_PAN_ID__,
+    zigbee_extendedpanid="__CAMPERPILOT_ZIGBEE_EXTENDED_PAN_ID__",
+    zigbee_networkkey="__CAMPERPILOT_ZIGBEE_NETWORK_KEY__",
     zigbee_powermode=1,
     zigbee_txpower=0
     ]
