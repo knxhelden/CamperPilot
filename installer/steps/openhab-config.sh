@@ -17,7 +17,30 @@ install_openhab_config_services() {
 }
 
 install_openhab_config_things() {
+  local thing_file
+  local thing_files=(
+    "systeminfo.things"
+  )
+
+  for thing_file in "${thing_files[@]}"; do
+    validate_source_file "${SOURCE_OPENHAB_CONFIG_DIR}/things/${thing_file}"
+  done
+
   log_success "Installing openHAB things configuration..."
+  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/things"
+
+  for thing_file in "${thing_files[@]}"; do
+    install \
+      -o openhab \
+      -g openhab \
+      -m 0644 \
+      "${SOURCE_OPENHAB_CONFIG_DIR}/things/${thing_file}" \
+      "${TARGET_OPENHAB_CONFIG_DIR}/things/${thing_file}"
+  done
+
+  for thing_file in "${thing_files[@]}"; do
+    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/things/${thing_file}" "644" "openhab:openhab"
+  done
 }
 
 install_openhab_config_items() {

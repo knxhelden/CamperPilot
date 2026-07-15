@@ -237,6 +237,7 @@ install_camperpilot() {
   log_success "  ${TARGET_SCRIPT_DIR}/camperpilot-reboot"
   log_success "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/services/addons.cfg"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/systeminfo.things"
 }
 
 uninstall_camperpilot() {
