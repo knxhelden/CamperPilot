@@ -2,7 +2,7 @@
 
 This guide installs the CamperPilot base system on a Raspberry Pi 4.
 
-The current CamperPilot installer installs the system scripts and required sudoers configuration. Project-specific openHAB configuration will be added later.
+The current CamperPilot installer configures the base hostname, time zone and `openhabian` password, then installs the system scripts and required sudoers configuration. Project-specific openHAB configuration will be added later.
 
 ---
 
@@ -111,30 +111,27 @@ Change the default password during the base configuration.
 
 ## 5. Configure the Base System
 
-Start the openHABian configuration tool:
-
-```bash
-sudo openhabian-config
-```
-
-Configure at least the following settings.
-
-### Hostname
-
-Select:
+The CamperPilot installer configures the hostname, time zone and `openhabian` password automatically. During installation, confirm the default hostname or enter a custom value:
 
 ```text
-30 | System Settings
-31 | Change hostname
+Hostname [camperpilot]:
 ```
 
-Recommended hostname:
+If you press Enter without typing a custom value, the hostname is set to:
 
 ```text
 camperpilot
 ```
 
-Restart the Raspberry Pi:
+The time zone is set automatically to:
+
+```text
+Europe/Berlin
+```
+
+The installer then asks for the new `openhabian` password twice. The password is only applied if both entries match.
+
+After the installer has completed, restart the Raspberry Pi if the hostname was changed:
 
 ```bash
 sudo reboot
@@ -146,31 +143,9 @@ The system should then be available at:
 http://camperpilot:8080
 ```
 
-### Time Zone
-
-Select:
-
-```text
-30 | System Settings
-33 | Set system timezone
-```
-
-For Germany:
-
-```text
-Europe/Berlin
-```
-
 ### Passwords
 
-Select:
-
-```text
-30 | System Settings
-34 | Change passwords
-```
-
-Change at least the password of the `openhabian` system user.
+The `openhabian` system user password is changed by the CamperPilot installer.
 
 ---
 
@@ -259,14 +234,14 @@ The installer opens a main menu with the following options:
 2) Uninstall
 ```
 
-Choose **Install** to install or update the CamperPilot system scripts and sudoers configuration. Choose **Uninstall** to remove these CamperPilot system files again. Installer messages are color-coded: green marks successful steps, yellow marks warnings or follow-up checks, and red marks showstoppers. For scripted runs, the same actions can be selected directly:
+Choose **Install** to set the base hostname, time zone and `openhabian` password, then install or update the CamperPilot system scripts and sudoers configuration. Choose **Uninstall** to remove these CamperPilot system files again. Installer messages are color-coded: green marks successful steps, yellow marks warnings or follow-up checks, and red marks showstoppers. For scripted runs, the same actions can be selected directly:
 
 ```bash
 sudo /tmp/camperpilot_installer.sh install
 sudo /tmp/camperpilot_installer.sh uninstall
 ```
 
-The installer downloads the current CamperPilot repository into a `CamperPilot` subdirectory next to the installer. The main installer dispatches to the dedicated step file `installer/steps/system_scripts.sh` for system scripts and sudoers configuration. It installs:
+The installer downloads the current CamperPilot repository into a `CamperPilot` subdirectory next to the installer. The main installer dispatches to dedicated step files: `installer/steps/base_config.sh` sets the hostname, time zone and `openhabian` password, and `installer/steps/system_scripts.sh` installs system scripts and sudoers configuration. It installs:
 
 ```text
 /usr/local/sbin/camperpilot-poweroff

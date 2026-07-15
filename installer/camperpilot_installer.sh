@@ -134,12 +134,14 @@ download_repository() {
 load_installer_steps() {
   local installer_dir="${SOURCE_DIR}"
 
-  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" ]]; then
+  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" || ! -f "${installer_dir}/steps/base_config.sh" ]]; then
     require_command git
     download_repository
     installer_dir="${LOCAL_REPO_DIR}/installer"
   fi
 
+  # shellcheck source=steps/base_config.sh
+  source "${installer_dir}/steps/base_config.sh"
   # shellcheck source=steps/system_scripts.sh
   source "${installer_dir}/steps/system_scripts.sh"
 }
@@ -187,7 +189,7 @@ Usage: sudo ./installer/camperpilot_installer.sh [install|uninstall]
 Without an argument, the interactive main menu is shown.
 
 Options:
-  install      Install CamperPilot system scripts and sudoers configuration.
+  install      Configure the base system and install CamperPilot system files.
   uninstall    Remove CamperPilot system scripts and sudoers configuration.
   -h, --help   Show this help text.
 HELP
@@ -209,10 +211,17 @@ install_camperpilot() {
   require_command visudo
   require_command grep
   require_command id
+  require_command hostnamectl
+  require_command timedatectl
+  require_command chpasswd
 
   id openhab >/dev/null 2>&1 \
     || fail "The system user 'openhab' does not exist."
 
+  id openhabian >/dev/null 2>&1 \
+    || fail "The system user 'openhabian' does not exist."
+
+  install_base_configuration
   install_system_scripts
   install_sudoers_configuration
 
