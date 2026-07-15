@@ -1,0 +1,4 @@
+Thing systeminfo:computer:camperpilot "CamperPilot System" @ "CamperPilot" [
+    interval_high=5,
+    interval_medium=60
+]
