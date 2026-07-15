@@ -1,5 +1,5 @@
 Thing zigbee:coordinator_ember:stick "Zigbee USB Stick" [
-    zigbee_port="/dev/serial/by-id/usb-Itead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_V2_208fbecd93f3ef11a349c61b6d9880ab-if00-port0",
+    zigbee_port="__CAMPERPILOT_ZIGBEE_PORT__",
     zigbee_baud=115200,
     zigbee_flowcontrol=2,
     zigbee_childtimeout=86400,
