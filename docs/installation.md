@@ -6,17 +6,6 @@ The current CamperPilot installer configures the base hostname, time zone and `o
 
 ---
 
-## Requirements
-
-* Raspberry Pi 4 with at least 2 GB RAM
-* 64-bit capable microSD card, preferably an endurance model
-* Stable Raspberry Pi power supply
-* Ethernet connection for the initial installation
-* Computer with Raspberry Pi Imager
-* Access to the local network router
-
----
-
 ## 1. Write openHABian to the SD Card
 
 Open **Raspberry Pi Imager** and select:
@@ -105,97 +94,11 @@ Username: openhabian
 Password: openhabian
 ```
 
-Change the default password during the base configuration.
+Change the default password during the CamperPilot installation.
 
 ---
 
-## 5. Configure the Base System
-
-The CamperPilot installer configures the hostname, time zone and `openhabian` password automatically. During installation, confirm the default hostname or enter a custom value:
-
-```text
-Hostname [camperpilot]:
-```
-
-If you press Enter without typing a custom value, the hostname is set to:
-
-```text
-camperpilot
-```
-
-The time zone is set automatically to:
-
-```text
-Europe/Berlin
-```
-
-The installer then asks for the new `openhabian` password twice. The password is only applied if both entries match.
-
-After the installer has completed, restart the Raspberry Pi if the hostname was changed:
-
-```bash
-sudo reboot
-```
-
-The system should then be available at:
-
-```text
-http://camperpilot:8080
-```
-
-### Passwords
-
-The `openhabian` system user password is changed by the CamperPilot installer.
-
----
-
-## 6. Verify the Base Installation
-
-Check the hostname:
-
-```bash
-hostname
-```
-
-Expected result:
-
-```text
-camperpilot
-```
-
-Check whether openHAB is running:
-
-```bash
-sudo systemctl is-active openhab
-```
-
-Expected result:
-
-```text
-active
-```
-
-Check whether the operating system is running in 64-bit mode:
-
-```bash
-getconf LONG_BIT
-```
-
-Expected result:
-
-```text
-64
-```
-
-Open the openHAB interface:
-
-```text
-http://camperpilot:8080
-```
-
----
-
-## 7. Configure Remote Access
+## 5. Configure Remote Access
 
 Configure secure remote access using Tailscale:
 
@@ -205,7 +108,9 @@ No ports should be forwarded from the mobile router to CamperPilot.
 
 ---
 
-## 8. Install CamperPilot
+## 6. Install CamperPilot
+
+The installer installs everything required for CamperPilot. Run the following commands on the Raspberry Pi.
 
 Download the current installer:
 
@@ -227,56 +132,21 @@ Run the installer:
 sudo /tmp/camperpilot_installer.sh
 ```
 
-The installer opens a main menu with the following options:
+Choose **Install** from the installer menu.
 
-```text
-1) Install
-2) Uninstall
-```
-
-Choose **Install** to set the base hostname, time zone and `openhabian` password, then install or update the CamperPilot system scripts and sudoers configuration. Choose **Uninstall** to remove these CamperPilot system files again. Installer messages are color-coded: green marks successful steps, yellow marks warnings or follow-up checks, and red marks showstoppers. For scripted runs, the same actions can be selected directly:
+You can also pass an action directly to the installer:
 
 ```bash
 sudo /tmp/camperpilot_installer.sh install
+sudo /tmp/camperpilot_installer.sh --install
 sudo /tmp/camperpilot_installer.sh uninstall
+sudo /tmp/camperpilot_installer.sh --uninstall
+sudo /tmp/camperpilot_installer.sh -h
+sudo /tmp/camperpilot_installer.sh --help
 ```
 
-The installer downloads the current CamperPilot repository into a `CamperPilot` subdirectory next to the installer. The main installer dispatches to dedicated step files: `installer/steps/base_config.sh` sets the hostname, time zone and `openhabian` password, and `installer/steps/system_scripts.sh` installs system scripts and sudoers configuration. It installs:
+Available actions:
 
-```text
-/usr/local/sbin/camperpilot-poweroff
-/usr/local/sbin/camperpilot-reboot
-/etc/sudoers.d/camperpilot-openhab
-```
-
-The system scripts are installed with:
-
-```text
-Owner:       root:root
-Permissions: 750
-```
-
-The sudoers configuration is installed with:
-
-```text
-Owner:       root:root
-Permissions: 440
-```
-
-The installer can be executed again to update the local `CamperPilot` checkout and refresh the installed files. Manual copying from the `scripts/` directory is not required.
-
----
-
-## Installation Status
-
-The base installation is complete when:
-
-* openHAB is accessible
-* SSH access works
-* the hostname is `camperpilot`
-* the default password has been changed
-* the correct time zone is configured
-* Tailscale remote access works
-* the CamperPilot installer completes successfully
-
-The current installer only installs the system scripts and sudoers configuration. Bindings, Things, Items, rules and additional system components will be added incrementally.
+* `install` or `--install`: install CamperPilot without opening the menu.
+* `uninstall` or `--uninstall`: remove CamperPilot again without opening the menu.
+* `-h` or `--help`: show the installer help text.
