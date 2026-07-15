@@ -7,7 +7,9 @@ readonly LOCAL_REPO_DIR="${SOURCE_DIR}/CamperPilot"
 readonly REPOSITORY_URL="${CAMPERPILOT_REPOSITORY_URL:-https://github.com/knxhelden/CamperPilot.git}"
 readonly REPOSITORY_BRANCH="${CAMPERPILOT_REPOSITORY_BRANCH:-main}"
 readonly SOURCE_SCRIPT_DIR="${LOCAL_REPO_DIR}/scripts"
+readonly SOURCE_OPENHAB_CONFIG_DIR="${LOCAL_REPO_DIR}/openhab"
 readonly TARGET_SCRIPT_DIR="/usr/local/sbin"
+readonly TARGET_OPENHAB_CONFIG_DIR="/etc/openhab"
 readonly TARGET_SUDOERS_DIR="/etc/sudoers.d"
 
 readonly SCRIPTS=(
@@ -73,13 +75,14 @@ validate_source_file() {
 verify_installed_file() {
   local file="$1"
   local expected_mode="$2"
+  local expected_owner="${3:-root:root}"
   local actual_owner
   local actual_mode
 
   actual_owner="$(stat -c '%U:%G' "$file")"
   actual_mode="$(stat -c '%a' "$file")"
 
-  [[ "$actual_owner" == "root:root" ]] \
+  [[ "$actual_owner" == "$expected_owner" ]] \
     || fail "Unexpected owner for $file: $actual_owner"
 
   [[ "$actual_mode" == "$expected_mode" ]] \
@@ -134,7 +137,7 @@ download_repository() {
 load_installer_steps() {
   local installer_dir="${SOURCE_DIR}"
 
-  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" || ! -f "${installer_dir}/steps/base_config.sh" ]]; then
+  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" || ! -f "${installer_dir}/steps/base_config.sh" || ! -f "${installer_dir}/steps/openhab-config.sh" ]]; then
     require_command git
     download_repository
     installer_dir="${LOCAL_REPO_DIR}/installer"
@@ -144,6 +147,8 @@ load_installer_steps() {
   source "${installer_dir}/steps/base_config.sh"
   # shellcheck source=steps/system_scripts.sh
   source "${installer_dir}/steps/system_scripts.sh"
+  # shellcheck source=steps/openhab-config.sh
+  source "${installer_dir}/steps/openhab-config.sh"
 }
 
 show_main_menu() {
@@ -224,12 +229,14 @@ install_camperpilot() {
   install_base_configuration
   install_system_scripts
   install_sudoers_configuration
+  install_openhab_configuration
 
   log_success "Installation completed successfully."
   log_success "Installed:"
   log_success "  ${TARGET_SCRIPT_DIR}/camperpilot-poweroff"
   log_success "  ${TARGET_SCRIPT_DIR}/camperpilot-reboot"
   log_success "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/services/addons.cfg"
 }
 
 uninstall_camperpilot() {
