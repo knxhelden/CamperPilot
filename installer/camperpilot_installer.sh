@@ -98,7 +98,7 @@ uninstall_file() {
 
 require_root() {
   if [[ ${EUID} -ne 0 ]]; then
-    fail "Run this installer as root: sudo ./install.sh"
+    fail "Run this installer as root: sudo ./installer/camperpilot_installer.sh"
   fi
 }
 
@@ -123,7 +123,7 @@ download_repository() {
 }
 
 load_installer_steps() {
-  local installer_dir="${SOURCE_DIR}/installer"
+  local installer_dir="${SOURCE_DIR}"
 
   if [[ ! -f "${installer_dir}/steps/system_scripts.sh" ]]; then
     require_command git
@@ -131,7 +131,7 @@ load_installer_steps() {
     installer_dir="${LOCAL_REPO_DIR}/installer"
   fi
 
-  # shellcheck source=installer/steps/system_scripts.sh
+  # shellcheck source=steps/system_scripts.sh
   source "${installer_dir}/steps/system_scripts.sh"
 }
 
@@ -173,7 +173,7 @@ resolve_action() {
     uninstall|--uninstall) ACTION="uninstall" ;;
     -h|--help)
       cat <<'HELP'
-Usage: sudo ./install.sh [install|uninstall]
+Usage: sudo ./installer/camperpilot_installer.sh [install|uninstall]
 
 Without an argument, the interactive main menu is shown.
 

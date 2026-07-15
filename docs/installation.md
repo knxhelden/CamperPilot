@@ -236,20 +236,20 @@ Download the current installer:
 
 ```bash
 curl -fsSL \
-  https://raw.githubusercontent.com/knxhelden/CamperPilot/main/install.sh \
-  -o /tmp/camperpilot-install.sh
+  https://raw.githubusercontent.com/knxhelden/CamperPilot/main/installer/camperpilot_installer.sh \
+  -o /tmp/camperpilot_installer.sh
 ```
 
 Make it executable:
 
 ```bash
-chmod +x /tmp/camperpilot-install.sh
+chmod +x /tmp/camperpilot_installer.sh
 ```
 
 Run the installer:
 
 ```bash
-sudo /tmp/camperpilot-install.sh
+sudo /tmp/camperpilot_installer.sh
 ```
 
 The installer opens a main menu with the following options:
@@ -262,8 +262,8 @@ The installer opens a main menu with the following options:
 Choose **Install** to install or update the CamperPilot system scripts and sudoers configuration. Choose **Uninstall** to remove these CamperPilot system files again. Installer messages are color-coded: green marks successful steps, yellow marks warnings or follow-up checks, and red marks showstoppers. For scripted runs, the same actions can be selected directly:
 
 ```bash
-sudo /tmp/camperpilot-install.sh install
-sudo /tmp/camperpilot-install.sh uninstall
+sudo /tmp/camperpilot_installer.sh install
+sudo /tmp/camperpilot_installer.sh uninstall
 ```
 
 The installer downloads the current CamperPilot repository into a `CamperPilot` subdirectory next to the installer. The main installer dispatches to the dedicated step file `installer/steps/system_scripts.sh` for system scripts and sudoers configuration. It installs:
