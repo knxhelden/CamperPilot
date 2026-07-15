@@ -243,6 +243,8 @@ install_camperpilot() {
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/services/addons.cfg"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/systeminfo.things"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/zigbee.things"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/structure.items"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/system.items"
 }
 
 uninstall_camperpilot() {
