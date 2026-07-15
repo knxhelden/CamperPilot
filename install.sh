@@ -28,7 +28,7 @@ fail() {
 
 on_error() {
   local exit_code=$?
-  printf '[CamperPilot] ERROR: Installation failed in line %s (exit code %s).\n' \
+  printf '[CamperPilot] ERROR: Operation failed in line %s (exit code %s).\n' \
     "${BASH_LINENO[0]}" "$exit_code" >&2
   exit "$exit_code"
 }
@@ -75,6 +75,59 @@ download_repository() {
     "${LOCAL_REPO_DIR}"
 }
 
+show_main_menu() {
+  cat >&2 <<'MENU'
+
+CamperPilot Installer
+=====================
+
+Please choose an option:
+
+  1) Install
+  2) Uninstall
+
+MENU
+}
+
+read_menu_choice() {
+  local choice
+
+  while true; do
+    show_main_menu
+    read -r -p "Selection [1-2]: " choice
+
+    case "$choice" in
+      1) printf 'install\n'; return ;;
+      2) printf 'uninstall\n'; return ;;
+      *) printf '[CamperPilot] Invalid selection. Please enter 1 or 2.\n' >&2 ;;
+    esac
+  done
+}
+
+resolve_action() {
+  local action="${1:-}"
+
+  case "$action" in
+    "") ACTION="$(read_menu_choice)" ;;
+    install|--install) ACTION="install" ;;
+    uninstall|--uninstall) ACTION="uninstall" ;;
+    -h|--help)
+      cat <<'HELP'
+Usage: sudo ./install.sh [install|uninstall]
+
+Without an argument, the interactive main menu is shown.
+
+Options:
+  install      Install CamperPilot system scripts and sudoers configuration.
+  uninstall    Remove CamperPilot system scripts and sudoers configuration.
+  -h, --help   Show this help text.
+HELP
+      exit 0
+      ;;
+    *) fail "Unknown action: $action. Use install, uninstall or --help." ;;
+  esac
+}
+
 verify_installed_file() {
   local file="$1"
   local expected_mode="$2"
@@ -91,7 +144,7 @@ verify_installed_file() {
     || fail "Unexpected permissions for $file: $actual_mode"
 }
 
-main() {
+install_camperpilot() {
   require_command git
 
   download_repository
@@ -151,6 +204,48 @@ main() {
   log "  ${TARGET_SCRIPT_DIR}/camperpilot-poweroff"
   log "  ${TARGET_SCRIPT_DIR}/camperpilot-reboot"
   log "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
+}
+
+uninstall_file() {
+  local file="$1"
+
+  if [[ -e "$file" ]]; then
+    rm -f -- "$file"
+    log "Removed $file"
+    return
+  fi
+
+  log "Already absent: $file"
+}
+
+uninstall_camperpilot() {
+  require_root
+  require_command rm
+
+  log "Uninstalling CamperPilot system files..."
+
+  for script_name in "${SCRIPTS[@]}"; do
+    uninstall_file "${TARGET_SCRIPT_DIR}/${script_name}"
+  done
+
+  uninstall_file "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
+
+  log "Uninstallation completed successfully."
+}
+
+main() {
+  local ACTION
+
+  if [[ $# -gt 1 ]]; then
+    fail "Too many arguments. Use install, uninstall or --help."
+  fi
+
+  resolve_action "${1:-}"
+
+  case "$ACTION" in
+    install) install_camperpilot ;;
+    uninstall) uninstall_camperpilot ;;
+  esac
 }
 
 main "$@"

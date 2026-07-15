@@ -252,6 +252,20 @@ Run the installer:
 sudo /tmp/camperpilot-install.sh
 ```
 
+The installer opens a main menu with the following options:
+
+```text
+1) Install
+2) Uninstall
+```
+
+Choose **Install** to install or update the CamperPilot system scripts and sudoers configuration. Choose **Uninstall** to remove these CamperPilot system files again. For scripted runs, the same actions can be selected directly:
+
+```bash
+sudo /tmp/camperpilot-install.sh install
+sudo /tmp/camperpilot-install.sh uninstall
+```
+
 The installer downloads the current CamperPilot repository into a `CamperPilot` subdirectory next to the installer and installs:
 
 ```text
