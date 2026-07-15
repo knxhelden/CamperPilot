@@ -125,7 +125,7 @@ download_repository() {
 load_installer_steps() {
   local installer_dir="${SOURCE_DIR}/installer"
 
-  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" || ! -f "${installer_dir}/steps/sudoers.sh" ]]; then
+  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" ]]; then
     require_command git
     download_repository
     installer_dir="${LOCAL_REPO_DIR}/installer"
@@ -133,8 +133,6 @@ load_installer_steps() {
 
   # shellcheck source=installer/steps/system_scripts.sh
   source "${installer_dir}/steps/system_scripts.sh"
-  # shellcheck source=installer/steps/sudoers.sh
-  source "${installer_dir}/steps/sudoers.sh"
 }
 
 show_main_menu() {
