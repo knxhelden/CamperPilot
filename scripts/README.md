@@ -1,6 +1,6 @@
 # CamperPilot System Scripts
 
-This directory contains the system-level helper files installed by `install.sh`.
+This directory contains the system-level helper files installed by `installer/camperpilot_installer.sh`.
 Manual installation from this directory is not required.
 
 | File                   | Purpose                                                                 |
