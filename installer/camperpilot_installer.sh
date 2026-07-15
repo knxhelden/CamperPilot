@@ -17,6 +17,8 @@ readonly SCRIPTS=(
 
 readonly SUDOERS_FILE="camperpilot-openhab"
 
+REPOSITORY_SYNCED=0
+
 if [[ -z "${NO_COLOR:-}" && ( -t 1 || -t 2 ) ]]; then
   readonly COLOR_GREEN=$'\033[32m'
   readonly COLOR_YELLOW=$'\033[33m'
@@ -103,10 +105,15 @@ require_root() {
 }
 
 download_repository() {
+  if [[ "${REPOSITORY_SYNCED}" -eq 1 ]]; then
+    return
+  fi
+
   if [[ -d "${LOCAL_REPO_DIR}/.git" ]]; then
     log_success "Updating CamperPilot repository in ${LOCAL_REPO_DIR}..."
     git -C "${LOCAL_REPO_DIR}" fetch --depth 1 origin "${REPOSITORY_BRANCH}"
     git -C "${LOCAL_REPO_DIR}" checkout -B "${REPOSITORY_BRANCH}" "FETCH_HEAD"
+    REPOSITORY_SYNCED=1
     return
   fi
 
@@ -120,6 +127,8 @@ download_repository() {
     --branch "${REPOSITORY_BRANCH}" \
     "${REPOSITORY_URL}" \
     "${LOCAL_REPO_DIR}"
+
+  REPOSITORY_SYNCED=1
 }
 
 load_installer_steps() {
