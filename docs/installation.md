@@ -259,7 +259,7 @@ The installer opens a main menu with the following options:
 2) Uninstall
 ```
 
-Choose **Install** to install or update the CamperPilot system scripts and sudoers configuration. Choose **Uninstall** to remove these CamperPilot system files again. For scripted runs, the same actions can be selected directly:
+Choose **Install** to install or update the CamperPilot system scripts and sudoers configuration. Choose **Uninstall** to remove these CamperPilot system files again. Installer messages are color-coded: green marks successful steps, yellow marks warnings or follow-up checks, and red marks showstoppers. For scripted runs, the same actions can be selected directly:
 
 ```bash
 sudo /tmp/camperpilot-install.sh install

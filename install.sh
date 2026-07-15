@@ -17,19 +17,38 @@ readonly SCRIPTS=(
 
 readonly SUDOERS_FILE="camperpilot-openhab"
 
-log() {
-  printf '[CamperPilot] %s\n' "$*"
+if [[ -z "${NO_COLOR:-}" && ( -t 1 || -t 2 ) ]]; then
+  readonly COLOR_GREEN=$'\033[32m'
+  readonly COLOR_YELLOW=$'\033[33m'
+  readonly COLOR_RED=$'\033[31m'
+  readonly COLOR_RESET=$'\033[0m'
+else
+  readonly COLOR_GREEN=""
+  readonly COLOR_YELLOW=""
+  readonly COLOR_RED=""
+  readonly COLOR_RESET=""
+fi
+
+log_success() {
+  printf '%s[CamperPilot] %s%s\n' "$COLOR_GREEN" "$*" "$COLOR_RESET"
+}
+
+log_warning() {
+  printf '%s[CamperPilot] WARNING: %s%s\n' "$COLOR_YELLOW" "$*" "$COLOR_RESET" >&2
+}
+
+log_error() {
+  printf '%s[CamperPilot] ERROR: %s%s\n' "$COLOR_RED" "$*" "$COLOR_RESET" >&2
 }
 
 fail() {
-  printf '[CamperPilot] ERROR: %s\n' "$*" >&2
+  log_error "$*"
   exit 1
 }
 
 on_error() {
   local exit_code=$?
-  printf '[CamperPilot] ERROR: Operation failed in line %s (exit code %s).\n' \
-    "${BASH_LINENO[0]}" "$exit_code" >&2
+  log_error "Operation failed in line ${BASH_LINENO[0]} (exit code ${exit_code})."
   exit "$exit_code"
 }
 
@@ -57,7 +76,7 @@ validate_source_file() {
 
 download_repository() {
   if [[ -d "${LOCAL_REPO_DIR}/.git" ]]; then
-    log "Updating CamperPilot repository in ${LOCAL_REPO_DIR}..."
+    log_success "Updating CamperPilot repository in ${LOCAL_REPO_DIR}..."
     git -C "${LOCAL_REPO_DIR}" fetch --depth 1 origin "${REPOSITORY_BRANCH}"
     git -C "${LOCAL_REPO_DIR}" checkout -B "${REPOSITORY_BRANCH}" "FETCH_HEAD"
     return
@@ -67,7 +86,7 @@ download_repository() {
     fail "Target path already exists and is not a Git repository: ${LOCAL_REPO_DIR}"
   fi
 
-  log "Downloading CamperPilot repository to ${LOCAL_REPO_DIR}..."
+  log_success "Downloading CamperPilot repository to ${LOCAL_REPO_DIR}..."
   git clone \
     --depth 1 \
     --branch "${REPOSITORY_BRANCH}" \
@@ -99,7 +118,7 @@ read_menu_choice() {
     case "$choice" in
       1) printf 'install\n'; return ;;
       2) printf 'uninstall\n'; return ;;
-      *) printf '[CamperPilot] Invalid selection. Please enter 1 or 2.\n' >&2 ;;
+      *) log_warning "Invalid selection. Please enter 1 or 2." ;;
     esac
   done
 }
@@ -165,10 +184,10 @@ install_camperpilot() {
 
   validate_source_file "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}"
 
-  log "Validating sudoers configuration..."
+  log_success "Validating sudoers configuration..."
   visudo -cf "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}"
 
-  log "Installing system scripts..."
+  log_success "Installing system scripts..."
   install -d -o root -g root -m 0755 "$TARGET_SCRIPT_DIR"
 
   for script_name in "${SCRIPTS[@]}"; do
@@ -180,7 +199,7 @@ install_camperpilot() {
       "${TARGET_SCRIPT_DIR}/${script_name}"
   done
 
-  log "Installing sudoers configuration..."
+  log_success "Installing sudoers configuration..."
   install -d -o root -g root -m 0755 "$TARGET_SUDOERS_DIR"
 
   install \
@@ -190,7 +209,7 @@ install_camperpilot() {
     "${SOURCE_SCRIPT_DIR}/${SUDOERS_FILE}" \
     "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
 
-  log "Validating installed sudoers configuration..."
+  log_success "Validating installed sudoers configuration..."
   visudo -cf "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
 
   for script_name in "${SCRIPTS[@]}"; do
@@ -199,11 +218,11 @@ install_camperpilot() {
 
   verify_installed_file "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}" "440"
 
-  log "Installation completed successfully."
-  log "Installed:"
-  log "  ${TARGET_SCRIPT_DIR}/camperpilot-poweroff"
-  log "  ${TARGET_SCRIPT_DIR}/camperpilot-reboot"
-  log "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
+  log_success "Installation completed successfully."
+  log_success "Installed:"
+  log_success "  ${TARGET_SCRIPT_DIR}/camperpilot-poweroff"
+  log_success "  ${TARGET_SCRIPT_DIR}/camperpilot-reboot"
+  log_success "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
 }
 
 uninstall_file() {
@@ -211,18 +230,18 @@ uninstall_file() {
 
   if [[ -e "$file" ]]; then
     rm -f -- "$file"
-    log "Removed $file"
+    log_success "Removed $file"
     return
   fi
 
-  log "Already absent: $file"
+  log_warning "Already absent: $file"
 }
 
 uninstall_camperpilot() {
   require_root
   require_command rm
 
-  log "Uninstalling CamperPilot system files..."
+  log_success "Uninstalling CamperPilot system files..."
 
   for script_name in "${SCRIPTS[@]}"; do
     uninstall_file "${TARGET_SCRIPT_DIR}/${script_name}"
@@ -230,7 +249,7 @@ uninstall_camperpilot() {
 
   uninstall_file "${TARGET_SUDOERS_DIR}/${SUDOERS_FILE}"
 
-  log "Uninstallation completed successfully."
+  log_success "Uninstallation completed successfully."
 }
 
 main() {
