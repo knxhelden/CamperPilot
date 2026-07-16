@@ -5,4 +5,4 @@
 /* Alarm system */
 
 Group Security_AlarmSystem "Alarmanlage" <shield> ["Equipment"]
-Switch Security_AlarmSystem_Armed "Scharfgeschaltet" <shield> (Security_AlarmSystem) ["Status"]
+Switch Security_AlarmSystem_Armed "Scharfgeschaltet [%s]" <shield> (Security_AlarmSystem) ["Status"]

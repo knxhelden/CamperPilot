@@ -5,7 +5,7 @@ sitemap camperpilot label="CamperPilot" {
                 Switch item=Security_AlarmSystem_Armed
             }
             Frame label="Temperaturalarm" {
-                Switch item=Security_ClimateSurveillance_Armed
+                Switch item=Climate_TemperatureAlarm_Enabled
             }
         }
         Text label="CamperPilot" icon="settings" {
