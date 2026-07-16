@@ -75,6 +75,26 @@ resolve_mopekapro_address() {
   printf '%s\n' "${address}"
 }
 
+enable_mopekapro_sitemap() {
+  local sitemap_target="${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/camperpilot.sitemap"
+
+  validate_source_file "${sitemap_target}"
+
+  sed -i \
+    '/CAMPERPILOT_MOPEKAPRO_BEGIN/,/CAMPERPILOT_MOPEKAPRO_END/ {
+      /CAMPERPILOT_MOPEKAPRO_BEGIN/b
+      /CAMPERPILOT_MOPEKAPRO_END/b
+      s#^\([[:space:]]*\)//[[:space:]]\{0,1\}#\1#
+    }' \
+    "${sitemap_target}"
+
+  if ! grep -Eq '^[[:space:]]*Frame label="Gas"' "${sitemap_target}"; then
+    fail "Could not enable the Mopeka Pro section in ${sitemap_target}."
+  fi
+
+  verify_installed_file "${sitemap_target}" "664" "openhab:openhab"
+}
+
 install_mopekapro_configuration() {
   local thing_source="${SOURCE_OPENHAB_CONFIG_DIR}/things/mopekapro.things"
   local thing_target="${TARGET_OPENHAB_CONFIG_DIR}/things/mopekapro.things"
@@ -106,6 +126,7 @@ install_mopekapro_configuration() {
   verify_installed_file "${thing_target}" "664" "openhab:openhab"
   verify_installed_file "${item_target}" "664" "openhab:openhab"
   verify_installed_file "${automation_target}" "664" "openhab:openhab"
+  enable_mopekapro_sitemap
 }
 
 log_installed_mopekapro_configuration() {

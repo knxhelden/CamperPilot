@@ -1,9 +1,11 @@
 sitemap camperpilot label="CamperPilot" {
+    // CAMPERPILOT_MOPEKAPRO_BEGIN
     // Frame label="Gas" {
     //     Text item=Mopekapro_Level valuecolor=[>30="green", >15="orange", <=15="red"]
     //     Text item=Mopekapro_Quality label="Messqualität [%d/3]" valuecolor=[>=3="green", ==2="orange", <=1="red"]
     //     Text item=Mopekapro_Temperature valuecolor=[>=55="red", >=45="orange", <45="green"]
     // }
+    // CAMPERPILOT_MOPEKAPRO_END
     Frame label="System" {
         Text label="Überwachung" icon="shield" {
             Frame label="Alarmanlage" {
@@ -30,4 +32,4 @@ sitemap camperpilot label="CamperPilot" {
             }
         }
     }
-} 
+}

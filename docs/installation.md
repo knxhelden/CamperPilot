@@ -158,6 +158,10 @@ When Mopeka Pro is enabled, the installer also provisions:
 * `/etc/openhab/items/mopekapro.items`
 * `/etc/openhab/automation/js/mopekapro.js`
 
+The installer also enables the gas-level section in
+`/etc/openhab/sitemaps/camperpilot.sitemap`. If Mopeka Pro is not selected,
+that optional section remains commented out.
+
 It first reuses the address from an existing `mopekapro.things`. For a new
 installation it scans nearby Bluetooth devices for the Mopeka manufacturer ID
 `0x0059`. Make sure the sensor is awake and nearby during installation. If
