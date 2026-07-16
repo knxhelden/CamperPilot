@@ -208,6 +208,9 @@ install_openhab_config_things() {
 install_openhab_config_items() {
   local item_file
   local item_files=(
+    "climate.items"
+    "resources.items"
+    "security.items"
     "structure.items"
     "system.items"
   )
