@@ -23,6 +23,9 @@ readonly OPENHAB_CONFIG_FILES=(
   "services/addons.cfg"
   "things/systeminfo.things"
   "things/zigbee.things"
+  "items/climate.items"
+  "items/resources.items"
+  "items/security.items"
   "items/structure.items"
   "items/system.items"
   "sitemaps/camperpilot.sitemap"
@@ -283,6 +286,9 @@ install_camperpilot() {
   if [[ "${INSTALL_ZIGBEE}" -eq 1 ]]; then
     log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/zigbee.things"
   fi
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/climate.items"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/resources.items"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/security.items"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/structure.items"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/system.items"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/camperpilot.sitemap"
