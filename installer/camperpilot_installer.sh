@@ -291,6 +291,7 @@ install_camperpilot() {
   install_openhab_configuration
   install_zigbee_configuration
   install_mopekapro_configuration
+  restart_openhab_service
 
   log_success "Installation completed successfully."
   log_success "Installed:"
