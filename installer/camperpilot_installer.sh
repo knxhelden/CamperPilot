@@ -19,6 +19,15 @@ readonly SCRIPTS=(
 
 readonly SUDOERS_FILE="camperpilot-openhab"
 
+readonly OPENHAB_CONFIG_FILES=(
+  "services/addons.cfg"
+  "things/systeminfo.things"
+  "things/zigbee.things"
+  "items/structure.items"
+  "items/system.items"
+  "sitemaps/camperpilot.sitemap"
+)
+
 REPOSITORY_SYNCED=0
 
 if [[ -z "${NO_COLOR:-}" && ( -t 1 || -t 2 ) ]]; then
@@ -99,6 +108,16 @@ uninstall_file() {
   fi
 
   log_warning "Already absent: $file"
+}
+
+uninstall_local_repository() {
+  if [[ -e "${LOCAL_REPO_DIR}" || -L "${LOCAL_REPO_DIR}" ]]; then
+    rm -rf -- "${LOCAL_REPO_DIR}"
+    log_success "Removed cloned repository ${LOCAL_REPO_DIR}"
+    return
+  fi
+
+  log_warning "Already absent: ${LOCAL_REPO_DIR}"
 }
 
 require_root() {
@@ -269,6 +288,8 @@ install_camperpilot() {
 }
 
 uninstall_camperpilot() {
+  local config_file
+
   load_installer_steps
 
   require_root
@@ -278,6 +299,13 @@ uninstall_camperpilot() {
 
   uninstall_system_scripts
   uninstall_sudoers_configuration
+  uninstall_local_repository
+
+  log_warning "openHAB configuration files were retained because they may contain manual changes."
+  log_warning "Review and remove these files manually if they are no longer needed:"
+  for config_file in "${OPENHAB_CONFIG_FILES[@]}"; do
+    log_warning "  ${TARGET_OPENHAB_CONFIG_DIR}/${config_file}"
+  done
 
   log_success "Uninstallation completed successfully."
 }
