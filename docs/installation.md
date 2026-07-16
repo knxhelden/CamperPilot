@@ -2,7 +2,7 @@
 
 This guide installs the CamperPilot base system on a Raspberry Pi 4.
 
-The current CamperPilot installer configures the base hostname, time zone and `openhabian` password, then installs the system scripts and required sudoers configuration. Project-specific openHAB configuration will be added later.
+The current CamperPilot installer configures the base hostname, time zone and `openhabian` password, installs the system scripts and required sudoers configuration, and provisions the project-specific openHAB configuration including JavaScript automation rules.
 
 ---
 

@@ -217,7 +217,31 @@ install_openhab_config_items() {
 }
 
 install_openhab_config_automation() {
+  local automation_file
+  local automation_files=(
+    "camperpilot_system.js"
+  )
+
+  for automation_file in "${automation_files[@]}"; do
+    validate_source_file "${SOURCE_OPENHAB_CONFIG_DIR}/automation/js/${automation_file}"
+  done
+
   log_success "Installing openHAB automation configuration..."
+  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/automation"
+  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/automation/js"
+
+  for automation_file in "${automation_files[@]}"; do
+    install \
+      -o openhab \
+      -g openhab \
+      -m 0644 \
+      "${SOURCE_OPENHAB_CONFIG_DIR}/automation/js/${automation_file}" \
+      "${TARGET_OPENHAB_CONFIG_DIR}/automation/js/${automation_file}"
+  done
+
+  for automation_file in "${automation_files[@]}"; do
+    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/automation/js/${automation_file}" "644" "openhab:openhab"
+  done
 }
 
 install_openhab_config_sitemaps() {
