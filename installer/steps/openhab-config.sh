@@ -250,7 +250,30 @@ install_openhab_config_automation() {
 }
 
 install_openhab_config_sitemaps() {
+  local sitemap_file
+  local sitemap_files=(
+    "camperpilot.sitemap"
+  )
+
+  for sitemap_file in "${sitemap_files[@]}"; do
+    validate_source_file "${SOURCE_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}"
+  done
+
   log_success "Installing openHAB sitemaps configuration..."
+  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps"
+
+  for sitemap_file in "${sitemap_files[@]}"; do
+    install \
+      -o openhab \
+      -g openhab \
+      -m 0644 \
+      "${SOURCE_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}" \
+      "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}"
+  done
+
+  for sitemap_file in "${sitemap_files[@]}"; do
+    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}" "644" "openhab:openhab"
+  done
 }
 
 install_openhab_configuration() {
