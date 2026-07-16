@@ -265,6 +265,7 @@ install_camperpilot() {
   fi
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/structure.items"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/system.items"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/camperpilot.sitemap"
 }
 
 uninstall_camperpilot() {
