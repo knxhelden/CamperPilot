@@ -1,6 +1,5 @@
-/********************************************/
-/****************** SYSTEM ******************/
-/********************************************/
+/* Contains all items used to monitor and control the CamperPilot platform,
+   including the Raspberry Pi, openHAB, network connectivity and system health. */
 
 Group System "System" <settings> (Camper) ["Equipment"]
 Number:Time System_Uptime "Uptime [%d min]" <time> (System) ["Point"] { channel="systeminfo:computer:camperpilot:cpu#uptime" }

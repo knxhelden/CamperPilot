@@ -1,12 +1,4 @@
-/**********************************************/
-/****************** FAHRZEUG ******************/
-/**********************************************/
+/* Defines the semantic location hierarchy of the camper, including
+   the vehicle itself and its individual rooms, areas and storage spaces. */
 
 Group Camper "Wohnmobil" <none> ["Location"]
-
-
-/*********************************************/
-/****************** GEWERKE ******************/
-/*********************************************/
-
-Group:Switch:SUM Contacts "Kontakte [(%d)]" <contact>
