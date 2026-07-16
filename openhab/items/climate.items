@@ -2,7 +2,13 @@
    indoor climate, including temperature, humidity and air quality. */
 
 
-/* Climate Surveillance */
+Group Climate_TemperatureSensors "Temperatursensoren" <temperature>
 
-Group Security_ClimateSurveillance "Klimaüberwachung" <temperature_hot> ["Equipment"]
-Switch Security_ClimateSurveillance_Activated "Aktiviert" <shield> (Security_ClimateSurveillance) ["Status"]
+
+/* Temperature Alarm */
+
+Group Climate_TemperatureAlarm "Klimaüberwachung" <temperature_hot> ["Equipment"]
+Switch Climate_TemperatureAlarm_Enabled "Aktiviert [%s]" <alarm> (Climate_TemperatureAlarm)
+Switch Climate_TemperatureAlarm_Triggered "Alarm ausgelöst [%s]" <alarm> (Climate_TemperatureAlarm)
+Number:Temperature Climate_TemperatureAlarm_Threshold "Alarmgrenze [%.1f %unit%]" <temperature> (Climate_TemperatureAlarm)
+String Climate_TemperatureAlarm_Details "Details [%s]" <temperature> (Climate_TemperatureAlarm)
