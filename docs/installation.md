@@ -139,6 +139,18 @@ default) skips the optional `zigbee.things` configuration; no Zigbee
 coordinator is required in that case. Answer **Yes** only when CamperPilot
 should use a Zigbee coordinator.
 
+### Manually editing the openHAB configuration
+
+The installer adds `openhabian` to the `openhab` group and installs the
+configuration files group-writable. The configuration directories use the
+set-group-ID bit so newly created files inherit the `openhab` group. This lets
+the SSH user edit files such as `/etc/openhab/things/systeminfo.things` without
+using `sudo` while keeping openHAB as their owner.
+
+After the first installation, log out of the SSH session and log back in so the
+new group membership takes effect. An already open session otherwise continues
+to report insufficient permissions.
+
 ### Zigbee coordinator configuration
 
 When Zigbee is enabled at the installer prompt, the `openhab/things/zigbee.things` source file is provisioned with target-system values before it is copied to `/etc/openhab/things/zigbee.things`.

@@ -4,21 +4,33 @@ readonly ZIGBEE_PORT_PLACEHOLDER="__CAMPERPILOT_ZIGBEE_PORT__"
 readonly ZIGBEE_PAN_ID_PLACEHOLDER="__CAMPERPILOT_ZIGBEE_PAN_ID__"
 readonly ZIGBEE_EXTENDED_PAN_ID_PLACEHOLDER="__CAMPERPILOT_ZIGBEE_EXTENDED_PAN_ID__"
 readonly ZIGBEE_NETWORK_KEY_PLACEHOLDER="__CAMPERPILOT_ZIGBEE_NETWORK_KEY__"
+readonly OPENHAB_CONFIG_DIR_MODE="2775"
+readonly OPENHAB_CONFIG_FILE_MODE="0664"
+
+configure_openhab_config_access() {
+  if id -nG openhabian | tr ' ' '\n' | grep -qx openhab; then
+    log_success "User openhabian is already a member of the openhab group."
+  else
+    log_success "Adding user openhabian to the openhab group..."
+    usermod -a -G openhab openhabian
+    log_warning "Log out and back in before editing openHAB configuration as openhabian."
+  fi
+}
 
 install_openhab_config_services() {
   validate_source_file "${SOURCE_OPENHAB_CONFIG_DIR}/services/addons.cfg"
 
   log_success "Installing openHAB services configuration..."
-  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/services"
+  install -d -o openhab -g openhab -m "${OPENHAB_CONFIG_DIR_MODE}" "${TARGET_OPENHAB_CONFIG_DIR}/services"
 
   install \
     -o openhab \
     -g openhab \
-    -m 0644 \
+    -m "${OPENHAB_CONFIG_FILE_MODE}" \
     "${SOURCE_OPENHAB_CONFIG_DIR}/services/addons.cfg" \
     "${TARGET_OPENHAB_CONFIG_DIR}/services/addons.cfg"
 
-  verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/services/addons.cfg" "644" "openhab:openhab"
+  verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/services/addons.cfg" "664" "openhab:openhab"
 }
 
 read_existing_zigbee_value() {
@@ -142,7 +154,7 @@ render_zigbee_thing_file() {
     -e "s|${ZIGBEE_EXTENDED_PAN_ID_PLACEHOLDER}|${zigbee_extended_pan_id}|g" \
     -e "s|${ZIGBEE_NETWORK_KEY_PLACEHOLDER}|${zigbee_network_key}|g" \
     "${source_file}" \
-    | install -o openhab -g openhab -m 0644 /dev/stdin "${target_file}"
+    | install -o openhab -g openhab -m "${OPENHAB_CONFIG_FILE_MODE}" /dev/stdin "${target_file}"
 
   log_success "Installed zigbee.things with Zigbee port ${zigbee_port}"
 }
@@ -160,7 +172,7 @@ install_openhab_thing_file() {
   install \
     -o openhab \
     -g openhab \
-    -m 0644 \
+    -m "${OPENHAB_CONFIG_FILE_MODE}" \
     "${source_file}" \
     "${target_file}"
 }
@@ -182,14 +194,14 @@ install_openhab_config_things() {
   done
 
   log_success "Installing openHAB things configuration..."
-  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/things"
+  install -d -o openhab -g openhab -m "${OPENHAB_CONFIG_DIR_MODE}" "${TARGET_OPENHAB_CONFIG_DIR}/things"
 
   for thing_file in "${thing_files[@]}"; do
     install_openhab_thing_file "${thing_file}"
   done
 
   for thing_file in "${thing_files[@]}"; do
-    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/things/${thing_file}" "644" "openhab:openhab"
+    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/things/${thing_file}" "664" "openhab:openhab"
   done
 }
 
@@ -205,19 +217,19 @@ install_openhab_config_items() {
   done
 
   log_success "Installing openHAB items configuration..."
-  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/items"
+  install -d -o openhab -g openhab -m "${OPENHAB_CONFIG_DIR_MODE}" "${TARGET_OPENHAB_CONFIG_DIR}/items"
 
   for item_file in "${item_files[@]}"; do
     install \
       -o openhab \
       -g openhab \
-      -m 0644 \
+      -m "${OPENHAB_CONFIG_FILE_MODE}" \
       "${SOURCE_OPENHAB_CONFIG_DIR}/items/${item_file}" \
       "${TARGET_OPENHAB_CONFIG_DIR}/items/${item_file}"
   done
 
   for item_file in "${item_files[@]}"; do
-    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/items/${item_file}" "644" "openhab:openhab"
+    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/items/${item_file}" "664" "openhab:openhab"
   done
 }
 
@@ -232,20 +244,20 @@ install_openhab_config_automation() {
   done
 
   log_success "Installing openHAB automation configuration..."
-  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/automation"
-  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/automation/js"
+  install -d -o openhab -g openhab -m "${OPENHAB_CONFIG_DIR_MODE}" "${TARGET_OPENHAB_CONFIG_DIR}/automation"
+  install -d -o openhab -g openhab -m "${OPENHAB_CONFIG_DIR_MODE}" "${TARGET_OPENHAB_CONFIG_DIR}/automation/js"
 
   for automation_file in "${automation_files[@]}"; do
     install \
       -o openhab \
       -g openhab \
-      -m 0644 \
+      -m "${OPENHAB_CONFIG_FILE_MODE}" \
       "${SOURCE_OPENHAB_CONFIG_DIR}/automation/js/${automation_file}" \
       "${TARGET_OPENHAB_CONFIG_DIR}/automation/js/${automation_file}"
   done
 
   for automation_file in "${automation_files[@]}"; do
-    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/automation/js/${automation_file}" "644" "openhab:openhab"
+    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/automation/js/${automation_file}" "664" "openhab:openhab"
   done
 }
 
@@ -260,23 +272,24 @@ install_openhab_config_sitemaps() {
   done
 
   log_success "Installing openHAB sitemaps configuration..."
-  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps"
+  install -d -o openhab -g openhab -m "${OPENHAB_CONFIG_DIR_MODE}" "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps"
 
   for sitemap_file in "${sitemap_files[@]}"; do
     install \
       -o openhab \
       -g openhab \
-      -m 0644 \
+      -m "${OPENHAB_CONFIG_FILE_MODE}" \
       "${SOURCE_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}" \
       "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}"
   done
 
   for sitemap_file in "${sitemap_files[@]}"; do
-    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}" "644" "openhab:openhab"
+    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}" "664" "openhab:openhab"
   done
 }
 
 install_openhab_configuration() {
+  configure_openhab_config_access
   install_openhab_config_services
   install_openhab_config_sitemaps
   install_openhab_config_things
