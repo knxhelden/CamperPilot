@@ -175,5 +175,12 @@ sudo /tmp/camperpilot_installer.sh --help
 Available actions:
 
 * `install` or `--install`: install CamperPilot without opening the menu.
-* `uninstall` or `--uninstall`: remove CamperPilot again without opening the menu.
+* `uninstall` or `--uninstall`: remove the CamperPilot system scripts
+  (`camperpilot-poweroff` and `camperpilot-reboot`) and the
+  `camperpilot-openhab` sudoers configuration without opening the menu. It also
+  completely removes the `CamperPilot` repository cloned next to the installer.
+  The openHAB configuration files under `/etc/openhab` are deliberately
+  retained because they may contain manual changes. The installer prints a
+  warning with the files that should be reviewed and, if appropriate, removed
+  manually.
 * `-h` or `--help`: show the installer help text.
