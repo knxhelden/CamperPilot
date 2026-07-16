@@ -169,8 +169,13 @@ install_openhab_config_things() {
   local thing_file
   local thing_files=(
     "systeminfo.things"
-    "zigbee.things"
   )
+
+  if [[ "${INSTALL_ZIGBEE:-0}" -eq 1 ]]; then
+    thing_files+=("zigbee.things")
+  else
+    log_success "Skipping optional Zigbee things configuration."
+  fi
 
   for thing_file in "${thing_files[@]}"; do
     validate_source_file "${SOURCE_OPENHAB_CONFIG_DIR}/things/${thing_file}"
