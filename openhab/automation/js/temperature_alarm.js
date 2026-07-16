@@ -106,6 +106,20 @@ function formatSensorList(sensors) {
 
 
 /**
+ * Updates an item only if its state actually changes. This avoids unnecessary
+ * events, persistence writes and UI updates on every sensor report.
+ *
+ * @param {object} item openHAB Item
+ * @param {string} state new item state
+ */
+function postUpdateIfDifferent(item, state) {
+  if (item.state !== state) {
+    item.postUpdate(state);
+  }
+}
+
+
+/**
  * Sends a broadcast push notification via openHAB Cloud.
  *
  * @param {string} title
@@ -138,7 +152,7 @@ function evaluateTemperatureAlarm(sendReminder = false) {
   if (!alarmEnabled) {
     if (alarmActive) {
       activeItem.postUpdate('OFF');
-      detailsItem.postUpdate('Temperaturalarm deaktiviert');
+      postUpdateIfDifferent(detailsItem, 'Temperaturalarm deaktiviert');
 
       actions.NotificationAction
         .hideBroadcastNotificationByReferenceId(
@@ -171,7 +185,7 @@ function evaluateTemperatureAlarm(sendReminder = false) {
   if (hotSensors.length > 0) {
     const sensorDetails = formatSensorList(hotSensors);
 
-    detailsItem.postUpdate(sensorDetails);
+    postUpdateIfDifferent(detailsItem, sensorDetails);
 
     if (!alarmActive) {
       activeItem.postUpdate('ON');
@@ -222,7 +236,10 @@ function evaluateTemperatureAlarm(sendReminder = false) {
     const sensorDetails = formatSensorList(sensors);
 
     activeItem.postUpdate('OFF');
-    detailsItem.postUpdate(`Temperatur wieder normal – ${sensorDetails}`);
+    postUpdateIfDifferent(
+      detailsItem,
+      `Temperatur wieder normal – ${sensorDetails}`
+    );
 
     const message =
       `Die Temperaturen im Wohnmobil sind wieder unter ` +
@@ -242,7 +259,7 @@ function evaluateTemperatureAlarm(sendReminder = false) {
 /*
  * Main rule:
  *
- * - Temperature sensor update
+ * - Temperature sensor state change
  * - Threshold change
  * - Alarm activation or deactivation
  * - Completed openHAB startup
@@ -254,15 +271,18 @@ rules.JSRule({
   tags: ['CamperPilot', 'Temperature', 'Alarm'],
 
   triggers: [
-    triggers.GroupStateUpdateTrigger(
+    // Zigbee sensors can report an unchanged value very frequently. Reacting
+    // to every update needlessly executes the complete rule and can overwhelm
+    // a Raspberry Pi when several sensors report at the same time.
+    triggers.GroupStateChangeTrigger(
       CONFIG.sensorGroup
     ),
 
-    triggers.ItemStateUpdateTrigger(
+    triggers.ItemStateChangeTrigger(
       CONFIG.thresholdItem
     ),
 
-    triggers.ItemStateUpdateTrigger(
+    triggers.ItemStateChangeTrigger(
       CONFIG.enabledItem
     ),
 
