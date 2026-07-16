@@ -142,9 +142,21 @@ the bridge used by supported local Bluetooth sensors.
 ### Bluetooth and Mopeka Pro configuration
 
 The installer always provisions `/etc/openhab/things/bluetooth.things`. It
-determines the address of the Raspberry Pi Bluetooth adapter `hci0` from
-`/sys/class/bluetooth/hci0/address`. On a system where that interface is not
-available yet, provide the adapter address explicitly:
+first unblocks Bluetooth adapters with `rfkill unblock bluetooth` and restarts
+the Bluetooth service with `systemctl restart bluetooth`. It then
+determines the address of the Raspberry Pi Bluetooth adapter from the available
+`/sys/class/bluetooth/hci*/address` files, preferring `hci0`, and falls back to
+the controllers reported by `bluetoothctl list`. This also supports systems
+where a USB adapter or a disabled onboard controller causes the usable adapter
+to be named `hci1` (or higher). If no controller can be detected, first check
+what BlueZ can see:
+
+```bash
+bluetoothctl list
+```
+
+If the adapter is not available yet but its address is known, provide it
+explicitly:
 
 ```bash
 sudo env \
