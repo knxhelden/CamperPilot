@@ -1,0 +1,12 @@
+Number:Power Mopekapro_RSSI "Signalstärke [%.0f dBm]" <qualityofservice> (Camper) { channel="bluetooth:listener:hci0:mopeka:rssi" }
+String Mopekapro_ManufacturerRaw "Rohdaten" <text> (Camper) { channel="bluetooth:listener:hci0:mopeka:manufacturer-data" }
+Number Mopekapro_BatteryVoltage "Batterie Spannung [%.2f V]"
+Number:Dimensionless Mopekapro_Battery "Batterie [%.0f %%]" <batterylevel>
+Number:Temperature Mopekapro_Temperature "Sensortemperatur [%.0f %unit%]" <temperature>
+Number Mopekapro_RawLevel "Rohfüllstand [%d]"
+Number Mopekapro_Quality "Messqualität [%d/3]" <qualityofservice>
+Number:Length Mopekapro_FluidHeight "Gas Flüssigkeitshöhe [%.0f mm]"
+Number:Dimensionless Resources_Gas_Level "Gasfüllstand [%.0f %%]" <cistern>
+
+Number:Length Mopekapro_TankUsableHeight "Gasflasche nutzbare Höhe [%.0f mm]"
+String Mopekapro_SensorId "Sensor-ID [%s]"
