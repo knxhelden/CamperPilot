@@ -170,6 +170,12 @@ When Mopeka Pro is enabled, the installer also provisions:
 * `/etc/openhab/items/mopekapro.items`
 * `/etc/openhab/automation/js/mopekapro.js`
 
+The usable tank height defaults to `400 mm`. This value can be adjusted via
+`defaultTankUsableHeightMillimeters` in `mopekapro.js`. On the first sensor
+message, the rule also writes the default to `Mopekapro_TankUsableHeight` if
+the item has no valid positive value. Changes made to the item are persisted
+and restored on startup.
+
 The installer also enables the gas-level section in
 `/etc/openhab/sitemaps/camperpilot.sitemap`. If Mopeka Pro is not selected,
 that optional section remains commented out.
