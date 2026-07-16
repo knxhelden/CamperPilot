@@ -7,6 +7,11 @@ sitemap camperpilot label="CamperPilot" {
                 Text item=System_RAM_UsedPercent valuecolor=[>=90="red", >=80="orange", >=65="gold", >=0="green", "gray"]
                 Text item=System_RAM_Used
             }
+            Frame label="Netzwerk" {
+                Text item=System_Network_IP
+                Text item=System_Network_MAC
+                Text item=System_Network_Name
+            }
             Frame label="Steuerung" {
                 Switch item=System_Shutdown label="Herunterfahren"
                 Switch item=System_Reboot label="Neustarten"

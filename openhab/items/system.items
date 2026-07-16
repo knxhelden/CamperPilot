@@ -8,6 +8,9 @@ Number:Temperature System_CPU_Temperature "CPU Temperatur [%.0f °C]" <temperatu
 Number:Dimensionless System_CPU_Load "CPU Auslastung [%.0f %%]" <line> (System) ["Point"] { channel="systeminfo:computer:camperpilot:cpu#load" }
 Number:Dimensionless System_RAM_UsedPercent "RAM Auslastung [%.0f %%]" <line> (System) ["Point"] { channel="systeminfo:computer:camperpilot:memory#usedPercent" }
 Number:DataAmount System_RAM_Used "RAM Nutzung [%.0f %unit%]" <line> (System) ["Point"] { channel="systeminfo:computer:camperpilot:memory#used" }
+String System_Network_IP "IP-Adresse" <none> (System) ["Point"] { channel="systeminfo:computer:camperpilot:network#ip" }
+String System_Network_MAC "MAC-Adresse" <none> (System) ["Point"] { channel="systeminfo:computer:camperpilot:network#mac" }
+String System_Network_Name "Name" <none> (System) ["Point"] { channel="systeminfo:computer:camperpilot:network#networkName" }
 
 Switch System_Shutdown "CamperPilot herunterfahren" <settings> (System) { autoupdate="false" }
 Switch System_Reboot "CamperPilot neustarten" <settings> (System) { autoupdate="false" }
