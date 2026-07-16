@@ -1,7 +1,3 @@
-Strategies {
-  default = everyChange
-}
-
 Items {
   Security_AlarmSystem_Armed,
   Climate_TemperatureAlarm_Enabled,
