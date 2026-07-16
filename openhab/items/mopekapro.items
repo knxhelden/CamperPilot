@@ -6,7 +6,7 @@ Number:Temperature Mopekapro_Temperature "Sensortemperatur [%.0f %unit%]" <tempe
 Number Mopekapro_RawLevel "Rohfüllstand [%d]"
 Number Mopekapro_Quality "Messqualität [%d/3]" <qualityofservice>
 Number:Length Mopekapro_FluidHeight "Gas Flüssigkeitshöhe [%.0f mm]"
-Number:Dimensionless Resources_Gas_Level "Gasfüllstand [%.0f %%]" <cistern>
+Number:Dimensionless Mopekapro_Level "Gasfüllstand [%.0f %%]" <cistern>
 
 Number:Length Mopekapro_TankUsableHeight "Gasflasche nutzbare Höhe [%.0f mm]"
 String Mopekapro_SensorId "Sensor-ID [%s]"
