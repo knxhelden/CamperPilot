@@ -179,7 +179,7 @@ download_repository() {
 load_installer_steps() {
   local installer_dir="${SOURCE_DIR}"
 
-  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" || ! -f "${installer_dir}/steps/base_config.sh" || ! -f "${installer_dir}/steps/openhab-config.sh" || ! -f "${installer_dir}/steps/mopekapro-config.sh" ]]; then
+  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" || ! -f "${installer_dir}/steps/base_config.sh" || ! -f "${installer_dir}/steps/openhab-config.sh" || ! -f "${installer_dir}/steps/zigbee_config.sh" || ! -f "${installer_dir}/steps/mopekapro-config.sh" ]]; then
     require_command git
     download_repository
     installer_dir="${LOCAL_REPO_DIR}/installer"
@@ -191,6 +191,8 @@ load_installer_steps() {
   source "${installer_dir}/steps/system_scripts.sh"
   # shellcheck source=steps/openhab-config.sh
   source "${installer_dir}/steps/openhab-config.sh"
+  # shellcheck source=steps/zigbee_config.sh
+  source "${installer_dir}/steps/zigbee_config.sh"
   # shellcheck source=steps/mopekapro-config.sh
   source "${installer_dir}/steps/mopekapro-config.sh"
 }
@@ -220,20 +222,6 @@ read_menu_choice() {
       1) printf 'install\n'; return ;;
       2) printf 'uninstall\n'; return ;;
       *) log_warning "Invalid selection. Please enter 1 or 2." ;;
-    esac
-  done
-}
-
-read_zigbee_choice() {
-  local choice
-
-  while true; do
-    read -r -p "Will Zigbee be used with CamperPilot? [y/N]: " choice
-
-    case "${choice,,}" in
-      y|yes) printf '1\n'; return ;;
-      ""|n|no) printf '0\n'; return ;;
-      *) log_warning "Invalid selection. Please enter y or n." ;;
     esac
   done
 }
@@ -299,6 +287,7 @@ install_camperpilot() {
   install_system_scripts
   install_sudoers_configuration
   install_openhab_configuration
+  install_zigbee_configuration
   install_mopekapro_configuration
 
   log_success "Installation completed successfully."
