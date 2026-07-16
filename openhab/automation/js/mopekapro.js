@@ -1,3 +1,8 @@
+const CONFIG = Object.freeze({
+  tankUsableHeightItem: "Mopekapro_TankUsableHeight",
+  defaultTankUsableHeightMillimeters: 400
+});
+
 rules.JSRule({
   name: "Mopeka BLE Rohdaten dekodieren",
   description: "Dekodiert Manufacturer Raw Data des Mopeka Pro Sensors",
@@ -56,10 +61,8 @@ rules.JSRule({
 
     const fluidHeightMm = rawLevel * (c0 + c1 * tempRaw + c2 * tempRaw * tempRaw);
 
-    // Default: passend zu deiner aktuellen Kalibrierung
-    let tankUsableHeightMm = 400;
-
-    const tankHeightItem = items.getItem("Mopekapro_TankUsableHeight");
+    let tankUsableHeightMm = CONFIG.defaultTankUsableHeightMillimeters;
+    const tankHeightItem = items.getItem(CONFIG.tankUsableHeightItem);
 
     if (
       tankHeightItem &&
@@ -82,9 +85,19 @@ rules.JSRule({
 
     if (isNaN(tankUsableHeightMm) || tankUsableHeightMm <= 0) {
       console.warn(
-        `Mopeka: Ungültige Tankhöhe '${items.getItem("Mopekapro_TankUsableHeight").state}', verwende 400 mm`
+        `Mopeka: Ungültige Tankhöhe '${tankHeightItem.state}', verwende ${CONFIG.defaultTankUsableHeightMillimeters} mm`
       );
-      tankUsableHeightMm = 400;
+      tankUsableHeightMm = CONFIG.defaultTankUsableHeightMillimeters;
+    }
+
+    if (
+      !tankHeightItem.state ||
+      tankHeightItem.state.toString() === "NULL" ||
+      tankHeightItem.state.toString() === "UNDEF" ||
+      isNaN(parseFloat(tankHeightItem.state.toString())) ||
+      parseFloat(tankHeightItem.state.toString()) <= 0
+    ) {
+      tankHeightItem.postUpdate(`${CONFIG.defaultTankUsableHeightMillimeters} mm`);
     }
 
     let levelPercent = (fluidHeightMm / tankUsableHeightMm) * 100.0;
