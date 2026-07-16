@@ -1,2 +1,8 @@
 /* Contains all devices and items used to monitor or control the camper's
    indoor climate, including temperature, humidity and air quality. */
+
+
+/* Climate Surveillance */
+
+Group Security_ClimateSurveillance "Klimaüberwachung" <temperature_hot> ["Equipment"]
+Switch Security_ClimateSurveillance_Activated "Aktiviert" <shield> (Security_ClimateSurveillance) ["Status"]

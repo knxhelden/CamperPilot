@@ -1,5 +1,13 @@
 sitemap camperpilot label="CamperPilot" {
     Frame label="System" {
+        Text label="Überwachung" icon="shield" {
+            Frame label="Alarmanlage" {
+                Switch item=Security_AlarmSystem_Armed
+            }
+            Frame label="Temperaturalarm" {
+                Switch item=Security_ClimateSurveillance_Armed
+            }
+        }
         Text label="CamperPilot" icon="settings" {
             Frame label="Vitalwerte" {
                 Text item=System_CPU_Temperature valuecolor=[>=80="red", >=70="orange", >=60="gold", >=0="green", "gray"]

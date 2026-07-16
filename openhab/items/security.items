@@ -1,2 +1,8 @@
 /* Contains all devices and items related to safety and security,
    including motion detectors, door contacts, alarms and notifications.*/
+
+
+/* Alarm system */
+
+Group Security_AlarmSystem "Alarmanlage" <shield> ["Equipment"]
+Switch Security_AlarmSystem_Armed "Scharfgeschaltet" <shield> (Security_AlarmSystem) ["Status"]
