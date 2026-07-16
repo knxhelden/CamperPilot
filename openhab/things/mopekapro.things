@@ -1,4 +1,4 @@
-Thing bluetooth:listener:hci0:mopeka "Mopeka Pro" (bluetooth:bluez:hci0) [address="E2:1C:5A:62:46:0A", changeByteOrder=false, autoChannelCreation=true, dataTimeout=1] {
+Thing bluetooth:listener:hci0:mopeka "Mopeka Pro" (bluetooth:bluez:hci0) [address="__CAMPERPILOT_MOPEKAPRO_ADDRESS__", changeByteOrder=false, autoChannelCreation=true, dataTimeout=1] {
 	Channels:
 		Type rssi : rssi "RSSI"
 		Type advertise-interval : interval "Advertising Interval"
