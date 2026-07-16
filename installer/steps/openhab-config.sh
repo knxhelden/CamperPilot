@@ -4,6 +4,14 @@ readonly BLUETOOTH_ADDRESS_PLACEHOLDER="__CAMPERPILOT_BLUETOOTH_ADDRESS__"
 readonly OPENHAB_CONFIG_DIR_MODE="2775"
 readonly OPENHAB_CONFIG_FILE_MODE="0664"
 
+prepare_bluetooth_adapter() {
+  log_success "Unblocking Bluetooth adapters..."
+  rfkill unblock bluetooth
+
+  log_success "Restarting the Bluetooth service..."
+  systemctl restart bluetooth
+}
+
 configure_openhab_config_access() {
   if id -nG openhabian | tr ' ' '\n' | grep -qx openhab; then
     log_success "User openhabian is already a member of the openhab group."
@@ -49,6 +57,34 @@ read_existing_thing_address() {
   sed -nE 's/.*\[address="(([[:xdigit:]]{2}:){5}[[:xdigit:]]{2})".*/\1/p' "${target_file}" | head -n 1
 }
 
+discover_bluetooth_adapter_address() {
+  local address_file
+  local -a address_files=(/sys/class/bluetooth/hci*/address)
+
+  # Prefer hci0 for backwards compatibility, but do not assume that BlueZ
+  # assigned that index. USB adapters and disabled onboard controllers can
+  # cause the first usable controller to be named hci1 (or higher).
+  if [[ -r /sys/class/bluetooth/hci0/address ]]; then
+    cat /sys/class/bluetooth/hci0/address
+    return
+  fi
+
+  for address_file in "${address_files[@]}"; do
+    if [[ -r "${address_file}" ]]; then
+      cat "${address_file}"
+      return
+    fi
+  done
+
+  # BlueZ may already know the controller while its sysfs address file is not
+  # visible in the installer's environment (for example in a container).
+  if command -v bluetoothctl >/dev/null 2>&1; then
+    bluetoothctl list 2>/dev/null \
+      | sed -nE 's/^Controller[[:space:]]+(([[:xdigit:]]{2}:){5}[[:xdigit:]]{2})([[:space:]].*)?$/\1/p' \
+      | head -n 1
+  fi
+}
+
 resolve_bluetooth_adapter_address() {
   local address
 
@@ -56,11 +92,11 @@ resolve_bluetooth_adapter_address() {
   if [[ -z "${address}" ]]; then
     address="$(read_existing_thing_address "${TARGET_OPENHAB_CONFIG_DIR}/things/bluetooth.things" || true)"
   fi
-  if [[ -z "${address}" && -r /sys/class/bluetooth/hci0/address ]]; then
-    address="$(< /sys/class/bluetooth/hci0/address)"
+  if [[ -z "${address}" ]]; then
+    address="$(discover_bluetooth_adapter_address || true)"
   fi
   [[ -n "${address}" ]] \
-    || fail "Bluetooth adapter hci0 was not found. Set CAMPERPILOT_BLUETOOTH_ADDRESS=AA:BB:CC:DD:EE:FF and rerun the installer."
+    || fail "No Bluetooth adapter was found. Check 'bluetoothctl list' or set CAMPERPILOT_BLUETOOTH_ADDRESS=AA:BB:CC:DD:EE:FF and rerun the installer."
 
   address="$(normalize_bluetooth_address "${address}")"
   validate_bluetooth_address CAMPERPILOT_BLUETOOTH_ADDRESS "${address}"
@@ -222,6 +258,7 @@ install_openhab_config_sitemaps() {
 }
 
 install_openhab_configuration() {
+  prepare_bluetooth_adapter
   configure_openhab_config_access
   install_openhab_config_services
   install_openhab_config_sitemaps

@@ -267,6 +267,8 @@ install_camperpilot() {
   require_command find
   require_command sed
   require_command od
+  require_command rfkill
+  require_command systemctl
   require_command tr
   require_command id
   require_command hostnamectl
