@@ -3,6 +3,7 @@ Strategies {
 }
 
 Items {
+  Security_AlarmSystem_Armed,
   Climate_TemperatureAlarm_Enabled,
   Climate_TemperatureAlarm_Threshold : strategy = everyChange, restoreOnStartup
 }
