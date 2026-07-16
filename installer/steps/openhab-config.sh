@@ -278,8 +278,8 @@ install_openhab_config_sitemaps() {
 
 install_openhab_configuration() {
   install_openhab_config_services
+  install_openhab_config_sitemaps
   install_openhab_config_things
   install_openhab_config_items
   install_openhab_config_automation
-  install_openhab_config_sitemaps
 }
