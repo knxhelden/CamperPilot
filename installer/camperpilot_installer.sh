@@ -180,6 +180,20 @@ read_menu_choice() {
   done
 }
 
+read_zigbee_choice() {
+  local choice
+
+  while true; do
+    read -r -p "Will Zigbee be used with CamperPilot? [y/N]: " choice
+
+    case "${choice,,}" in
+      y|yes) printf '1\n'; return ;;
+      ""|n|no) printf '0\n'; return ;;
+      *) log_warning "Invalid selection. Please enter y or n." ;;
+    esac
+  done
+}
+
 resolve_action() {
   local action="${1:-}"
 
@@ -205,6 +219,8 @@ HELP
 }
 
 install_camperpilot() {
+  local INSTALL_ZIGBEE
+
   require_command git
 
   download_repository
@@ -230,6 +246,8 @@ install_camperpilot() {
   id openhabian >/dev/null 2>&1 \
     || fail "The system user 'openhabian' does not exist."
 
+  INSTALL_ZIGBEE="$(read_zigbee_choice)"
+
   install_base_configuration
   install_system_scripts
   install_sudoers_configuration
@@ -242,9 +260,12 @@ install_camperpilot() {
   log_success "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/services/addons.cfg"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/systeminfo.things"
-  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/zigbee.things"
+  if [[ "${INSTALL_ZIGBEE}" -eq 1 ]]; then
+    log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/zigbee.things"
+  fi
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/structure.items"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/system.items"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/camperpilot.sitemap"
 }
 
 uninstall_camperpilot() {

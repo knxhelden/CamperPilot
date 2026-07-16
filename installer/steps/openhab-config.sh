@@ -169,8 +169,13 @@ install_openhab_config_things() {
   local thing_file
   local thing_files=(
     "systeminfo.things"
-    "zigbee.things"
   )
+
+  if [[ "${INSTALL_ZIGBEE:-0}" -eq 1 ]]; then
+    thing_files+=("zigbee.things")
+  else
+    log_success "Skipping optional Zigbee things configuration."
+  fi
 
   for thing_file in "${thing_files[@]}"; do
     validate_source_file "${SOURCE_OPENHAB_CONFIG_DIR}/things/${thing_file}"
@@ -245,13 +250,36 @@ install_openhab_config_automation() {
 }
 
 install_openhab_config_sitemaps() {
+  local sitemap_file
+  local sitemap_files=(
+    "camperpilot.sitemap"
+  )
+
+  for sitemap_file in "${sitemap_files[@]}"; do
+    validate_source_file "${SOURCE_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}"
+  done
+
   log_success "Installing openHAB sitemaps configuration..."
+  install -d -o openhab -g openhab -m 0755 "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps"
+
+  for sitemap_file in "${sitemap_files[@]}"; do
+    install \
+      -o openhab \
+      -g openhab \
+      -m 0644 \
+      "${SOURCE_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}" \
+      "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}"
+  done
+
+  for sitemap_file in "${sitemap_files[@]}"; do
+    verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/${sitemap_file}" "644" "openhab:openhab"
+  done
 }
 
 install_openhab_configuration() {
   install_openhab_config_services
+  install_openhab_config_sitemaps
   install_openhab_config_things
   install_openhab_config_items
   install_openhab_config_automation
-  install_openhab_config_sitemaps
 }
