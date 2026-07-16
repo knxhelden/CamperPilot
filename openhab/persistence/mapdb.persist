@@ -1,0 +1,8 @@
+Strategies {
+  default = everyChange
+}
+
+Items {
+  Climate_TemperatureAlarm_Enabled,
+  Climate_TemperatureAlarm_Threshold : strategy = everyChange, restoreOnStartup
+}

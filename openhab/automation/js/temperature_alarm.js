@@ -3,10 +3,10 @@ const { rules, triggers, items, actions } = require('openhab');
 const CONFIG = Object.freeze({
   sensorGroup: 'Climate_TemperatureSensors',
 
-  enabledItem: 'Climate_HighTemperatureAlarm_Enabled',
-  thresholdItem: 'Climate_HighTemperatureAlarm_Threshold',
-  triggeredItem: 'Climate_HighTemperatureAlarm_Triggered',
-  detailsItem: 'Climate_HighTemperatureAlarm_Details',
+  enabledItem: 'Climate_TemperatureAlarm_Enabled',
+  thresholdItem: 'Climate_TemperatureAlarm_Threshold',
+  triggeredItem: 'Climate_TemperatureAlarm_Triggered',
+  detailsItem: 'Climate_TemperatureAlarm_Details',
 
   defaultThresholdCelsius: 35,
   hysteresisCelsius: 2,
@@ -16,14 +16,13 @@ const CONFIG = Object.freeze({
 });
 
 const SENSOR_LABELS = Object.freeze({
-  Dinette_ClimateSensor_Temperature: 'Dinette',
-  Sleeping_ClimateSensor_Temperature: 'Schlafen',
-  Garage_ClimateSensor_Temperature: 'Garage'
+  // Temperature items and their display names can optionally be entered here,
+  // for example: Dinette_ClimateSensor_Temperature: 'Dinette'
 });
 
 
 /**
- * Liest den Zustand eines Temperatur-Items in Grad Celsius.
+ * Reads the state of a temperature item in degrees Celsius.
  *
  * @param {object} item openHAB Item
  * @returns {number|null}
@@ -46,7 +45,7 @@ function getTemperatureCelsius(item) {
 
 
 /**
- * Liefert alle aktuell auswertbaren Temperatursensoren.
+ * Returns all temperature sensors that can currently be evaluated.
  *
  * @returns {Array<{name: string, label: string, temperature: number}>}
  */
@@ -76,7 +75,7 @@ function getSensorTemperatures() {
 
 
 /**
- * Liest den konfigurierten Grenzwert.
+ * Reads the configured threshold.
  *
  * @returns {number}
  */
@@ -84,12 +83,17 @@ function getThresholdCelsius() {
   const thresholdItem = items.getItem(CONFIG.thresholdItem);
   const threshold = getTemperatureCelsius(thresholdItem);
 
-  return threshold ?? CONFIG.defaultThresholdCelsius;
+  if (threshold === null) {
+    thresholdItem.postUpdate(`${CONFIG.defaultThresholdCelsius} °C`);
+    return CONFIG.defaultThresholdCelsius;
+  }
+
+  return threshold;
 }
 
 
 /**
- * Erzeugt eine lesbare Liste der Sensoren.
+ * Creates a readable list of sensors.
  *
  * @param {Array<{label: string, temperature: number}>} sensors
  * @returns {string}
@@ -102,7 +106,7 @@ function formatSensorList(sensors) {
 
 
 /**
- * Sendet eine Broadcast-Push-Benachrichtigung über openHAB Cloud.
+ * Sends a broadcast push notification via openHAB Cloud.
  *
  * @param {string} title
  * @param {string} message
@@ -110,7 +114,7 @@ function formatSensorList(sensors) {
 function sendPushNotification(title, message) {
   actions.notificationBuilder(message)
     .withTitle(title)
-    .withIcon('energy')
+    .withIcon('temperature')
     .withTag(CONFIG.notificationTag)
     .withReferenceId(CONFIG.notificationReferenceId)
     .send();
@@ -118,7 +122,7 @@ function sendPushNotification(title, message) {
 
 
 /**
- * Prüft alle Sensoren und setzt beziehungsweise beendet den Alarm.
+ * Checks all sensors and activates or clears the alarm.
  *
  * @param {boolean} sendReminder
  */
@@ -127,7 +131,7 @@ function evaluateTemperatureAlarm(sendReminder = false) {
   const activeItem = items.getItem(CONFIG.triggeredItem);
   const detailsItem = items.getItem(CONFIG.detailsItem);
 
-  // Ein noch nicht initialisiertes Enabled-Item wird wie ON behandelt.
+  // Treat an Enabled item that has not yet been initialized as ON.
   const alarmEnabled = enabledItem.state !== 'OFF';
   const alarmActive = activeItem.state === 'ON';
 
@@ -162,7 +166,7 @@ function evaluateTemperatureAlarm(sendReminder = false) {
   );
 
   /*
-   * Alarm auslösen beziehungsweise aktualisieren.
+   * Trigger or update the alarm.
    */
   if (hotSensors.length > 0) {
     const sensorDetails = formatSensorList(hotSensors);
@@ -200,10 +204,15 @@ function evaluateTemperatureAlarm(sendReminder = false) {
     return;
   }
 
+  // Initialize the alarm state after the first successful check without an alarm.
+  if (!alarmActive && activeItem.state !== 'OFF') {
+    activeItem.postUpdate('OFF');
+  }
+
   /*
-   * Hysterese:
-   * Der Alarm wird erst zurückgesetzt, wenn alle Sensoren mindestens
-   * 2 °C unterhalb des Grenzwerts liegen.
+   * Hysteresis:
+   * The alarm is cleared only when all sensors are at least 2 °C below
+   * the threshold.
    */
   const allSensorsBelowResetThreshold = sensors.every(
     sensor => sensor.temperature <= resetThreshold
@@ -231,12 +240,12 @@ function evaluateTemperatureAlarm(sendReminder = false) {
 
 
 /*
- * Hauptregel:
+ * Main rule:
  *
- * - Aktualisierung eines Temperatursensors
- * - Änderung des Grenzwerts
- * - Aktivierung oder Deaktivierung des Alarms
- * - vollständiger openHAB-Start
+ * - Temperature sensor update
+ * - Threshold change
+ * - Alarm activation or deactivation
+ * - Completed openHAB startup
  */
 rules.JSRule({
   name: 'Wohnmobil Temperaturalarm',
@@ -267,9 +276,9 @@ rules.JSRule({
 
 
 /*
- * Erinnerungsregel:
+ * Reminder rule:
  *
- * Solange der Alarm aktiv ist, wird alle 30 Minuten erneut informiert.
+ * Sends another notification every 30 minutes while the alarm is active.
  */
 rules.JSRule({
   name: 'Wohnmobil Temperaturalarm Erinnerung',
@@ -282,6 +291,10 @@ rules.JSRule({
   ],
 
   execute: () => {
-    evaluateTemperatureAlarm(true);
+    const triggeredItem = items.getItem(CONFIG.triggeredItem);
+
+    if (triggeredItem.state === 'ON') {
+      evaluateTemperatureAlarm(true);
+    }
   }
 });

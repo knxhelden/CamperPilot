@@ -236,10 +236,27 @@ install_openhab_config_items() {
   done
 }
 
+install_openhab_config_persistence() {
+  validate_source_file "${SOURCE_OPENHAB_CONFIG_DIR}/persistence/mapdb.persist"
+
+  log_success "Installing openHAB persistence configuration..."
+  install -d -o openhab -g openhab -m "${OPENHAB_CONFIG_DIR_MODE}" "${TARGET_OPENHAB_CONFIG_DIR}/persistence"
+
+  install \
+    -o openhab \
+    -g openhab \
+    -m "${OPENHAB_CONFIG_FILE_MODE}" \
+    "${SOURCE_OPENHAB_CONFIG_DIR}/persistence/mapdb.persist" \
+    "${TARGET_OPENHAB_CONFIG_DIR}/persistence/mapdb.persist"
+
+  verify_installed_file "${TARGET_OPENHAB_CONFIG_DIR}/persistence/mapdb.persist" "664" "openhab:openhab"
+}
+
 install_openhab_config_automation() {
   local automation_file
   local automation_files=(
     "camperpilot_system.js"
+    "temperature_alarm.js"
   )
 
   for automation_file in "${automation_files[@]}"; do
@@ -297,5 +314,6 @@ install_openhab_configuration() {
   install_openhab_config_sitemaps
   install_openhab_config_things
   install_openhab_config_items
+  install_openhab_config_persistence
   install_openhab_config_automation
 }
