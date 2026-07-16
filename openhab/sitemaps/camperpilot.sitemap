@@ -10,7 +10,6 @@ sitemap camperpilot label="CamperPilot" {
             Frame label="Netzwerk" {
                 Text item=System_Network_IP
                 Text item=System_Network_MAC
-                Text item=System_Network_Name
             }
             Frame label="Steuerung" {
                 Switch item=System_Shutdown label="Herunterfahren"
