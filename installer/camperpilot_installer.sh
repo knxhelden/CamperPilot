@@ -258,6 +258,7 @@ install_camperpilot() {
   require_command hostnamectl
   require_command timedatectl
   require_command chpasswd
+  require_command usermod
 
   id openhab >/dev/null 2>&1 \
     || fail "The system user 'openhab' does not exist."
