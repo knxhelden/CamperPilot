@@ -3,7 +3,15 @@ set -Eeuo pipefail
 IFS=$'\n\t'
 
 readonly SOURCE_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-readonly LOCAL_REPO_DIR="${SOURCE_DIR}/CamperPilot"
+
+if [[ -d "${SOURCE_DIR}/../openhab" && -d "${SOURCE_DIR}/../scripts" ]]; then
+  readonly LOCAL_REPO_DIR="$(cd -- "${SOURCE_DIR}/.." && pwd)"
+  readonly REPOSITORY_IS_INSTALLER_MANAGED=0
+else
+  readonly LOCAL_REPO_DIR="${SOURCE_DIR}/CamperPilot"
+  readonly REPOSITORY_IS_INSTALLER_MANAGED=1
+fi
+
 readonly REPOSITORY_URL="${CAMPERPILOT_REPOSITORY_URL:-https://github.com/knxhelden/CamperPilot.git}"
 readonly REPOSITORY_BRANCH="${CAMPERPILOT_REPOSITORY_BRANCH:-main}"
 readonly SOURCE_SCRIPT_DIR="${LOCAL_REPO_DIR}/scripts"
@@ -31,7 +39,7 @@ readonly OPENHAB_CONFIG_FILES=(
   "sitemaps/camperpilot.sitemap"
 )
 
-REPOSITORY_SYNCED=0
+REPOSITORY_SYNCED=$((1 - REPOSITORY_IS_INSTALLER_MANAGED))
 
 if [[ -z "${NO_COLOR:-}" && ( -t 1 || -t 2 ) ]]; then
   readonly COLOR_GREEN=$'\033[32m'
@@ -114,6 +122,11 @@ uninstall_file() {
 }
 
 uninstall_local_repository() {
+  if [[ "${REPOSITORY_IS_INSTALLER_MANAGED}" -eq 0 ]]; then
+    log_warning "Local CamperPilot checkout retained: ${LOCAL_REPO_DIR}"
+    return
+  fi
+
   if [[ -e "${LOCAL_REPO_DIR}" || -L "${LOCAL_REPO_DIR}" ]]; then
     rm -rf -- "${LOCAL_REPO_DIR}"
     log_success "Removed cloned repository ${LOCAL_REPO_DIR}"
@@ -131,6 +144,9 @@ require_root() {
 
 download_repository() {
   if [[ "${REPOSITORY_SYNCED}" -eq 1 ]]; then
+    if [[ "${REPOSITORY_IS_INSTALLER_MANAGED}" -eq 0 ]]; then
+      log_success "Using CamperPilot checkout in ${LOCAL_REPO_DIR}."
+    fi
     return
   fi
 
