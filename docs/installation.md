@@ -134,9 +134,14 @@ sudo /tmp/camperpilot_installer.sh
 
 Choose **Install** from the installer menu.
 
+The installer then asks whether Zigbee will be used. Answering **No** (the
+default) skips the optional `zigbee.things` configuration; no Zigbee
+coordinator is required in that case. Answer **Yes** only when CamperPilot
+should use a Zigbee coordinator.
+
 ### Zigbee coordinator configuration
 
-During installation, the `openhab/things/zigbee.things` source file is provisioned with target-system values before it is copied to `/etc/openhab/things/zigbee.things`.
+When Zigbee is enabled at the installer prompt, the `openhab/things/zigbee.things` source file is provisioned with target-system values before it is copied to `/etc/openhab/things/zigbee.things`.
 
 The installer individualizes these values:
 
