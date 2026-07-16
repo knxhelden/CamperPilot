@@ -267,3 +267,8 @@ install_openhab_configuration() {
   install_openhab_config_persistence
   install_openhab_config_automation
 }
+
+restart_openhab_service() {
+  log_success "Restarting the openHAB service..."
+  systemctl restart openhab
+}

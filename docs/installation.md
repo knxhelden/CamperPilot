@@ -139,6 +139,9 @@ will be used. Answering **No** (the default) skips the corresponding optional
 configuration. The Bluetooth adapter itself is always configured because it is
 the bridge used by supported local Bluetooth sensors.
 
+After all configuration files have been installed, the installer restarts the
+openHAB service so that the new configuration is loaded.
+
 ### Bluetooth and Mopeka Pro configuration
 
 The installer always provisions `/etc/openhab/things/bluetooth.things`. It
