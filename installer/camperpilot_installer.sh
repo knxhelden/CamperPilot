@@ -30,6 +30,7 @@ readonly SUDOERS_FILE="camperpilot-openhab"
 readonly OPENHAB_CONFIG_FILES=(
   "services/addons.cfg"
   "things/systeminfo.things"
+  "things/bluetooth.things"
   "things/zigbee.things"
   "items/climate.items"
   "items/resources.items"
@@ -178,7 +179,7 @@ download_repository() {
 load_installer_steps() {
   local installer_dir="${SOURCE_DIR}"
 
-  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" || ! -f "${installer_dir}/steps/base_config.sh" || ! -f "${installer_dir}/steps/openhab-config.sh" ]]; then
+  if [[ ! -f "${installer_dir}/steps/system_scripts.sh" || ! -f "${installer_dir}/steps/base_config.sh" || ! -f "${installer_dir}/steps/openhab-config.sh" || ! -f "${installer_dir}/steps/mopekapro-config.sh" ]]; then
     require_command git
     download_repository
     installer_dir="${LOCAL_REPO_DIR}/installer"
@@ -190,6 +191,8 @@ load_installer_steps() {
   source "${installer_dir}/steps/system_scripts.sh"
   # shellcheck source=steps/openhab-config.sh
   source "${installer_dir}/steps/openhab-config.sh"
+  # shellcheck source=steps/mopekapro-config.sh
+  source "${installer_dir}/steps/mopekapro-config.sh"
 }
 
 show_main_menu() {
@@ -261,6 +264,7 @@ HELP
 
 install_camperpilot() {
   local INSTALL_ZIGBEE
+  local INSTALL_MOPEKAPRO
 
   require_command git
 
@@ -289,11 +293,13 @@ install_camperpilot() {
     || fail "The system user 'openhabian' does not exist."
 
   INSTALL_ZIGBEE="$(read_zigbee_choice)"
+  INSTALL_MOPEKAPRO="$(read_mopekapro_choice)"
 
   install_base_configuration
   install_system_scripts
   install_sudoers_configuration
   install_openhab_configuration
+  install_mopekapro_configuration
 
   log_success "Installation completed successfully."
   log_success "Installed:"
@@ -302,9 +308,11 @@ install_camperpilot() {
   log_success "  ${TARGET_SUDOERS_DIR}/camperpilot-openhab"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/services/addons.cfg"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/systeminfo.things"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/bluetooth.things"
   if [[ "${INSTALL_ZIGBEE}" -eq 1 ]]; then
     log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/things/zigbee.things"
   fi
+  log_installed_mopekapro_configuration
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/climate.items"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/resources.items"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/security.items"
@@ -335,6 +343,7 @@ uninstall_camperpilot() {
   for config_file in "${OPENHAB_CONFIG_FILES[@]}"; do
     log_warning "  ${TARGET_OPENHAB_CONFIG_DIR}/${config_file}"
   done
+  log_retained_mopekapro_configuration
 
   log_success "Uninstallation completed successfully."
 }

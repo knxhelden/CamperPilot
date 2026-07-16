@@ -134,10 +134,48 @@ sudo /tmp/camperpilot_installer.sh
 
 Choose **Install** from the installer menu.
 
-The installer then asks whether Zigbee will be used. Answering **No** (the
-default) skips the optional `zigbee.things` configuration; no Zigbee
-coordinator is required in that case. Answer **Yes** only when CamperPilot
-should use a Zigbee coordinator.
+The installer asks separately whether Zigbee and a Mopeka Pro gas level sensor
+will be used. Answering **No** (the default) skips the corresponding optional
+configuration. The Bluetooth adapter itself is always configured because it is
+the bridge used by supported local Bluetooth sensors.
+
+### Bluetooth and Mopeka Pro configuration
+
+The installer always provisions `/etc/openhab/things/bluetooth.things`. It
+determines the address of the Raspberry Pi Bluetooth adapter `hci0` from
+`/sys/class/bluetooth/hci0/address`. On a system where that interface is not
+available yet, provide the adapter address explicitly:
+
+```bash
+sudo env \
+  CAMPERPILOT_BLUETOOTH_ADDRESS=<adapter-address> \
+  /tmp/camperpilot_installer.sh install
+```
+
+When Mopeka Pro is enabled, the installer also provisions:
+
+* `/etc/openhab/things/mopekapro.things`
+* `/etc/openhab/items/mopekapro.items`
+* `/etc/openhab/automation/js/mopekapro.js`
+
+It first reuses the address from an existing `mopekapro.things`. For a new
+installation it scans nearby Bluetooth devices for the Mopeka manufacturer ID
+`0x0059`. Make sure the sensor is awake and nearby during installation. If
+automatic discovery fails in an interactive installation, the installer asks
+for the Bluetooth address. It can be found manually by running
+`bluetoothctl scan on` and watching for the Mopeka device. Alternatively, set it
+before starting the installer:
+
+```bash
+sudo env \
+  CAMPERPILOT_MOPEKAPRO_ADDRESS=<sensor-address> \
+  /tmp/camperpilot_installer.sh install
+```
+
+Both addresses use the format `AA:BB:CC:DD:EE:FF`. Existing installed addresses
+take precedence over hardware discovery so rerunning the installer keeps the
+configuration stable. An explicitly supplied environment variable always has
+the highest priority.
 
 ### Manually editing the openHAB configuration
 

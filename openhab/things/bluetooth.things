@@ -1,1 +1,1 @@
-Thing bluetooth:bluez:hci0 "CamperPilot Bluetooth" [address="88:A2:9E:B9:EC:E6", backgroundDiscovery=false, inactiveDeviceCleanupInterval=60, inactiveDeviceCleanupThreshold=300, lazyScan=true]
+Thing bluetooth:bluez:hci0 "CamperPilot Bluetooth" [address="__CAMPERPILOT_BLUETOOTH_ADDRESS__", backgroundDiscovery=false, inactiveDeviceCleanupInterval=60, inactiveDeviceCleanupThreshold=300, lazyScan=true]

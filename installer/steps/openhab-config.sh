@@ -4,6 +4,7 @@ readonly ZIGBEE_PORT_PLACEHOLDER="__CAMPERPILOT_ZIGBEE_PORT__"
 readonly ZIGBEE_PAN_ID_PLACEHOLDER="__CAMPERPILOT_ZIGBEE_PAN_ID__"
 readonly ZIGBEE_EXTENDED_PAN_ID_PLACEHOLDER="__CAMPERPILOT_ZIGBEE_EXTENDED_PAN_ID__"
 readonly ZIGBEE_NETWORK_KEY_PLACEHOLDER="__CAMPERPILOT_ZIGBEE_NETWORK_KEY__"
+readonly BLUETOOTH_ADDRESS_PLACEHOLDER="__CAMPERPILOT_BLUETOOTH_ADDRESS__"
 readonly OPENHAB_CONFIG_DIR_MODE="2775"
 readonly OPENHAB_CONFIG_FILE_MODE="0664"
 
@@ -159,6 +160,53 @@ render_zigbee_thing_file() {
   log_success "Installed zigbee.things with Zigbee port ${zigbee_port}"
 }
 
+normalize_bluetooth_address() {
+  printf '%s\n' "${1^^}"
+}
+
+validate_bluetooth_address() {
+  local name="$1"
+  local address="$2"
+
+  [[ "${address}" =~ ^([0-9A-F]{2}:){5}[0-9A-F]{2}$ ]] \
+    || fail "${name} must be a Bluetooth address such as AA:BB:CC:DD:EE:FF: ${address}"
+}
+
+read_existing_thing_address() {
+  local target_file="$1"
+
+  [[ -f "${target_file}" ]] || return 1
+  sed -nE 's/.*\[address="(([[:xdigit:]]{2}:){5}[[:xdigit:]]{2})".*/\1/p' "${target_file}" | head -n 1
+}
+
+resolve_bluetooth_adapter_address() {
+  local address
+
+  address="${CAMPERPILOT_BLUETOOTH_ADDRESS:-}"
+  if [[ -z "${address}" ]]; then
+    address="$(read_existing_thing_address "${TARGET_OPENHAB_CONFIG_DIR}/things/bluetooth.things" || true)"
+  fi
+  if [[ -z "${address}" && -r /sys/class/bluetooth/hci0/address ]]; then
+    address="$(< /sys/class/bluetooth/hci0/address)"
+  fi
+  [[ -n "${address}" ]] \
+    || fail "Bluetooth adapter hci0 was not found. Set CAMPERPILOT_BLUETOOTH_ADDRESS=AA:BB:CC:DD:EE:FF and rerun the installer."
+
+  address="$(normalize_bluetooth_address "${address}")"
+  validate_bluetooth_address CAMPERPILOT_BLUETOOTH_ADDRESS "${address}"
+  printf '%s\n' "${address}"
+}
+
+render_addressed_thing_file() {
+  local source_file="$1"
+  local target_file="$2"
+  local placeholder="$3"
+  local address="$4"
+
+  sed "s|${placeholder}|${address}|g" "${source_file}" \
+    | install -o openhab -g openhab -m "${OPENHAB_CONFIG_FILE_MODE}" /dev/stdin "${target_file}"
+}
+
 install_openhab_thing_file() {
   local thing_file="$1"
   local source_file="${SOURCE_OPENHAB_CONFIG_DIR}/things/${thing_file}"
@@ -166,6 +214,11 @@ install_openhab_thing_file() {
 
   if [[ "${thing_file}" == "zigbee.things" ]]; then
     render_zigbee_thing_file "${source_file}" "${target_file}"
+    return
+  fi
+
+  if [[ "${thing_file}" == "bluetooth.things" ]]; then
+    render_addressed_thing_file "${source_file}" "${target_file}" "${BLUETOOTH_ADDRESS_PLACEHOLDER}" "$(resolve_bluetooth_adapter_address)"
     return
   fi
 
@@ -181,6 +234,7 @@ install_openhab_config_things() {
   local thing_file
   local thing_files=(
     "systeminfo.things"
+    "bluetooth.things"
   )
 
   if [[ "${INSTALL_ZIGBEE:-0}" -eq 1 ]]; then
