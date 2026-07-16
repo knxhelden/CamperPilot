@@ -36,6 +36,9 @@ readonly OPENHAB_CONFIG_FILES=(
   "items/security.items"
   "items/structure.items"
   "items/system.items"
+  "persistence/mapdb.persist"
+  "automation/js/camperpilot_system.js"
+  "automation/js/temperature_alarm.js"
   "sitemaps/camperpilot.sitemap"
 )
 
@@ -307,6 +310,9 @@ install_camperpilot() {
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/security.items"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/structure.items"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/items/system.items"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/persistence/mapdb.persist"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/automation/js/camperpilot_system.js"
+  log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/automation/js/temperature_alarm.js"
   log_success "  ${TARGET_OPENHAB_CONFIG_DIR}/sitemaps/camperpilot.sitemap"
 }
 
