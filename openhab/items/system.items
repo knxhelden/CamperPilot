@@ -2,13 +2,13 @@
    including the Raspberry Pi, openHAB, network connectivity and system health. */
 
 Group System_CamperPilot "CamperPilot" <settings> (Technical) ["Equipment"]
-Number:Time System_CamperPilot_Uptime "Uptime [%d min]" <time> (System_CamperPilot) ["Point"] { channel="systeminfo:computer:camperpilot:cpu#uptime" }
-Number:Temperature System_CamperPilot_CPU_Temperature "CPU Temperatur [%.0f °C]" <temperature> (System_CamperPilot) ["Measurement", "Temperature"] { channel="systeminfo:computer:camperpilot:sensors#cpuTemp" }
-Number:Dimensionless System_CamperPilot_CPU_Load "CPU Auslastung [%.0f %%]" <line> (System_CamperPilot) ["Point"] { channel="systeminfo:computer:camperpilot:cpu#load" }
-Number:Dimensionless System_CamperPilot_RAM_UsedPercent "RAM Auslastung [%.0f %%]" <line> (System_CamperPilot) ["Point"] { channel="systeminfo:computer:camperpilot:memory#usedPercent" }
-Number:DataAmount System_CamperPilot_RAM_Used "RAM Nutzung [%.0f %unit%]" <line> (System_CamperPilot) ["Point"] { channel="systeminfo:computer:camperpilot:memory#used" }
-String System_CamperPilot_Network_IP "IP-Adresse" <text> (System_CamperPilot) ["Point"] { channel="systeminfo:computer:camperpilot:network#ip" }
-String System_CamperPilot_Network_MAC "MAC-Adresse" <text> (System_CamperPilot) ["Point"] { channel="systeminfo:computer:camperpilot:network#mac" }
+Number:Time System_CamperPilot_Uptime "Uptime [%d min]" <time> (System_CamperPilot) { channel="systeminfo:computer:camperpilot:cpu#uptime" }
+Number:Temperature System_CamperPilot_CPU_Temperature "CPU-Temperatur [%.0f °C]" <temperature> (System_CamperPilot) ["Measurement", "Temperature"] { channel="systeminfo:computer:camperpilot:sensors#cpuTemp" }
+Number:Dimensionless System_CamperPilot_CPU_Load "CPU-Auslastung [%.0f %%]" <line> (System_CamperPilot) ["Measurement"] { channel="systeminfo:computer:camperpilot:cpu#load" }
+Number:Dimensionless System_CamperPilot_RAM_UsedPercent "RAM-Auslastung [%.0f %%]" <line> (System_CamperPilot) ["Measurement"] { channel="systeminfo:computer:camperpilot:memory#usedPercent" }
+Number:DataAmount System_CamperPilot_RAM_Used "RAM-Nutzung [%.0f %unit%]" <line> (System_CamperPilot) ["Measurement"] { channel="systeminfo:computer:camperpilot:memory#used" }
+String System_CamperPilot_Network_IP "IP-Adresse" <text> (System_CamperPilot) { channel="systeminfo:computer:camperpilot:network#ip" }
+String System_CamperPilot_Network_MAC "MAC-Adresse" <text> (System_CamperPilot) { channel="systeminfo:computer:camperpilot:network#mac" }
 
 Switch System_CamperPilot_Shutdown "CamperPilot herunterfahren" <settings> (System_CamperPilot) { autoupdate="false" }
 Switch System_CamperPilot_Reboot "CamperPilot neustarten" <settings> (System_CamperPilot) { autoupdate="false" }
