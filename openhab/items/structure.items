@@ -3,9 +3,10 @@
 
 Group Camper "Wohnmobil" <none> ["Location"]
 
-Group GasLocker "Gaskasten" <gas> (Camper)  ["Location"]
-Group Technical "Technikbereich" <settings> (Camper) ["Location"]
-Group RearGarage "Heckgarage" <none> (Camper) ["Location"]
+Group GasLocker "Gaskasten" <gas> (Camper)  ["Location"]  { widgetOrder="5" }
+Group Technical "Technikbereich" <settings> (Camper) ["Location"]  { widgetOrder="6" }
+Group RearGarage "Heckgarage" <suitcase> (Camper) ["Location"]  { widgetOrder="4" }
 
-Group Cabin "Fahrerhaus" <none> (Camper) ["Location"]
-Group Dinette "Dinette" <none> (Camper) ["Location"]
+Group Cabin "Fahrerhaus" <parents_1_1> (Camper) ["Location"] { widgetOrder="1" }
+Group Dinette "Dinette" <sofa> (Camper) ["Location"] { widgetOrder="2" }
+Group Sleeping "Schlafen" <bedroom> (Camper)  ["Location"]  { widgetOrder="3" }

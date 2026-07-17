@@ -1,14 +1,14 @@
-Group Mopekapro "Mopeka Sensor" <cistern> (Camper) ["Equipment"]
+Group Mopekapro "Mopeka Sensor" <cistern> (GasLocker) ["Sensor"]
 
-Number:Power Mopekapro_RSSI "Signalstärke [%.0f dBm]" <qualityofservice> (Mopekapro) { channel="bluetooth:listener:hci0:mopeka:rssi" }
+Number:Power Mopekapro_RSSI "Signalstärke [%.0f dBm]" <qualityofservice> (Mopekapro) ["Measurement", "QualityOfService"] { channel="bluetooth:listener:hci0:mopeka:rssi" }
 String Mopekapro_ManufacturerRaw "Rohdaten" <text> (Mopekapro) { channel="bluetooth:listener:hci0:mopeka:manufacturer-data" }
-Number Mopekapro_BatteryVoltage "Batterie Spannung [%.2f V]" (Mopekapro)
-Number:Dimensionless Mopekapro_Battery "Batterie [%.0f %%]" <batterylevel> (Mopekapro)
-Number:Temperature Mopekapro_Temperature "Sensortemperatur [%.0f %unit%]" <temperature> (Mopekapro)
+Number Mopekapro_BatteryVoltage "Batterie Spannung [%.2f V]" (Mopekapro) ["Measurement", "Voltage"]
+Number:Dimensionless Mopekapro_BatteryLevel "Batteriestand [%.0f %unit%]" <batterylevel> (Mopekapro) ["Measurement", "BatteryLevel"] { unit="%" }
+Number:Temperature Mopekapro_Temperature "Sensortemperatur [%.0f %unit%]" <temperature> (Mopekapro) ["Measurement", "Temperature"]
 Number Mopekapro_RawLevel "Rohfüllstand [%d]" (Mopekapro)
-Number Mopekapro_Quality "Messqualität [%d/3]" <qualityofservice> (Mopekapro)
-Number:Length Mopekapro_FluidHeight "Gas Flüssigkeitshöhe [%.0f mm]" (Mopekapro)
-Number:Dimensionless Mopekapro_Level "Gasfüllstand [%.0f %%]" <cistern> (Mopekapro)
+Number Mopekapro_Quality "Messqualität [%d/3]" <qualityofservice> (Mopekapro) ["Measurement", "QualityOfService"]
+Number:Length Mopekapro_FluidHeight "Gas Flüssigkeitshöhe [%.0f %unit%]" (Mopekapro) ["Measurement", "Level"]
+Number:Dimensionless Mopekapro_Level "Gasfüllstand [%.0f %unit%]" <cistern> (Mopekapro) ["Measurement", "Level"] { unit="%" }
 
 Number:Length Mopekapro_TankUsableHeight "Gasflasche nutzbare Höhe [%.0f mm]" (Mopekapro)
 String Mopekapro_SensorId "Sensor-ID [%s]" (Mopekapro)
