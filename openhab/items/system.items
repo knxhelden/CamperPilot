@@ -1,14 +1,14 @@
 /* Contains all items used to monitor and control the CamperPilot platform,
    including the Raspberry Pi, openHAB, network connectivity and system health. */
 
-Group System "System" <settings> (Camper) ["Equipment"]
-Number:Time System_Uptime "Uptime [%d min]" <time> (System) ["Point"] { channel="systeminfo:computer:camperpilot:cpu#uptime" }
-Number:Temperature System_CPU_Temperature "CPU Temperatur [%.0f °C]" <temperature> (System) ["Point"] { channel="systeminfo:computer:camperpilot:sensors#cpuTemp" }
-Number:Dimensionless System_CPU_Load "CPU Auslastung [%.0f %%]" <line> (System) ["Point"] { channel="systeminfo:computer:camperpilot:cpu#load" }
-Number:Dimensionless System_RAM_UsedPercent "RAM Auslastung [%.0f %%]" <line> (System) ["Point"] { channel="systeminfo:computer:camperpilot:memory#usedPercent" }
-Number:DataAmount System_RAM_Used "RAM Nutzung [%.0f %unit%]" <line> (System) ["Point"] { channel="systeminfo:computer:camperpilot:memory#used" }
-String System_Network_IP "IP-Adresse" <text> (System) ["Point"] { channel="systeminfo:computer:camperpilot:network#ip" }
-String System_Network_MAC "MAC-Adresse" <text> (System) ["Point"] { channel="systeminfo:computer:camperpilot:network#mac" }
+Group System_CamperPilot_CamperPilot "CamperPilot" <settings> (Camper) ["Equipment"]
+Number:Time System_CamperPilot_Uptime "Uptime [%d min]" <time> (System) ["Point"] { channel="systeminfo:computer:camperpilot:cpu#uptime" }
+Number:Temperature System_CamperPilot_CPU_Temperature "CPU Temperatur [%.0f °C]" <temperature> (System) ["Measurement", "Temperature"] { channel="systeminfo:computer:camperpilot:sensors#cpuTemp" }
+Number:Dimensionless System_CamperPilot_CPU_Load "CPU Auslastung [%.0f %%]" <line> (System) ["Point"] { channel="systeminfo:computer:camperpilot:cpu#load" }
+Number:Dimensionless System_CamperPilot_RAM_UsedPercent "RAM Auslastung [%.0f %%]" <line> (System) ["Point"] { channel="systeminfo:computer:camperpilot:memory#usedPercent" }
+Number:DataAmount System_CamperPilot_RAM_Used "RAM Nutzung [%.0f %unit%]" <line> (System) ["Point"] { channel="systeminfo:computer:camperpilot:memory#used" }
+String System_CamperPilot_Network_IP "IP-Adresse" <text> (System) ["Point"] { channel="systeminfo:computer:camperpilot:network#ip" }
+String System_CamperPilot_Network_MAC "MAC-Adresse" <text> (System) ["Point"] { channel="systeminfo:computer:camperpilot:network#mac" }
 
-Switch System_Shutdown "CamperPilot herunterfahren" <settings> (System) { autoupdate="false" }
-Switch System_Reboot "CamperPilot neustarten" <settings> (System) { autoupdate="false" }
+Switch System_CamperPilot_Shutdown "CamperPilot herunterfahren" <settings> (System) { autoupdate="false" }
+Switch System_CamperPilot_Reboot "CamperPilot neustarten" <settings> (System) { autoupdate="false" }

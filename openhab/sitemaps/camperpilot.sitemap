@@ -17,18 +17,18 @@ sitemap camperpilot label="CamperPilot" {
         }
         Text label="CamperPilot" icon="settings" {
             Frame label="Vitalwerte" {
-                Text item=System_CPU_Temperature valuecolor=[>=80="red", >=70="orange", >=60="gold", >=0="green", "gray"]
-                Text item=System_CPU_Load valuecolor=[>=90="red", >=75="orange", >=50="gold", >=0="green", "gray"]
-                Text item=System_RAM_UsedPercent valuecolor=[>=90="red", >=80="orange", >=65="gold", >=0="green", "gray"]
-                Text item=System_RAM_Used
+                Text item=System_CamperPilot_CPU_Temperature valuecolor=[>=80="red", >=70="orange", >=60="gold", >=0="green", "gray"]
+                Text item=System_CamperPilot_CPU_Load valuecolor=[>=90="red", >=75="orange", >=50="gold", >=0="green", "gray"]
+                Text item=System_CamperPilot_RAM_UsedPercent valuecolor=[>=90="red", >=80="orange", >=65="gold", >=0="green", "gray"]
+                Text item=System_CamperPilot_RAM_Used
             }
             Frame label="Netzwerk" {
-                Text item=System_Network_IP
-                Text item=System_Network_MAC
+                Text item=System_CamperPilot_Network_IP
+                Text item=System_CamperPilot_Network_MAC
             }
             Frame label="Steuerung" {
-                Switch item=System_Shutdown label="Herunterfahren"
-                Switch item=System_Reboot label="Neustarten"
+                Switch item=System_CamperPilot_Shutdown label="Herunterfahren"
+                Switch item=System_CamperPilot_Reboot label="Neustarten"
             }
         }
     }

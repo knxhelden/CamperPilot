@@ -2,3 +2,10 @@
    the vehicle itself and its individual rooms, areas and storage spaces. */
 
 Group Camper "Wohnmobil" <none> ["Location"]
+
+Group GasLocker "Gaskasten" <gas> (Camper)  ["Location"]
+Group Technical "Technikbereich" <settings> (Camper) ["Location"]
+Group RearGarage "Heckgarage" <none> (Camper) ["Location"]
+
+Group Cabin "Fahrerhaus" <none> (Camper) ["Location"]
+Group Dinette "Dinette" <none> (Camper) ["Location"]

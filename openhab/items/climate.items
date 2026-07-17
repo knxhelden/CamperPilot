@@ -7,7 +7,7 @@ Group Climate_TemperatureSensors "Temperatursensoren" <temperature>
 
 /* Temperature Alarm */
 
-Group Climate_TemperatureAlarm "Klimaüberwachung" <temperature_hot> ["Equipment"]
+Group Climate_TemperatureAlarm "Klimaüberwachung" <temperature_hot>
 Switch Climate_TemperatureAlarm_Enabled "Aktiviert [%s]" <alarm> (Climate_TemperatureAlarm)
 Switch Climate_TemperatureAlarm_Triggered "Alarm ausgelöst [%s]" <alarm> (Climate_TemperatureAlarm)
 Number:Temperature Climate_TemperatureAlarm_Threshold "Alarmgrenze [%.1f %unit%]" <temperature> (Climate_TemperatureAlarm)
