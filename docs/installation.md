@@ -1,20 +1,19 @@
-# Installation
+# 🚀 Installation
 
-This guide installs the CamperPilot base system on a Raspberry Pi 4.
+> This guide installs the CamperPilot base system on a **Raspberry Pi 4**.
+
+## ✨ What the installer does
 
 The current CamperPilot installer:
 
-- Configures the base system (e.g. hostname, time zone and `openhabian` password).
-- Installs the CamperPilot system bash scripts and required sudoers configuration.
-- Provisions the project-specific openHAB configuration (e.g. bindings, things, items, sitemap, automation rules, etc.).
-- Configures optional hardware integrations for
-  - **Zigbee**,
-  - **Bluetooth**,
-  - **Mopeka Pro gas level sensor**
+- ⚙️ Configures the base system (e.g. hostname, time zone and `openhabian` password).
+- 📜 Installs the CamperPilot system bash scripts and required sudoers configuration.
+- 🏠 Provisions the project-specific openHAB configuration (e.g. bindings, things, items, sitemap, automation rules, etc.).
+- 📡 Configures optional hardware integrations for **Zigbee**, **Bluetooth** and the **Mopeka Pro gas level sensor**.
 
 ---
 
-## 1. Write openHABian to the SD Card
+## 1. 💾 Write openHABian to the SD Card
 
 Open [Raspberry Pi Imager](https://www.raspberrypi.com/software/) and select:
 
@@ -32,22 +31,26 @@ Storage:
 Your microSD card
 ```
 
-Write the image to the SD card.
+> [!IMPORTANT]
+> Double-check that you selected the correct storage device, then write the image to the SD card.
 
 ---
 
-## 2. Start the Raspberry Pi and open openHAB
+## 2. 🔌 Start the Raspberry Pi and open openHAB
 
 1. Insert the SD card into the Raspberry Pi.
 2. Connect the Raspberry Pi to the router using Ethernet.
 3. Connect the power supply.
-4. Wait for the initial installation to complete (this takes approx. 10 minutes).
-5. After the installation has completed, open: `http://openhabian:8080`
+4. Wait for the initial installation to complete (this takes approximately **10 minutes**).
+5. After the installation has completed, open [`http://openhabian:8080`](http://openhabian:8080).
 6. Complete the initial openHAB setup and create the administrator account.
+
+> [!TIP]
+> Keep the Raspberry Pi connected to Ethernet and power throughout the initial setup.
 
 ---
 
-## 3. Connect through SSH
+## 3. 🔐 Connect through SSH
 
 Connect to the Raspberry Pi:
 
@@ -61,30 +64,31 @@ Alternatively, use its IP address:
 ssh openhabian@<IP-ADDRESS>
 ```
 
-Default credentials:
+### Default credentials
 
-```text
-Username: openhabian
-Password: openhabian
-```
+| Username | Password |
+| -------- | -------- |
+| `openhabian` | `openhabian` |
 
-Change the default password during the CamperPilot installation.
+> [!WARNING]
+> Change the default password during the CamperPilot installation.
 
 ---
 
-## 4. Configure Remote Access
+## 4. 🌐 Configure Remote Access
 
 Configure secure remote access using [Tailscale](remote-access.md).
 
-No ports should be forwarded from the mobile router to CamperPilot.
+> [!CAUTION]
+> Do **not** forward ports from the mobile router to CamperPilot.
 
 ---
 
-## 5. Install CamperPilot
+## 5. 🛠️ Install CamperPilot
 
 The installer installs everything required for CamperPilot. Run the following commands on the Raspberry Pi.
 
-Download the current installer:
+### 5.1 Download the installer
 
 ```bash
 curl -fsSL \
@@ -92,19 +96,21 @@ curl -fsSL \
   -o /tmp/camperpilot_installer.sh
 ```
 
-Make it executable:
+### 5.2 Make it executable
 
 ```bash
 chmod +x /tmp/camperpilot_installer.sh
 ```
 
-Run the installer:
+### 5.3 Run the installer
 
 ```bash
 sudo /tmp/camperpilot_installer.sh
 ```
 
-Choose **Install** from the installer menu.
+Choose **Install** from the installer menu. ✅
+
+### Optional: Run an action directly
 
 You can also pass an action directly to the installer:
 
@@ -114,7 +120,16 @@ sudo /tmp/camperpilot_installer.sh --uninstall
 sudo /tmp/camperpilot_installer.sh --help
 ```
 
-Available actions:
+#### Available actions
 
-* `--install` or `--uninstall`: install / uninstall CamperPilot without opening the menu.
-* `-h` or `--help`: show the installer help text.
+| Action | Description |
+| ------ | ----------- |
+| `--install` | Install CamperPilot without opening the menu. |
+| `--uninstall` | Uninstall CamperPilot without opening the menu. |
+| `-h`, `--help` | Show the installer help text. |
+
+---
+
+## ✅ Installation complete
+
+CamperPilot and the selected hardware integrations are now ready to be configured in openHAB.
