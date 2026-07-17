@@ -104,7 +104,7 @@ rules.JSRule({
     levelPercent = Math.max(0, Math.min(100, levelPercent));
 
     items.getItem("Mopekapro_BatteryVoltage").postUpdate(batteryVoltage.toFixed(2));
-    items.getItem("Mopekapro_Battery").postUpdate(`${Math.round(batteryPercent)} %`);
+    items.getItem("Mopekapro_BatteryLevel").postUpdate(`${Math.round(batteryPercent)} %`);
     items.getItem("Mopekapro_Temperature").postUpdate(`${temperatureC} °C`);
     items.getItem("Mopekapro_RawLevel").postUpdate(rawLevel);
     items.getItem("Mopekapro_Quality").postUpdate(quality);
