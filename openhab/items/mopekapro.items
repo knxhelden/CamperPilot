@@ -7,8 +7,8 @@ Number:Dimensionless Mopekapro_BatteryLevel "Batteriestand [%.0f %unit%]" <batte
 Number:Temperature Mopekapro_Temperature "Sensortemperatur [%.0f %unit%]" <temperature> (Mopekapro) ["Measurement", "Temperature"]
 Number Mopekapro_RawLevel "Rohfüllstand [%d]" (Mopekapro)
 Number Mopekapro_Quality "Messqualität [%d/3]" <qualityofservice> (Mopekapro) ["Measurement", "QualityOfService"]
-Number:Length Mopekapro_FluidHeight "Flüssigkeitshöhe [%.0f %unit%]" (Mopekapro) ["Measurement", "Level"] { unit="mm" }
+Number:Length Mopekapro_FluidHeight "Flüssigkeitshöhe [%.0f mm]" (Mopekapro) ["Measurement", "Level"] { unit="mm" }
 Number:Dimensionless Mopekapro_Level "Füllstand [%.0f %unit%]" <cistern> (Mopekapro) ["Measurement", "Level"] { unit="%" }
 
-Number:Length Mopekapro_TankUsableHeight "Nutzbare Flaschenhöhe [%.0f %unit%]" (Mopekapro) { unit="mm" }
+Number:Length Mopekapro_TankUsableHeight "Nutzbare Flaschenhöhe [%.0f mm]" (Mopekapro) { unit="mm" }
 String Mopekapro_SensorId "Sensor-ID [%s]" (Mopekapro)
