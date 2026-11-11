@@ -37,6 +37,11 @@ Each Node runs its own firmware and handles its inputs and outputs locally.
 
 ## Node Hardware
 
+| Component | Function |
+| --------- | -------- |
+| EBYTE E73-2G4M54LP(15) | Candidate module with Nordic nRF54L15 microcontroller and integrated PCB antenna |
+| TI LMR36503-Q1 | Buck-Regler |
+
 - Preferred microcontroller: Nordic nRF54L15.
 - Candidate PCB module: EBYTE E73-2G4M54LP(15) with integrated antenna.
 - Programming/debugging through SWD (Serial Wire Debug).
