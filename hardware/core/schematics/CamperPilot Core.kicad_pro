@@ -378,6 +378,18 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Bauteil",
+          "name": "Bauteil",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -428,7 +440,7 @@
         "uuid": "61c43c18-720a-4ca1-821c-7025a697bbcb"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U1",
     "variants": []
   },
   "sheets": [

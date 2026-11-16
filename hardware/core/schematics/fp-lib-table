@@ -1,0 +1,4 @@
+(fp_lib_table
+ (version 7)
+ (lib (name "CamperPilot") (type "KiCad") (uri "${KIPRJMOD}/../../lib/CamperPilot.pretty") (options "") (descr "CamperPilot project footprints"))
+)
