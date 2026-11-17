@@ -8,7 +8,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "0.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -440,13 +440,17 @@
         "uuid": "61c43c18-720a-4ca1-821c-7025a697bbcb"
       }
     ],
-    "used_designators": "U1",
+    "used_designators": "IC1,#PWR18-25,C15-17",
     "variants": []
   },
   "sheets": [
     [
       "61c43c18-720a-4ca1-821c-7025a697bbcb",
       "Stammblatt"
+    ],
+    [
+      "82a90dd1-49ca-417e-aa9d-14fe07869b9c",
+      "Peripherie"
     ]
   ],
   "text_variables": {},
