@@ -2469,7 +2469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 23.8252 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -2480,7 +2480,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.de/datasheet/3/76/2/GRM21BR71H104KA01_01.pdf"
 			(at 22.86 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -2492,6 +2492,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 22.86 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bauteil" "Murata GRM21BR71H104KA01L"
 			(at 22.86 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -2598,7 +2609,6 @@
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 69.85 166.37 0)
-		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2608,7 +2618,7 @@
 		(dnp no)
 		(uuid "94405d11-f895-4f6a-9198-8d6fef0f9551")
 		(property "Reference" "J3"
-			(at 72.39 167.6401 0)
+			(at 72.39 165.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2619,7 +2629,7 @@
 			)
 		)
 		(property "Value" "AM2301"
-			(at 72.39 165.1001 0)
+			(at 72.39 167.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2629,7 +2639,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_3-G-5,08_1x03_P5.08mm_Horizontal"
 			(at 69.85 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -2640,7 +2650,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.de/datasheet/3/507/9/phoenix_contact_1757255_en.pdf"
 			(at 69.85 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -2652,6 +2662,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 69.85 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bauteil" "Phoenix Contact 1757255"
 			(at 69.85 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -2867,7 +2888,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 45.72 168.148 90)
 			(hide yes)
 			(show_name no)
@@ -2878,7 +2899,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*g4u90j*_gcl_aw*R0NMLjE3OTQ4NTg1MjQuQ2owS0NRaUE4T3JYQmhERUFSSXNBRUN0bHg0UHFKM1ZmNUY0bEJrZkVjTXdxWTNlNGp6V1hWZ2plNFVZMVhOSzdwUGJvX1RyRDNhTUtXRWFBaFBTRUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTQ5OTMyNjQkbzEyJGcxJHQxNzk0OTkzNDAyJGoyNiRsMCRoMA.."
 			(at 45.72 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -2891,6 +2912,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 45.72 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bauteil" "Yageo RC0805FR-07220RL"
+			(at 45.72 166.37 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2948,7 +2980,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 51.562 157.48 90)
 			(hide yes)
 			(show_name no)
@@ -2959,7 +2991,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*1dwe9y*_gcl_aw*R0NMLjE3OTQ4NTg1MjQuQ2owS0NRaUE4T3JYQmhERUFSSXNBRUN0bHg0UHFKM1ZmNUY0bEJrZkVjTXdxWTNlNGp6V1hWZ2plNFVZMVhOSzdwUGJvX1RyRDNhTUtXRWFBaFBTRUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTQ5OTMyNjQkbzEyJGcxJHQxNzk0OTkzMjY5JGo1NSRsMCRoMA.."
 			(at 53.34 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -2971,6 +3003,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bauteil" "Yageo RC0805FR-074K7L"
 			(at 53.34 157.48 0)
 			(hide yes)
 			(show_name no)
