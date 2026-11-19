@@ -2402,6 +2402,158 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -3222,6 +3374,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+12V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -3769,7 +4060,7 @@
 	)
 	(rectangle
 		(start 172.72 22.86)
-		(end 278.13 133.35)
+		(end 280.67 149.86)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3792,7 +4083,7 @@
 	)
 	(text "Power Input Protection & EMI Filter"
 		(exclude_from_sim no)
-		(at 34.544 31.75 0)
+		(at 34.544 28.194 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3847,7 +4138,7 @@
 		(uuid "013e2ea1-da6d-4d98-9e3a-ceb0e121bf13")
 	)
 	(junction
-		(at 111.76 35.56)
+		(at 127 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "01aa2413-f8aa-4fae-b75b-613fafc503dc")
@@ -3859,7 +4150,7 @@
 		(uuid "06735b74-d62e-4f9e-84af-1957507638ba")
 	)
 	(junction
-		(at 31.75 52.07)
+		(at 46.99 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1a401f7e-85d2-4710-9c0d-404d868737e8")
@@ -3877,10 +4168,16 @@
 		(uuid "2353e987-a2b7-4f8f-8eca-0c5205db13c3")
 	)
 	(junction
-		(at 82.55 45.72)
+		(at 97.79 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25bdab2f-bcf4-484a-821f-6b7cf6b7243d")
+	)
+	(junction
+		(at 259.08 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3980866d-372c-4e46-b834-55dd4bf35bfa")
 	)
 	(junction
 		(at 66.04 109.22)
@@ -3895,7 +4192,7 @@
 		(uuid "4eb4f476-04f1-4c38-a57a-4cbabfee4d39")
 	)
 	(junction
-		(at 67.31 52.07)
+		(at 82.55 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f16bcee-c3d6-4b74-b398-afe155443777")
@@ -3907,7 +4204,7 @@
 		(uuid "83ae4d71-0120-48c6-925e-085e00ebd826")
 	)
 	(junction
-		(at 82.55 55.88)
+		(at 97.79 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8684a6e7-7597-437e-9b87-91c301a4bb89")
@@ -3931,7 +4228,7 @@
 		(uuid "8f8e6810-00da-40b9-b84d-9b80d28bac38")
 	)
 	(junction
-		(at 31.75 39.37)
+		(at 46.99 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "946a41ee-1d90-4e44-b89d-a77b52580d03")
@@ -3955,7 +4252,7 @@
 		(uuid "9e28bd47-c4f6-4ee1-9185-3b75ada5f8fa")
 	)
 	(junction
-		(at 111.76 33.02)
+		(at 127 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac98b03f-61ac-4e64-bcf3-a52d2eae74b4")
@@ -3973,7 +4270,7 @@
 		(uuid "c1116d16-e201-4048-a011-2ddc9abbce6c")
 	)
 	(junction
-		(at 67.31 39.37)
+		(at 82.55 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c7bd1eb7-06f7-4ae8-8846-7093f04505b8")
@@ -3985,7 +4282,7 @@
 		(uuid "cffba9db-d0bf-4a1f-9042-751fb474abef")
 	)
 	(junction
-		(at 92.71 35.56)
+		(at 107.95 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d43aab26-a29d-4a50-b834-e15d1093cbf2")
@@ -4015,108 +4312,64 @@
 		(uuid "fa321917-b667-474b-bc3d-2f4553a012f4")
 	)
 	(no_connect
-		(at 177.8 77.47)
-		(uuid "1fd54014-4932-49f6-8b80-4b943152da37")
-	)
-	(no_connect
-		(at 243.84 72.39)
+		(at 252.73 76.2)
 		(uuid "2682f6df-ffe1-4109-8ee5-aac527cf1728")
 	)
 	(no_connect
-		(at 177.8 46.99)
-		(uuid "3f39d593-5c2d-43a8-b250-0e5f32b87acf")
-	)
-	(no_connect
-		(at 177.8 74.93)
-		(uuid "3f65b995-8d9b-4039-a10f-7d2715aa6478")
-	)
-	(no_connect
-		(at 243.84 77.47)
+		(at 252.73 81.28)
 		(uuid "55b75dd1-8c54-4c95-a972-d3ab4da2b99d")
 	)
 	(no_connect
-		(at 177.8 64.77)
+		(at 186.69 68.58)
 		(uuid "562b8ffd-9c65-4523-9bfe-bc81266d881e")
 	)
 	(no_connect
-		(at 177.8 82.55)
-		(uuid "5d56b599-687f-4c81-ab60-af9f2f0dd339")
-	)
-	(no_connect
-		(at 177.8 39.37)
-		(uuid "62f92a6d-83f8-4cbd-92c2-9d15fd234eb8")
-	)
-	(no_connect
-		(at 177.8 52.07)
-		(uuid "66c9fdc1-4683-4c98-806a-0cb1206d0f5c")
-	)
-	(no_connect
-		(at 177.8 69.85)
-		(uuid "702818fa-6806-4122-9279-4d5e6a81a9c1")
-	)
-	(no_connect
-		(at 243.84 69.85)
+		(at 252.73 73.66)
 		(uuid "84f79c23-1f6d-4c8f-9c5d-a1472c891bed")
 	)
 	(no_connect
-		(at 177.8 62.23)
+		(at 186.69 66.04)
 		(uuid "858390b7-b66f-43c7-9e72-c66ddc7c0858")
 	)
 	(no_connect
-		(at 243.84 64.77)
+		(at 252.73 68.58)
 		(uuid "8f6a237a-8620-4a84-95fc-b30265922853")
 	)
 	(no_connect
-		(at 243.84 74.93)
+		(at 252.73 78.74)
 		(uuid "90c627db-b952-46a1-906c-44d4899b48d8")
 	)
 	(no_connect
-		(at 243.84 46.99)
+		(at 252.73 50.8)
 		(uuid "9c13ef0e-64d8-43f6-911f-7338ac595789")
 	)
 	(no_connect
-		(at 177.8 54.61)
-		(uuid "a6697e94-3e47-4a6f-9a8b-cf88f237f6dd")
-	)
-	(no_connect
-		(at 243.84 44.45)
+		(at 252.73 48.26)
 		(uuid "bd58a7f2-d8fa-4dd9-a5cd-5235d7ff5163")
 	)
 	(no_connect
-		(at 177.8 44.45)
+		(at 186.69 48.26)
 		(uuid "c2f38b3a-e36a-4e2f-ba42-1391ae6ba61c")
 	)
 	(no_connect
-		(at 177.8 72.39)
-		(uuid "c3521fe1-6298-4c0d-8fc8-f4dc426366e3")
-	)
-	(no_connect
-		(at 177.8 59.69)
+		(at 186.69 63.5)
 		(uuid "d271a751-72c8-4946-9872-cbb14ca87b8d")
 	)
 	(no_connect
-		(at 243.84 59.69)
+		(at 252.73 63.5)
 		(uuid "d5df685b-8f50-43b3-aac4-2bbb5b7c21a8")
 	)
 	(no_connect
-		(at 177.8 80.01)
-		(uuid "ee6cd158-e5cb-4671-b84f-70af95fbae25")
-	)
-	(no_connect
-		(at 177.8 57.15)
+		(at 186.69 60.96)
 		(uuid "f19a6532-48fc-42ff-a9a6-07f7958c80b8")
 	)
 	(no_connect
-		(at 243.84 62.23)
+		(at 252.73 66.04)
 		(uuid "f1e04f3a-0bb7-4288-9d2e-b693ce571b1b")
 	)
 	(no_connect
-		(at 243.84 80.01)
+		(at 252.73 83.82)
 		(uuid "f3c8131f-b47e-446e-a9c9-5622b88fcef4")
-	)
-	(no_connect
-		(at 177.8 36.83)
-		(uuid "f4d7f446-c506-4097-a1dc-f55f2469d1eb")
 	)
 	(wire
 		(pts
@@ -4140,6 +4393,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 46.99) (xy 40.64 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07e8d2cb-4a9f-4829-9465-ba9df382e796")
+	)
+	(wire
+		(pts
 			(xy 124.46 99.06) (xy 124.46 101.6)
 		)
 		(stroke
@@ -4150,7 +4413,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 35.56) (xy 77.47 35.56)
+			(xy 82.55 38.1) (xy 92.71 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4160,7 +4423,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 39.37) (xy 67.31 39.37)
+			(xy 80.01 41.91) (xy 82.55 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4170,27 +4433,17 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 54.61) (xy 267.97 54.61)
+			(xy 46.99 54.61) (xy 46.99 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0c9680cf-089e-4b89-b68b-9e1776538577")
+		(uuid "0d86a84e-6e8f-4202-803d-60746adcddf9")
 	)
 	(wire
 		(pts
-			(xy 270.51 52.07) (xy 270.51 107.6202)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cbd190e-be88-4ae3-bd63-99ba425fcefd")
-	)
-	(wire
-		(pts
-			(xy 111.76 35.56) (xy 111.76 33.02)
+			(xy 127 38.1) (xy 127 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4200,7 +4453,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 39.37) (xy 243.84 39.37)
+			(xy 261.62 43.18) (xy 252.73 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4230,7 +4483,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 43.18) (xy 49.53 43.18)
+			(xy 63.5 45.72) (xy 64.77 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4240,7 +4493,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 44.45) (xy 30.48 39.37)
+			(xy 40.64 46.99) (xy 45.72 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4260,6 +4513,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 58.42) (xy 261.62 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cf84a8d-6a4b-4edc-98bd-223243021d3d")
+	)
+	(wire
+		(pts
 			(xy 91.44 87.63) (xy 91.44 88.9)
 		)
 		(stroke
@@ -4270,13 +4533,23 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 33.02) (xy 113.03 33.02)
+			(xy 127 35.56) (xy 128.27 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "22311fa3-8541-434f-99fb-9a2d57a6e2a5")
+	)
+	(wire
+		(pts
+			(xy 195.58 114.3) (xy 207.01 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "229c3107-c01a-4536-ae57-b179e4af2b6d")
 	)
 	(wire
 		(pts
@@ -4310,7 +4583,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 36.83) (xy 92.71 35.56)
+			(xy 107.95 39.37) (xy 107.95 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4340,7 +4613,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 43.18) (xy 64.77 39.37)
+			(xy 76.2 45.72) (xy 80.01 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4370,7 +4643,17 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 35.56) (xy 67.31 39.37)
+			(xy 270.51 130.81) (xy 275.59 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e603ffe-8bdc-42f9-9926-38645ce2cf62")
+	)
+	(wire
+		(pts
+			(xy 82.55 38.1) (xy 82.55 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4387,6 +4670,16 @@
 			(type default)
 		)
 		(uuid "33c62ae2-8d5d-454b-964e-94a408828d31")
+	)
+	(wire
+		(pts
+			(xy 175.26 43.18) (xy 186.69 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34bb21c6-1023-42c0-b8ac-799adece22a8")
 	)
 	(wire
 		(pts
@@ -4410,7 +4703,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 39.37) (xy 31.75 39.37)
+			(xy 45.72 41.91) (xy 46.99 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4440,13 +4733,23 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 54.61) (xy 82.55 55.88)
+			(xy 97.79 57.15) (xy 97.79 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3c2c481b-59b1-4848-8c50-cd8ac323382f")
+	)
+	(wire
+		(pts
+			(xy 175.26 58.42) (xy 186.69 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e2b23b0-3917-4a1d-9d4e-9d52821149ae")
 	)
 	(wire
 		(pts
@@ -4460,7 +4763,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 52.07) (xy 48.26 48.26)
+			(xy 59.69 54.61) (xy 63.5 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4470,7 +4773,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 35.56) (xy 87.63 35.56)
+			(xy 107.95 38.1) (xy 102.87 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4480,7 +4783,27 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 52.07) (xy 67.31 55.88)
+			(xy 259.08 130.81) (xy 262.89 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46510321-256a-4d68-adc1-41e799f2ed5e")
+	)
+	(wire
+		(pts
+			(xy 175.26 40.64) (xy 186.69 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46b432c9-b180-48d9-b5a8-d7ea7260f8f9")
+	)
+	(wire
+		(pts
+			(xy 82.55 54.61) (xy 82.55 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4500,17 +4823,17 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 44.45) (xy 25.4 44.45)
+			(xy 219.71 132.08) (xy 229.87 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d89b422-54f6-4ac5-8662-1d27e17bcf38")
+		(uuid "4a30aefe-9ab5-4ac2-b1a4-7d24bb84f44d")
 	)
 	(wire
 		(pts
-			(xy 64.77 52.07) (xy 67.31 52.07)
+			(xy 80.01 54.61) (xy 82.55 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4520,7 +4843,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 55.88) (xy 82.55 58.42)
+			(xy 195.58 110.49) (xy 207.01 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "538c770d-8ce6-4ed6-a1af-6ffee406f14d")
+	)
+	(wire
+		(pts
+			(xy 97.79 58.42) (xy 97.79 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4530,7 +4863,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 52.07) (xy 30.48 52.07)
+			(xy 46.99 54.61) (xy 45.72 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4580,6 +4913,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 115.57) (xy 269.24 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d2dd00c-0bac-4494-91cc-a4d305caf1a8")
+	)
+	(wire
+		(pts
 			(xy 52.07 81.28) (xy 55.88 81.28)
 		)
 		(stroke
@@ -4620,7 +4963,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 48.26) (xy 60.96 48.26)
+			(xy 74.93 50.8) (xy 76.2 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4630,7 +4973,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 36.83) (xy 246.38 31.75)
+			(xy 255.27 40.64) (xy 255.27 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4647,6 +4990,16 @@
 			(type default)
 		)
 		(uuid "64c38517-c0ee-4a73-a546-5cdd52063a10")
+	)
+	(wire
+		(pts
+			(xy 256.54 123.19) (xy 259.08 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65bb61d2-814f-4f69-b71d-689075e29f92")
 	)
 	(wire
 		(pts
@@ -4680,7 +5033,17 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 39.37) (xy 48.26 43.18)
+			(xy 175.26 78.74) (xy 186.69 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68ce7ef9-1842-412c-b712-9bb2ad191769")
+	)
+	(wire
+		(pts
+			(xy 59.69 41.91) (xy 63.5 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4700,7 +5063,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 52.07) (xy 270.51 52.07)
+			(xy 252.73 55.88) (xy 261.62 55.88)
 		)
 		(stroke
 			(width 0)
@@ -4720,7 +5083,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 46.99) (xy 30.48 52.07)
+			(xy 40.64 49.53) (xy 45.72 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4750,7 +5113,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 36.83) (xy 243.84 36.83)
+			(xy 255.27 40.64) (xy 252.73 40.64)
 		)
 		(stroke
 			(width 0)
@@ -4760,7 +5123,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 46.99) (xy 25.4 46.99)
+			(xy 26.67 49.53) (xy 40.64 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4790,7 +5153,17 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 55.88) (xy 82.55 55.88)
+			(xy 26.67 46.99) (xy 29.21 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81da7712-edc8-4bbc-bcd9-1d4c02c4bbac")
+	)
+	(wire
+		(pts
+			(xy 82.55 58.42) (xy 97.79 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4830,7 +5203,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 48.26) (xy 49.53 48.26)
+			(xy 63.5 50.8) (xy 64.77 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4840,7 +5213,27 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 87.63) (xy 210.82 91.44)
+			(xy 175.26 81.28) (xy 186.69 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "860e99ed-0280-4867-aa00-20ad1a0184a6")
+	)
+	(wire
+		(pts
+			(xy 259.08 123.19) (xy 259.08 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86dda4d1-b333-4822-a66e-028d8ba66131")
+	)
+	(wire
+		(pts
+			(xy 219.71 91.44) (xy 219.71 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4860,23 +5253,13 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 55.88) (xy 85.09 55.88)
+			(xy 97.79 58.42) (xy 100.33 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8abe652f-84ca-4386-9fe8-3d041808c965")
-	)
-	(wire
-		(pts
-			(xy 267.97 54.61) (xy 267.97 107.6202)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8aeca4c6-3d34-4b62-a525-da8c1d5e16cb")
 	)
 	(wire
 		(pts
@@ -4930,6 +5313,36 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 111.76) (xy 229.87 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9baad3a2-18d9-46c5-bdfc-240fa0ca9e83")
+	)
+	(wire
+		(pts
+			(xy 175.26 83.82) (xy 186.69 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c8bcfec-a49a-43d9-8d2c-fe6c6187ba7c")
+	)
+	(wire
+		(pts
+			(xy 46.99 38.1) (xy 46.99 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a05bdae3-4675-4283-a5a1-82e958fac54d")
+	)
+	(wire
+		(pts
 			(xy 111.76 88.9) (xy 111.76 91.44)
 		)
 		(stroke
@@ -4937,6 +5350,16 @@
 			(type default)
 		)
 		(uuid "a2480396-674e-4242-8124-2b78f50dcd7e")
+	)
+	(wire
+		(pts
+			(xy 256.54 119.38) (xy 269.24 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2801c16-2727-479e-9e8c-39719a131b87")
 	)
 	(wire
 		(pts
@@ -4950,7 +5373,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 39.37) (xy 44.45 39.37)
+			(xy 46.99 41.91) (xy 59.69 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4970,6 +5393,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 111.76) (xy 269.24 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ace55fc7-fef2-4669-9da5-f3e867273560")
+	)
+	(wire
+		(pts
 			(xy 163.83 99.06) (xy 163.83 104.14)
 		)
 		(stroke
@@ -4980,7 +5413,27 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 39.37) (xy 252.73 31.75)
+			(xy 175.26 73.66) (xy 186.69 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae40e69d-8243-41ba-95f9-471db65c8ac5")
+	)
+	(wire
+		(pts
+			(xy 175.26 76.2) (xy 186.69 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7293cea-34b7-43fb-81bd-69f36c0edb53")
+	)
+	(wire
+		(pts
+			(xy 261.62 43.18) (xy 261.62 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5000,7 +5453,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 44.45) (xy 92.71 45.72)
+			(xy 107.95 46.99) (xy 107.95 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5030,7 +5483,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 45.72) (xy 92.71 45.72)
+			(xy 97.79 48.26) (xy 107.95 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5070,7 +5523,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 46.99) (xy 82.55 45.72)
+			(xy 175.26 86.36) (xy 186.69 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4ca7104-8f84-497d-b16a-49406ef83187")
+	)
+	(wire
+		(pts
+			(xy 97.79 49.53) (xy 97.79 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5090,7 +5553,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 41.91) (xy 31.75 39.37)
+			(xy 46.99 44.45) (xy 46.99 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5100,7 +5563,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 49.53) (xy 111.76 52.07)
+			(xy 127 52.07) (xy 127 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5120,7 +5583,27 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 35.56) (xy 111.76 35.56)
+			(xy 218.44 137.16) (xy 229.87 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd587792-1315-4c21-ae16-5ff434278181")
+	)
+	(wire
+		(pts
+			(xy 219.71 115.57) (xy 229.87 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdf3a553-3e11-4aaf-a914-dde93927f8aa")
+	)
+	(wire
+		(pts
+			(xy 107.95 38.1) (xy 127 38.1)
 		)
 		(stroke
 			(width 0)
@@ -5130,7 +5613,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 49.53) (xy 67.31 52.07)
+			(xy 82.55 52.07) (xy 82.55 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5170,7 +5653,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 30.48) (xy 111.76 33.02)
+			(xy 127 33.02) (xy 127 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5180,7 +5663,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 52.07) (xy 44.45 52.07)
+			(xy 46.99 54.61) (xy 59.69 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5240,7 +5723,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 49.53) (xy 31.75 52.07)
+			(xy 46.99 52.07) (xy 46.99 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5270,13 +5753,43 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 43.18) (xy 60.96 43.18)
+			(xy 175.26 50.8) (xy 186.69 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7740db3-b757-4e21-b7c4-5e23e2770eca")
+	)
+	(wire
+		(pts
+			(xy 74.93 45.72) (xy 76.2 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e7ca35eb-60fd-4dc8-a68a-e9c3ad2158fb")
+	)
+	(wire
+		(pts
+			(xy 175.26 55.88) (xy 186.69 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb1289b8-99e0-4a24-96e6-f2db4158d2ea")
+	)
+	(wire
+		(pts
+			(xy 195.58 118.11) (xy 207.01 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec43ebb3-3022-47d5-9b57-5b65a85f339f")
 	)
 	(wire
 		(pts
@@ -5287,6 +5800,16 @@
 			(type default)
 		)
 		(uuid "ee79a1d8-5333-44d4-8578-f607f733143f")
+	)
+	(wire
+		(pts
+			(xy 275.59 130.81) (xy 275.59 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f16ca330-c5ec-4119-bc7f-f04989fa2f15")
 	)
 	(wire
 		(pts
@@ -5310,7 +5833,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 43.18) (xy 82.55 45.72)
+			(xy 259.08 123.19) (xy 269.24 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5d0ef33-c722-45a4-8fc3-22a807899e12")
+	)
+	(wire
+		(pts
+			(xy 97.79 45.72) (xy 97.79 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5320,13 +5853,23 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 35.56) (xy 111.76 41.91)
+			(xy 127 38.1) (xy 127 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f944d059-00ab-493a-8833-1bdb85da157c")
+	)
+	(wire
+		(pts
+			(xy 195.58 121.92) (xy 207.01 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9947856-6d23-4076-812e-64b078434b5a")
 	)
 	(wire
 		(pts
@@ -5340,7 +5883,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 48.26) (xy 64.77 52.07)
+			(xy 76.2 50.8) (xy 80.01 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5350,7 +5893,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 39.37) (xy 67.31 41.91)
+			(xy 82.55 41.91) (xy 82.55 44.45)
 		)
 		(stroke
 			(width 0)
@@ -5358,8 +5901,248 @@
 		)
 		(uuid "fd015d14-0d12-4991-abae-aa2233ad414d")
 	)
+	(label "GPIO17"
+		(at 207.01 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "045b320b-f438-4ef6-a686-1b31954c319b")
+	)
+	(label "GPIO16"
+		(at 269.24 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "065b3fdc-debe-4655-a272-b82540ea5362")
+	)
+	(label "GPIO24"
+		(at 175.26 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0aba3d2e-0de9-4ebb-84a8-1a4ff9d871c5")
+	)
+	(label "SDA"
+		(at 219.71 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10b69732-acce-4bd3-8b2b-99938ca08058")
+	)
+	(label "GPIO12"
+		(at 175.26 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c0e8169-de5f-40b2-a145-01ba3dab3be1")
+	)
+	(label "GPIO27"
+		(at 175.26 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41ce2f11-4417-41ee-a978-b060ff682a83")
+	)
+	(label "SCL"
+		(at 219.71 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4595b7e8-328d-4f4e-a661-2a4d7a42cd66")
+	)
+	(label "GPIO12"
+		(at 269.24 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "60143bed-ad09-4afa-ae8d-5d463edfb766")
+	)
+	(label "SDA"
+		(at 261.62 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64c6b188-0853-4ffd-9a4f-64d547e1ef0a")
+	)
+	(label "GPIO27"
+		(at 219.71 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7018c24a-bb10-4f9a-91d3-47274873effb")
+	)
+	(label "GPIO22"
+		(at 207.01 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "745d952b-ac2d-4ecc-9a8d-3e15bd022f81")
+	)
+	(label "GPIO13"
+		(at 175.26 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8170d74e-3863-4ca5-bd77-6239ef66d5ac")
+	)
+	(label "GPIO23"
+		(at 207.01 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "832a3c9f-2010-4e94-bbb2-6aefdae65704")
+	)
+	(label "GPIO24"
+		(at 207.01 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "83c430fb-a708-427f-82dc-ac7c9f12bcaa")
+	)
+	(label "GPIO22"
+		(at 175.26 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "921b818c-6864-4cbf-af0e-9b0d5b936eb0")
+	)
+	(label "GPIO23"
+		(at 175.26 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9888f24c-66af-4e48-960c-87b7d24ddf3f")
+	)
+	(label "GPIO15"
+		(at 175.26 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a6a17eeb-0802-4db0-94f3-3251befcb902")
+	)
+	(label "GPIO17"
+		(at 175.26 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa8e8010-27d6-430a-ba2d-cb978781ddba")
+	)
+	(label "GPIO26"
+		(at 175.26 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae07c1eb-29b4-42ea-9fe4-219061fcf4a4")
+	)
+	(label "GPIO26"
+		(at 218.44 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "afe204a2-35dd-44f0-b199-e0c54bd15b8e")
+	)
+	(label "GPIO25"
+		(at 175.26 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c78d3e69-0654-4605-97f1-35194d076192")
+	)
+	(label "GPIO16"
+		(at 175.26 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3cb4e96-ec42-4df0-b2aa-85c5fc143f00")
+	)
+	(label "GPIO13"
+		(at 269.24 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d562d554-6b98-4647-8172-ebb53c5c2fb0")
+	)
+	(label "SCL"
+		(at 261.62 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f55d1d38-9669-4b99-9a64-991ad1a43d70")
+	)
 	(label "IN+"
-		(at 71.12 35.56 180)
+		(at 86.36 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5368,9 +6151,19 @@
 		)
 		(uuid "f68055c9-9563-48d7-8fca-2af9c0205c12")
 	)
+	(label "GPIO15"
+		(at 269.24 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fe557635-c3e5-4a07-bb03-f5b432b27c0d")
+	)
 	(symbol
 		(lib_id "Device:D_Zener")
-		(at 31.75 45.72 270)
+		(at 46.99 48.26 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5380,8 +6173,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04d66966-46ac-4b3b-9270-69238f050da1")
-		(property "Reference" "D1"
-			(at 34.29 44.4499 90)
+		(property "Reference" "D102"
+			(at 49.53 46.9899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5392,7 +6185,7 @@
 			)
 		)
 		(property "Value" "CUHZ30V,H3F"
-			(at 34.29 46.9899 90)
+			(at 49.53 49.5299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5403,7 +6196,7 @@
 			)
 		)
 		(property "Footprint" "KNX_Helden:D_Toshiba_US2H_CUHZ30V"
-			(at 31.75 45.72 0)
+			(at 46.99 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5414,7 +6207,7 @@
 			)
 		)
 		(property "Datasheet" "https://toshiba.semicon-storage.com/info/CUHZ30V_datasheet_en_20210917.pdf?did=70664&prodName=CUHZ30V"
-			(at 31.75 45.72 0)
+			(at 46.99 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5425,7 +6218,7 @@
 			)
 		)
 		(property "Description" "Zener diode"
-			(at 31.75 45.72 0)
+			(at 46.99 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5435,8 +6228,19 @@
 				)
 			)
 		)
-		(property "Bauteil" "Toshiba CUHZ30V,H3F"
-			(at 31.75 45.72 90)
+		(property "Artikelnummer" "CUHZ30V,H3F"
+			(at 46.99 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Toshiba"
+			(at 46.99 48.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5455,7 +6259,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "D1")
+					(reference "D102")
 					(unit 1)
 				)
 			)
@@ -5463,7 +6267,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 19.05 44.45 0)
+		(at 21.59 46.99 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5473,8 +6277,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "08bbb42a-074c-41eb-8c56-eb4656809ed9")
-		(property "Reference" "J1"
-			(at 19.05 49.784 0)
+		(property "Reference" "J101"
+			(at 21.59 52.324 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5483,9 +6287,8 @@
 				)
 			)
 		)
-		(property "Value" "1757242"
-			(at 19.05 50.8 0)
-			(hide yes)
+		(property "Value" "Battery"
+			(at 21.59 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5495,7 +6298,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal"
-			(at 19.05 44.45 0)
+			(at 21.59 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5506,7 +6309,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-reichelt.de/documents/datenblatt/C100/MSTBA_2-G_5-08_DB-DE.pdf"
-			(at 19.05 44.45 0)
+			(at 21.59 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5517,7 +6320,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 19.05 44.45 0)
+			(at 21.59 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5527,8 +6330,19 @@
 				)
 			)
 		)
-		(property "Bauteil" "Phoenix Contact 1757242"
-			(at 19.05 44.45 0)
+		(property "Artikelnummer" "1757242"
+			(at 21.59 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Phoenix Contact"
+			(at 21.59 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5547,7 +6361,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "J1")
+					(reference "J101")
 					(unit 1)
 				)
 			)
@@ -5555,7 +6369,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Raspberry_Pi_4")
-		(at 210.82 59.69 0)
+		(at 219.71 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5565,8 +6379,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0eabc2f6-23f0-4f66-9fed-695f70bee67c")
-		(property "Reference" "J2"
-			(at 210.82 29.21 0)
+		(property "Reference" "J102"
+			(at 219.71 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5576,7 +6390,7 @@
 			)
 		)
 		(property "Value" "Raspberry Pi 4 Model B"
-			(at 210.82 31.75 0)
+			(at 219.71 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5586,7 +6400,7 @@
 			)
 		)
 		(property "Footprint" "KNX_Helden:Raspberry Pi 4"
-			(at 280.924 107.188 0)
+			(at 289.814 110.998 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5597,8 +6411,8 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-datasheet.pdf"
-			(at 226.568 91.948 0)
+		(property "Datasheet" "https://pip-assets.raspberrypi.com/categories/545-raspberry-pi-4-model-b/documents/RP-008344-DS-7-raspberry-pi-4-product-brief.pdf"
+			(at 235.458 95.758 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5610,7 +6424,7 @@
 			)
 		)
 		(property "Description" "Raspberry Pi 4 Model B"
-			(at 226.568 89.408 0)
+			(at 235.458 93.218 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5621,8 +6435,8 @@
 				(justify left)
 			)
 		)
-		(property "Bauteil" "Rasberrpy Pi 4 Model B"
-			(at 210.82 59.69 0)
+		(property "Artikelnummer" "Rasberry Pi 4 Model B"
+			(at 219.71 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5755,7 +6569,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "J2")
+					(reference "J102")
 					(unit 1)
 				)
 			)
@@ -5772,7 +6586,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1150f469-2a7c-4273-8b77-e8dea7acc196")
-		(property "Reference" "FB1"
+		(property "Reference" "FB101"
 			(at 160.274 75.692 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5783,7 +6597,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "MPZ1608S300ATAH0"
+		(property "Value" "MPZ2012S300AT000"
 			(at 160.274 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5827,7 +6641,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "TDK MPZ2012S300AT000"
+		(property "Artikelnummer" "MPZ2012S300AT000"
+			(at 163.83 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "TDK"
 			(at 163.83 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -5847,7 +6672,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "FB1")
+					(reference "FB101")
 					(unit 1)
 				)
 			)
@@ -5855,7 +6680,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_PMOS_GDS")
-		(at 82.55 38.1 90)
+		(at 97.79 40.64 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5865,8 +6690,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12d7baff-d3d3-49f2-b553-c94accec88b0")
-		(property "Reference" "Q1"
-			(at 82.55 29.21 90)
+		(property "Reference" "Q101"
+			(at 97.79 31.75 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5876,7 +6701,7 @@
 			)
 		)
 		(property "Value" "DMP4051LK3-13"
-			(at 82.55 31.75 90)
+			(at 97.79 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5886,7 +6711,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 80.01 33.02 0)
+			(at 95.25 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5897,7 +6722,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMP4051LK3.pdf"
-			(at 82.55 38.1 0)
+			(at 97.79 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5908,7 +6733,7 @@
 			)
 		)
 		(property "Description" "P-MOSFET transistor, gate/drain/source"
-			(at 82.55 38.1 0)
+			(at 97.79 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5918,8 +6743,19 @@
 				)
 			)
 		)
-		(property "Bauteil" "Diodes DMP4051LK3-13"
-			(at 82.55 38.1 90)
+		(property "Artikelnummer" "DMP4051LK3-13"
+			(at 97.79 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Diodes Incorporated"
+			(at 97.79 40.64 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5941,7 +6777,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "Q1")
+					(reference "Q101")
 					(unit 1)
 				)
 			)
@@ -5949,7 +6785,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 113.03 33.02 270)
+		(at 128.27 35.56 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5958,8 +6794,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "144bc473-539b-43e3-bf38-7a246b26da2b")
-		(property "Reference" "TP2"
-			(at 118.11 33.02 90)
+		(property "Reference" "TP101"
+			(at 133.35 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5970,7 +6806,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 118.11 34.2899 90)
+			(at 133.35 36.8299 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5982,7 +6818,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 113.03 38.1 0)
+			(at 128.27 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5993,7 +6829,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 38.1 0)
+			(at 128.27 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6004,7 +6840,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 113.03 33.02 0)
+			(at 128.27 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6020,7 +6856,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "TP2")
+					(reference "TP101")
 					(unit 1)
 				)
 			)
@@ -6028,7 +6864,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 82.55 58.42 0)
+		(at 97.79 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6038,8 +6874,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1af99df8-7382-4d17-8e8c-89d2fc5b4b34")
-		(property "Reference" "#PWR04"
-			(at 82.55 64.77 0)
+		(property "Reference" "#PWR0107"
+			(at 97.79 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6050,7 +6886,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 82.55 63.5 0)
+			(at 97.79 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6060,7 +6896,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 58.42 0)
+			(at 97.79 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6071,7 +6907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 58.42 0)
+			(at 97.79 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6082,7 +6918,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 58.42 0)
+			(at 97.79 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6098,7 +6934,87 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR04")
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 33.02 46.99 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2178a718-918d-4a1c-9321-e1d9a49ae941")
+		(property "Reference" "F101"
+			(at 33.02 40.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3A"
+			(at 33.02 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open"
+			(at 33.02 48.768 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 33.02 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76591ddf-4494-4b43-bc5c-e81216749fd5")
+		)
+		(pin "2"
+			(uuid "bfcbf82d-e88a-4f42-8d1d-4ba8a030c20c")
+		)
+		(instances
+			(project "CamperPilot Core"
+				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
+					(reference "F101")
 					(unit 1)
 				)
 			)
@@ -6106,7 +7022,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener")
-		(at 92.71 40.64 270)
+		(at 107.95 43.18 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6116,8 +7032,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "217ff1b2-e7c3-479f-b7a3-f25cdf22fa5c")
-		(property "Reference" "D2"
-			(at 95.25 39.3699 90)
+		(property "Reference" "D101"
+			(at 110.49 41.9099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6127,8 +7043,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BZT52-C12"
-			(at 95.25 41.9099 90)
+		(property "Value" "BZT52C12"
+			(at 110.49 44.4499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6139,7 +7055,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 92.71 40.64 0)
+			(at 107.95 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6150,7 +7066,7 @@
 			)
 		)
 		(property "Datasheet" "https://diotec.com/request/datasheet/bzt52c2v4.pdf"
-			(at 92.71 40.64 0)
+			(at 107.95 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6161,7 +7077,7 @@
 			)
 		)
 		(property "Description" "Zener diode"
-			(at 92.71 40.64 0)
+			(at 107.95 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6171,8 +7087,19 @@
 				)
 			)
 		)
-		(property "Bauteil" "Nexperia BZT52-C12"
-			(at 92.71 40.64 90)
+		(property "Artikelnummer" "BZT52C12"
+			(at 107.95 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Diotec Semiconductor"
+			(at 107.95 43.18 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6191,7 +7118,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "D2")
+					(reference "D101")
 					(unit 1)
 				)
 			)
@@ -6209,7 +7136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "235096de-632e-4977-a17a-cfbde65e01d2")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR0111"
 			(at 19.05 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -6269,7 +7196,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR08")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -6277,7 +7204,7 @@
 	)
 	(symbol
 		(lib_id "Device:Filter_EMI_CommonMode")
-		(at 54.61 45.72 0)
+		(at 69.85 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6286,8 +7213,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "28df9e43-0665-4024-9fee-e89f8a11a319")
-		(property "Reference" "FL1"
-			(at 54.356 40.894 0)
+		(property "Reference" "FL101"
+			(at 69.596 43.434 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6297,7 +7224,7 @@
 			)
 		)
 		(property "Value" "DLW5BTM501SQ2L"
-			(at 54.356 38.608 0)
+			(at 69.596 41.148 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6307,7 +7234,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_CommonModeChoke_Murata_DLW5BTMxxxSQ2x_5x5mm"
-			(at 54.61 44.704 0)
+			(at 69.85 47.244 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6318,7 +7245,7 @@
 			)
 		)
 		(property "Datasheet" "https://pim.murata.com/asset/pim4/commonModeChokeCoilCommonModeNoiseFilter/EFLC0020_PDF_COMMONMODECHOKECOILCOMMONMODENOISEFILTER?lastModifiedDatetime=20250707191135"
-			(at 54.61 44.704 0)
+			(at 69.85 47.244 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6329,7 +7256,7 @@
 			)
 		)
 		(property "Description" "EMI 2-inductor common mode filter"
-			(at 54.61 45.72 0)
+			(at 69.85 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6339,8 +7266,19 @@
 				)
 			)
 		)
-		(property "Bauteil" "Murata DLW5BTM501SQ2L"
-			(at 54.61 45.72 0)
+		(property "Artikelnummer" "DLW5BTM501SQ2L"
+			(at 69.85 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Murata Electronics"
+			(at 69.85 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6365,7 +7303,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "FL1")
+					(reference "FL101")
 					(unit 1)
 				)
 			)
@@ -6382,7 +7320,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2af98726-b5af-437f-9d88-c67a9b732428")
-		(property "Reference" "TP3"
+		(property "Reference" "TP103"
 			(at 157.226 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6442,7 +7380,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "TP3")
+					(reference "TP103")
 					(unit 1)
 				)
 			)
@@ -6460,7 +7398,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "341c0a89-fa08-4453-8194-ec9f418c1853")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR0109"
 			(at 19.05 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6520,7 +7458,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR07")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -6528,7 +7466,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 246.38 31.75 0)
+		(at 255.27 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6538,8 +7476,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34316d62-7a12-4961-91f2-6d6942e962b6")
-		(property "Reference" "#PWR02"
-			(at 246.38 35.56 0)
+		(property "Reference" "#PWR0102"
+			(at 255.27 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6550,7 +7488,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 246.38 26.67 0)
+			(at 255.27 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6560,7 +7498,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 31.75 0)
+			(at 255.27 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6571,7 +7509,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 31.75 0)
+			(at 255.27 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6582,7 +7520,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 246.38 31.75 0)
+			(at 255.27 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6598,7 +7536,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR02")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -6616,7 +7554,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3da95e5a-4518-42f5-b252-4e3de033b979")
-		(property "Reference" "C10"
+		(property "Reference" "C107"
 			(at 115.57 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6680,7 +7618,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C10")
+					(reference "C107")
 					(unit 1)
 				)
 			)
@@ -6698,7 +7636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56456768-e356-4355-a9ed-767d8d53cf76")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR0113"
 			(at 50.8 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6758,7 +7696,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR09")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -6776,7 +7714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5966536e-4170-45ed-a877-8c8d2676ac01")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR0118"
 			(at 46.99 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6836,7 +7774,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR014")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -6854,7 +7792,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "751da1f4-2952-443f-8c84-f6c5c3daa577")
-		(property "Reference" "C8"
+		(property "Reference" "C113"
 			(at 88.9 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6909,7 +7847,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "KEMET C0805C272J5GACTU"
+		(property "Artikelnummer" "C0805C272J5GACTU"
+			(at 85.09 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "KEMET"
 			(at 85.09 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6929,7 +7878,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C8")
+					(reference "C113")
 					(unit 1)
 				)
 			)
@@ -6947,7 +7896,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "771a1b0a-a7b2-42f7-89c3-ee9dc5666483")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR0112"
 			(at 163.83 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7007,7 +7956,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR012")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -7015,7 +7964,7 @@
 	)
 	(symbol
 		(lib_id "power:VPP")
-		(at 111.76 30.48 0)
+		(at 127 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7025,8 +7974,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "794000fc-b15c-4387-ad02-2e29b9e8cc02")
-		(property "Reference" "#PWR05"
-			(at 111.76 34.29 0)
+		(property "Reference" "#PWR0101"
+			(at 127 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7037,7 +7986,7 @@
 			)
 		)
 		(property "Value" "VPP"
-			(at 111.76 25.4 0)
+			(at 127 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7047,7 +7996,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 30.48 0)
+			(at 127 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7058,7 +8007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 30.48 0)
+			(at 127 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7069,7 +8018,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 111.76 30.48 0)
+			(at 127 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7085,7 +8034,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR05")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -7103,7 +8052,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79de7374-be7c-49da-b906-e21db04c7011")
-		(property "Reference" "R3"
+		(property "Reference" "R102"
 			(at 127 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7158,7 +8107,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Vishay CRCW080552K3FKEA"
+		(property "Artikelnummer" "CRCW080552K3FKEA"
+			(at 124.46 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Vishay"
 			(at 124.46 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -7178,7 +8138,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "R3")
+					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -7195,8 +8155,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7b1347f4-8cee-4f4c-8848-76a368d3626e")
-		(property "Reference" "C6"
-			(at 47.752 98.044 0)
+		(property "Reference" "C111"
+			(at 51.308 98.044 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7250,7 +8210,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "KEMET C0805C103K5RACTU"
+		(property "Artikelnummer" "C0805C103K5RACTU"
+			(at 50.8 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "KEMET"
 			(at 50.8 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7270,7 +8241,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C6")
+					(reference "C111")
 					(unit 1)
 				)
 			)
@@ -7288,7 +8259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84906be5-63de-4c2e-bf99-eab3ef960a20")
-		(property "Reference" "R4"
+		(property "Reference" "R104"
 			(at 127 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7343,7 +8314,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Vishay CRCW080510K0FKEA"
+		(property "Artikelnummer" "RC0805FR-0710KL"
+			(at 124.46 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "YAGEO"
 			(at 124.46 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7363,7 +8345,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "R4")
+					(reference "R104")
 					(unit 1)
 				)
 			)
@@ -7371,7 +8353,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 82.55 50.8 0)
+		(at 97.79 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7381,8 +8363,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "887db5fe-962c-4856-8be1-b2b9a2dee073")
-		(property "Reference" "R1"
-			(at 85.09 49.5299 0)
+		(property "Reference" "R101"
+			(at 100.33 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7393,7 +8375,7 @@
 			)
 		)
 		(property "Value" "2,2kΩ"
-			(at 85.09 52.0699 0)
+			(at 100.33 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7404,7 +8386,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 80.772 50.8 90)
+			(at 96.012 53.34 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7415,7 +8397,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 82.55 50.8 0)
+			(at 97.79 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7426,7 +8408,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 82.55 50.8 0)
+			(at 97.79 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7436,8 +8418,19 @@
 				)
 			)
 		)
-		(property "Bauteil" "Vishay CRCW08052K20FKEA"
-			(at 82.55 50.8 0)
+		(property "Artikelnummer" "CRCW08052K20FKEA"
+			(at 97.79 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Vishay"
+			(at 97.79 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7456,7 +8449,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "R1")
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -7474,7 +8467,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88d174cd-528e-4378-a3de-3a562e4cfd07")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR0108"
 			(at 163.83 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -7534,7 +8527,85 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR013")
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 275.59 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d037386-0d4e-4fcd-8b6b-cc1485f070ef")
+		(property "Reference" "#PWR0115"
+			(at 275.59 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 275.59 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 275.59 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275.59 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 275.59 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "553e2f7f-6704-4c1d-a5ee-f6effd6f9cd4")
+		)
+		(instances
+			(project "CamperPilot Core"
+				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -7551,8 +8622,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8f2b7c65-6647-45f9-b6d0-6d13087ef7a7")
-		(property "Reference" "C3"
-			(at 15.494 85.344 0)
+		(property "Reference" "C104"
+			(at 19.558 85.344 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7606,7 +8677,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Murata GRM32ER71H106KA12L"
+		(property "Artikelnummer" "GRM32ER71H106KA12L"
+			(at 19.05 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Murata Electronics"
 			(at 19.05 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -7626,7 +8708,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C3")
+					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -7634,7 +8716,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 210.82 91.44 0)
+		(at 219.71 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7644,8 +8726,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94a2f83c-f2b9-4a8d-af9c-0d318fb563a7")
-		(property "Reference" "#PWR01"
-			(at 210.82 97.79 0)
+		(property "Reference" "#PWR0110"
+			(at 219.71 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7656,7 +8738,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 210.82 96.52 0)
+			(at 219.71 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7666,7 +8748,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 210.82 91.44 0)
+			(at 219.71 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7677,7 +8759,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 91.44 0)
+			(at 219.71 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7688,7 +8770,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 210.82 91.44 0)
+			(at 219.71 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7704,7 +8786,108 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR01")
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 266.7 130.81 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a83c8b22-4dba-4133-90e7-d7a213ffa85d")
+		(property "Reference" "R106"
+			(at 266.7 128.524 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 266.7 133.35 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 266.7 132.588 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*oga877*_gcl_aw*R0NMLjE3OTUwMTU5MzYuQ2owS0NRaUF0dlhYQmhDMkFSSXNBSmM4U1VRUmpranlCOVl4ZXN1WDRWYW52WjVEUUd6eHdvdWdtZlRDT0dSMHV5OWRJQ01wVWplS0E4OGFBcmQ3RUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1LjM2NjY4NDIxOC4xNzk0OTkzNzI5LjE3OTQ5OTM5MjIuNDAwMDkxNjY5LjE3OTQ5OTM3MjkuMTc5NDk5MzkyMg..*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTUwOTczNjEkbzE5JGcxJHQxNzk1MDk4NDE4JGo1OCRsMCRoMA.."
+			(at 266.7 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 266.7 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "YAGEO"
+			(at 266.7 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Artikelnummer" "RC0805FR-0710KL"
+			(at 266.7 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "857383b6-775d-4f3c-b569-dc67712639e3")
+		)
+		(pin "1"
+			(uuid "db0322a3-8bb4-4573-95f0-836ac4501156")
+		)
+		(instances
+			(project "CamperPilot Core"
+				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
+					(reference "R106")
 					(unit 1)
 				)
 			)
@@ -7721,7 +8904,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a8610025-6634-4ce2-90e3-4c606a082b54")
-		(property "Reference" "C11"
+		(property "Reference" "C108"
 			(at 139.192 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7776,7 +8959,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Murata GRM32ER71E226KE15L"
+		(property "Artikelnummer" "GRM32ER71E226KE15L"
+			(at 139.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Murata Electronics"
 			(at 139.7 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -7796,7 +8990,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C11")
+					(reference "C108")
 					(unit 1)
 				)
 			)
@@ -7814,7 +9008,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aced84ca-17c2-490a-9ac5-544fcea0a26a")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR0116"
 			(at 85.09 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -7874,7 +9068,85 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR011")
+					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 46.99 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad129fc9-9c03-428b-96a8-da76a3cec8a2")
+		(property "Reference" "#PWR0104"
+			(at 46.99 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+BAT"
+			(at 46.99 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 46.99 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "243ca46d-2361-4a2b-a0bc-3031d2910057")
+		)
+		(instances
+			(project "CamperPilot Core"
+				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -7882,7 +9154,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 67.31 45.72 0)
+		(at 82.55 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7891,8 +9163,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad142356-2606-43bc-9855-5a4a6b54ffbc")
-		(property "Reference" "C1"
-			(at 71.12 44.4499 0)
+		(property "Reference" "C101"
+			(at 85.598 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7903,7 +9175,7 @@
 			)
 		)
 		(property "Value" "10µF/50V"
-			(at 71.12 46.9899 0)
+			(at 85.598 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7914,7 +9186,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
-			(at 68.2752 49.53 0)
+			(at 83.5152 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7925,7 +9197,7 @@
 			)
 		)
 		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM32ER71J106MA12-04A-EN_PDF_CERAMICCAPACITORSMD?lastModifiedDatetime=20260730173653"
-			(at 67.31 45.72 0)
+			(at 82.55 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7936,7 +9208,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 67.31 45.72 0)
+			(at 82.55 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7946,8 +9218,19 @@
 				)
 			)
 		)
-		(property "Bauteil" "Murata GRM32ER71H106KA12L"
-			(at 67.31 45.72 0)
+		(property "Artikelnummer" "GRM32ER71H106KA12L"
+			(at 82.55 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Murata Electronics"
+			(at 82.55 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7966,7 +9249,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C1")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -7984,7 +9267,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b24a9760-4b79-445f-bd5c-1fcbda091e94")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR0117"
 			(at 20.32 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -8044,7 +9327,85 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR015")
+					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 46.99 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3c7599d-8ecb-4413-ab43-ee8703662d94")
+		(property "Reference" "#PWR0106"
+			(at 46.99 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-BAT"
+			(at 46.99 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 46.99 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1f186bac-962e-4cee-97d1-ec32ef8e3247")
+		)
+		(instances
+			(project "CamperPilot Core"
+				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -8062,7 +9423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b70ba02b-dd6e-49d0-8ea0-eb8d2e174e2a")
-		(property "Reference" "U1"
+		(property "Reference" "U101"
 			(at 68.58 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8115,7 +9476,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Diodes AP64501QSP-13"
+		(property "Artikelnummer" "AP64501QSP-13"
+			(at 68.58 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Diodes Incorporated"
 			(at 68.58 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -8156,7 +9528,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "U1")
+					(reference "U101")
 					(unit 1)
 				)
 			)
@@ -8173,7 +9545,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b8c2dd13-2002-4319-992f-d2300f3c8d52")
-		(property "Reference" "R5"
+		(property "Reference" "R105"
 			(at 27.94 128.27 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8235,7 +9607,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "R5")
+					(reference "R105")
 					(unit 1)
 				)
 			)
@@ -8252,7 +9624,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b8c3f59e-1a04-4b73-9b4f-4c86d0b7657b")
-		(property "Reference" "C13"
+		(property "Reference" "C110"
 			(at 163.322 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8307,7 +9679,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Murata GRM32ER71E226KE15L"
+		(property "Artikelnummer" "GRM32ER71E226KE15L"
+			(at 163.83 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Murata Electronics"
 			(at 163.83 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -8327,7 +9710,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C13")
+					(reference "C110")
 					(unit 1)
 				)
 			)
@@ -8335,7 +9718,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 85.09 55.88 270)
+		(at 100.33 58.42 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8344,8 +9727,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b9aad5f4-e22a-4716-92f5-af8a62ad4d63")
-		(property "Reference" "TP1"
-			(at 90.17 55.88 90)
+		(property "Reference" "TP102"
+			(at 105.41 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8356,7 +9739,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 90.17 57.1499 90)
+			(at 105.41 59.6899 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8368,7 +9751,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 85.09 60.96 0)
+			(at 100.33 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8379,7 +9762,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 60.96 0)
+			(at 100.33 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8390,7 +9773,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 85.09 55.88 0)
+			(at 100.33 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8406,7 +9789,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "TP1")
+					(reference "TP102")
 					(unit 1)
 				)
 			)
@@ -8424,7 +9807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9db9cb9-69aa-4012-b118-e4264c6d1001")
-		(property "Reference" "C9"
+		(property "Reference" "C112"
 			(at 101.6 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8479,7 +9862,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "KEMET C0805C330J5GACTU"
+		(property "Artikelnummer" "C0805C330J5GACTU"
+			(at 97.79 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "KEMET"
 			(at 97.79 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8499,7 +9893,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C9")
+					(reference "C112")
 					(unit 1)
 				)
 			)
@@ -8507,7 +9901,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 111.76 45.72 0)
+		(at 127 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8517,8 +9911,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbd38fb4-9847-4003-bce6-13da8819e379")
-		(property "Reference" "C2"
-			(at 115.57 43.5609 0)
+		(property "Reference" "C102"
+			(at 130.81 46.1009 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8529,7 +9923,7 @@
 			)
 		)
 		(property "Value" "100µF"
-			(at 115.57 46.1009 0)
+			(at 130.81 48.6409 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8540,7 +9934,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
-			(at 112.7252 49.53 0)
+			(at 127.9652 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8551,7 +9945,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf"
-			(at 111.76 45.72 0)
+			(at 127 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8562,7 +9956,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 111.76 45.72 0)
+			(at 127 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8572,8 +9966,19 @@
 				)
 			)
 		)
-		(property "Bauteil" "Panasonic EEU-FR1H101"
-			(at 111.76 45.72 0)
+		(property "Artikelnummer" "EEU-FR1H101"
+			(at 127 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Panasonic Industry"
+			(at 127 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8592,7 +9997,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C2")
+					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -8609,8 +10014,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dadf59b0-983b-4617-af23-df6fde3f5fe3")
-		(property "Reference" "C5"
-			(at 41.148 85.344 0)
+		(property "Reference" "C106"
+			(at 44.704 85.344 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8664,7 +10069,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Murata GRM21BR71H104KA01L"
+		(property "Artikelnummer" "GRM21BR71H104KA01L"
+			(at 44.45 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Murata Electronics"
 			(at 44.45 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8684,7 +10100,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C5")
+					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -8701,7 +10117,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dc63c73f-5de9-4712-bef7-f68a9d4df1dd")
-		(property "Reference" "D3"
+		(property "Reference" "D103"
 			(at 39.37 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8774,7 +10190,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "D3")
+					(reference "D103")
 					(unit 1)
 				)
 			)
@@ -8792,7 +10208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "deeb9129-3b4d-41e0-bd89-2c4d8051e81f")
-		(property "Reference" "C7"
+		(property "Reference" "C103"
 			(at 95.25 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8847,7 +10263,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Murata GRM21BR71H104KA01L"
+		(property "Artikelnummer" "GRM21BR71H104KA01L"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Murata Electronics"
 			(at 91.44 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -8867,7 +10294,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C7")
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -8875,7 +10302,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 111.76 52.07 0)
+		(at 127 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8885,8 +10312,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfe9d520-e005-411d-af00-dc00e6eee027")
-		(property "Reference" "#PWR06"
-			(at 111.76 58.42 0)
+		(property "Reference" "#PWR0105"
+			(at 127 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8897,7 +10324,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 57.15 0)
+			(at 127 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8907,7 +10334,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 52.07 0)
+			(at 127 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8918,7 +10345,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 52.07 0)
+			(at 127 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8929,7 +10356,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 52.07 0)
+			(at 127 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8945,7 +10372,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR06")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -8962,8 +10389,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7f89225-9f9b-405c-9e2c-f3484cf11a6e")
-		(property "Reference" "C4"
-			(at 28.702 85.344 0)
+		(property "Reference" "C105"
+			(at 32.004 85.344 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9017,7 +10444,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Murata GRM32ER71H106KA12L"
+		(property "Artikelnummer" "GRM32ER71H106KA12L"
+			(at 31.75 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Murata Electronics"
 			(at 31.75 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -9037,7 +10475,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C4")
+					(reference "C105")
 					(unit 1)
 				)
 			)
@@ -9054,7 +10492,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ead9a590-6a4b-4441-8b47-8be32c336339")
-		(property "Reference" "C12"
+		(property "Reference" "C109"
 			(at 151.892 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9109,7 +10547,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Murata GRM32ER71E226KE15L"
+		(property "Artikelnummer" "GRM32ER71E226KE15L"
+			(at 152.4 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Murata Electronics"
 			(at 152.4 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9129,7 +10578,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "C12")
+					(reference "C109")
 					(unit 1)
 				)
 			)
@@ -9147,7 +10596,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef9b6e11-fe5f-4e8c-b087-5057d928712b")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR0114"
 			(at 124.46 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -9207,7 +10656,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR010")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -9215,7 +10664,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 252.73 31.75 0)
+		(at 261.62 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9225,8 +10674,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2e5d369-64e0-4070-b0ab-866d37ae2626")
-		(property "Reference" "#PWR03"
-			(at 252.73 35.56 0)
+		(property "Reference" "#PWR0103"
+			(at 261.62 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9237,7 +10686,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 252.73 26.67 0)
+			(at 261.62 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9247,7 +10696,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 31.75 0)
+			(at 261.62 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9258,7 +10707,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 31.75 0)
+			(at 261.62 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9269,7 +10718,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 252.73 31.75 0)
+			(at 261.62 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9285,7 +10734,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "#PWR03")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -9303,7 +10752,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f32c6993-4305-48c4-8eb4-80ec56b67616")
-		(property "Reference" "L1"
+		(property "Reference" "L101"
 			(at 105.41 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9356,7 +10805,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Würth 74437368047"
+		(property "Artikelnummer" "74437368047"
+			(at 105.41 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Wurth Elektronik"
 			(at 105.41 88.9 90)
 			(hide yes)
 			(show_name no)
@@ -9376,7 +10836,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "L1")
+					(reference "L101")
 					(unit 1)
 				)
 			)
@@ -9394,7 +10854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8d22662-afae-48c9-a2ee-e57f560adaa2")
-		(property "Reference" "R2"
+		(property "Reference" "R103"
 			(at 87.63 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9449,7 +10909,18 @@
 				)
 			)
 		)
-		(property "Bauteil" "Vishay CRCW080515K8FKEA"
+		(property "Artikelnummer" "CRCW080515K8FKEA"
+			(at 85.09 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "Vishay"
 			(at 85.09 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -9469,15 +10940,101 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
-					(reference "R2")
+					(reference "R103")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 218.44 107.6202)
-		(size 55.88 21.59)
+		(at 177.8 107.95)
+		(size 17.78 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "392ba35d-7346-4dae-848d-9d265173d5bb")
+		(property "Sheetname" "Relais"
+			(at 177.8 107.2384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "relais.kicad_sch"
+			(at 177.8 128.8546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SIRENE" input
+			(at 195.58 110.49 0)
+			(uuid "a294b5b0-0e84-4f36-ba26-c1dd8c82ba0a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RELAY_1" input
+			(at 195.58 114.3 0)
+			(uuid "56f4a86b-4c16-493f-82a3-78f538d6a8b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RELAY_2" input
+			(at 195.58 118.11 0)
+			(uuid "b23d7b7a-6c10-4f52-9eaf-705d632bc822")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RELAY_3" input
+			(at 195.58 121.92 0)
+			(uuid "e5f328c2-bbc1-403d-8dd0-0ae58753cb1d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CamperPilot Core"
+				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 229.87 108.8902)
+		(size 26.67 32.0798)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -9492,7 +11049,7 @@
 		)
 		(uuid "82a90dd1-49ca-417e-aa9d-14fe07869b9c")
 		(property "Sheetname" "Peripherie"
-			(at 218.44 106.9086 0)
+			(at 229.87 108.1786 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9503,7 +11060,7 @@
 			)
 		)
 		(property "Sheetfile" "periphery.kicad_sch"
-			(at 218.44 129.7948 0)
+			(at 229.87 141.5546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9513,29 +11070,49 @@
 				(justify left top)
 			)
 		)
-		(pin "AM2301" input
-			(at 255.27 107.6202 90)
+		(pin "AM2301" bidirectional
+			(at 229.87 132.08 180)
 			(uuid "27a14439-d6d8-4015-a8cf-0f78f5ce86e5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(pin "SDA" input
-			(at 270.51 107.6202 90)
+		(pin "SDA" bidirectional
+			(at 229.87 111.76 180)
 			(uuid "6aceb936-29fe-48ae-8aab-531485ccd5c5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(pin "SCL" input
-			(at 267.97 107.6202 90)
+		(pin "SCL" bidirectional
+			(at 229.87 115.57 180)
 			(uuid "2eb376b9-3fe8-4e78-a54a-1ba81c79b404")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GYRO_INT" output
+			(at 229.87 137.16 180)
+			(uuid "423d7816-4673-421e-af1d-97f1e5d77178")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART5_RX" tri_state
+			(at 256.54 115.57 0)
+			(uuid "9f34efb3-dacc-410a-abd7-4c163e74d785")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9543,9 +11120,29 @@
 				(justify right)
 			)
 		)
-		(pin "INTERRUPT" input
-			(at 265.43 107.6202 90)
-			(uuid "effc6aab-ce27-4ce1-84b2-ba99cee26b0e")
+		(pin "UART5_TX" input
+			(at 256.54 111.76 0)
+			(uuid "ee5536d4-f386-4db9-a6de-ade66fe7d038")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART5_RTS" input
+			(at 256.54 119.38 0)
+			(uuid "bf699f2c-ecce-4fce-aaf1-92d118b9f2ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BUS_INT" output
+			(at 256.54 123.19 0)
+			(uuid "16f448cc-a286-430e-98ce-12f2d45fc1e3")
 			(effects
 				(font
 					(size 1.27 1.27)
