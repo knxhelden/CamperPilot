@@ -4603,7 +4603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "076576ab-5604-4e1a-975c-13a97792d8d0")
-		(property "Reference" "#PWR0207"
+		(property "Reference" "#PWR0209"
 			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -4663,7 +4663,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0207")
+					(reference "#PWR0209")
 					(unit 1)
 				)
 			)
@@ -4680,7 +4680,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0e7a8ed3-2275-483b-b70c-983514d67cd8")
-		(property "Reference" "#PWR0215"
+		(property "Reference" "#PWR0212"
 			(at 228.6 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4740,7 +4740,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0215")
+					(reference "#PWR0212")
 					(unit 1)
 				)
 			)
@@ -5125,7 +5125,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bdd3448-2d45-4a00-82b4-a5fa4abc3338")
-		(property "Reference" "#PWR0212"
+		(property "Reference" "#PWR0216"
 			(at 109.22 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -5185,7 +5185,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0212")
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
@@ -5511,7 +5511,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "428baea7-2eb8-4be3-9f7c-99fedd99cd29")
-		(property "Reference" "#PWR0214"
+		(property "Reference" "#PWR0211"
 			(at 190.5 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -5571,7 +5571,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0214")
+					(reference "#PWR0211")
 					(unit 1)
 				)
 			)
@@ -6054,7 +6054,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f95164e-d980-4931-a9b6-3fd98b09e145")
-		(property "Reference" "#PWR0211"
+		(property "Reference" "#PWR0215"
 			(at 92.71 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6114,7 +6114,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0211")
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -6494,7 +6494,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7b292cf4-35b1-4c23-9ad4-509b848fb6d5")
-		(property "Reference" "#PWR0209"
+		(property "Reference" "#PWR0208"
 			(at 190.5 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6554,7 +6554,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0209")
+					(reference "#PWR0208")
 					(unit 1)
 				)
 			)
@@ -7059,7 +7059,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab820945-c896-45c3-810e-a1cab10bd481")
-		(property "Reference" "#PWR0213"
+		(property "Reference" "#PWR0217"
 			(at 125.73 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -7119,7 +7119,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0213")
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -7555,7 +7555,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b9d78e94-2c4e-477b-8e58-e1a062a792ef")
-		(property "Reference" "#PWR0208"
+		(property "Reference" "#PWR0207"
 			(at 234.95 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -7615,7 +7615,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0208")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
@@ -7745,7 +7745,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf6f43de-8176-499d-bee9-1196a915f066")
-		(property "Reference" "#PWR0217"
+		(property "Reference" "#PWR0214"
 			(at 259.08 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -7805,7 +7805,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0217")
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -7937,7 +7937,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d735b3dd-886e-409f-80ed-e4eb5091ad03")
-		(property "Reference" "#PWR0216"
+		(property "Reference" "#PWR0213"
 			(at 234.95 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -7997,7 +7997,7 @@
 		(instances
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/82a90dd1-49ca-417e-aa9d-14fe07869b9c"
-					(reference "#PWR0216")
+					(reference "#PWR0213")
 					(unit 1)
 				)
 			)
