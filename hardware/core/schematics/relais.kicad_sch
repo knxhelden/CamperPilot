@@ -505,158 +505,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Fuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "F"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fuse"
-				(at -1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Fuse"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "fuse"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "*Fuse*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Fuse_0_1"
-				(rectangle
-					(start -0.762 -2.54)
-					(end 0.762 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fuse_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -1848,145 +1696,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+12V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+12V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -2107,121 +1816,6 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
 					(length 0)
 					(name ""
 						(effects
@@ -2639,16 +2233,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 54.61) (xy 104.14 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cb8bb8f-aa6c-44c8-ba8d-b8cef882d2b6")
-	)
-	(wire
-		(pts
 			(xy 158.75 35.56) (xy 158.75 36.83)
 		)
 		(stroke
@@ -2796,6 +2380,16 @@
 			(type default)
 		)
 		(uuid "2b16deb9-f2e0-47a2-9f2d-76b951fcc295")
+	)
+	(wire
+		(pts
+			(xy 104.14 59.69) (xy 127 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c8fd3da-adc9-4755-85a0-977e8022d678")
 	)
 	(wire
 		(pts
@@ -2949,7 +2543,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 39.37) (xy 127 45.72)
+			(xy 127 35.56) (xy 127 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2966,6 +2560,16 @@
 			(type default)
 		)
 		(uuid "46c473f2-6eb7-46be-ac3d-ffc1b2c14387")
+	)
+	(wire
+		(pts
+			(xy 106.68 35.56) (xy 106.68 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49e8567f-7eb3-403f-853b-48ee92099a6a")
 	)
 	(wire
 		(pts
@@ -3309,6 +2913,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 54.61) (xy 104.14 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cd32ddf-2f86-4e3e-88a9-5c05216df66b")
+	)
+	(wire
+		(pts
 			(xy 176.53 125.73) (xy 180.34 125.73)
 		)
 		(stroke
@@ -3419,7 +3033,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 39.37) (xy 127 39.37)
+			(xy 106.68 35.56) (xy 127 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3689,16 +3303,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 64.77) (xy 104.14 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3f40278-4e68-4d59-b0b3-25d9436d4f31")
-	)
-	(wire
-		(pts
 			(xy 52.07 34.29) (xy 52.07 35.56)
 		)
 		(stroke
@@ -3789,7 +3393,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 48.26) (xy 127 52.07)
+			(xy 127 48.26) (xy 127 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5044,7 +4648,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*3fu18j*_gcl_aw*R0NMLjE3OTUwMTU5MzYuQ2owS0NRaUF0dlhYQmhDMkFSSXNBSmM4U1VRUmpranlCOVl4ZXN1WDRWYW52WjVEUUd6eHdvdWdtZlRDT0dSMHV5OWRJQ01wVWplS0E4OGFBcmQ3RUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1LjM2NjY4NDIxOC4xNzk0OTkzNzI5LjE3OTQ5OTM5MjIuNDAwMDkxNjY5LjE3OTQ5OTM3MjkuMTc5NDk5MzkyMg..*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTUxNzk3MjQkbzIxJGcxJHQxNzk1MTgwODU3JGo1OCRsMCRoMA.."
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17513.pdf"
 			(at 83.82 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5066,7 +4670,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-071KL"
+		(property "Artikelnummer" "0805W8F1001T5E"
 			(at 83.82 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5077,7 +4681,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 83.82 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5871,10 +5475,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "631cdc7b-ff28-4046-9046-9b14785626a7")
 		(property "Reference" "K301"
-			(at 110.49 45.7199 0)
+			(at 104.394 53.594 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5885,7 +5488,7 @@
 			)
 		)
 		(property "Value" "G5LE-14-DC5"
-			(at 110.49 48.2599 0)
+			(at 104.648 56.134 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6059,99 +5662,6 @@
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/392ba35d-7346-4dae-848d-9d265173d5bb"
 					(reference "#PWR0314")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 104.14 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64ddc135-4a4a-4e54-a82b-15f3d0a7fb13")
-		(property "Reference" "F301"
-			(at 106.68 59.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1A"
-			(at 106.68 62.2299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open"
-			(at 102.362 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 104.14 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 104.14 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b61128d2-9036-468c-838f-9a8bc7c0b76a")
-		)
-		(pin "2"
-			(uuid "c28a1124-3e73-4e20-9f58-d88144bb31e4")
-		)
-		(instances
-			(project "CamperPilot Core"
-				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/392ba35d-7346-4dae-848d-9d265173d5bb"
-					(reference "F301")
 					(unit 1)
 				)
 			)
@@ -6371,7 +5881,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*3fu18j*_gcl_aw*R0NMLjE3OTUwMTU5MzYuQ2owS0NRaUF0dlhYQmhDMkFSSXNBSmM4U1VRUmpranlCOVl4ZXN1WDRWYW52WjVEUUd6eHdvdWdtZlRDT0dSMHV5OWRJQ01wVWplS0E4OGFBcmQ3RUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1LjM2NjY4NDIxOC4xNzk0OTkzNzI5LjE3OTQ5OTM5MjIuNDAwMDkxNjY5LjE3OTQ5OTM3MjkuMTc5NDk5MzkyMg..*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTUxNzk3MjQkbzIxJGcxJHQxNzk1MTgwODU3JGo1OCRsMCRoMA.."
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17513.pdf"
 			(at 191.77 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6393,7 +5903,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-071KL"
+		(property "Artikelnummer" "0805W8F1001T5E"
 			(at 191.77 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6404,7 +5914,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 191.77 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6938,84 +6448,6 @@
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/392ba35d-7346-4dae-848d-9d265173d5bb"
 					(reference "R306")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 104.14 67.31 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c213e42-2415-4106-8cb4-fc1c9b2f922b")
-		(property "Reference" "#PWR0306"
-			(at 104.14 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+BAT"
-			(at 104.14 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 104.14 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f57d416e-b0c0-4aad-8539-9ffd91ab136f")
-		)
-		(instances
-			(project "CamperPilot Core"
-				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/392ba35d-7346-4dae-848d-9d265173d5bb"
-					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -7965,7 +7397,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*3fu18j*_gcl_aw*R0NMLjE3OTUwMTU5MzYuQ2owS0NRaUF0dlhYQmhDMkFSSXNBSmM4U1VRUmpranlCOVl4ZXN1WDRWYW52WjVEUUd6eHdvdWdtZlRDT0dSMHV5OWRJQ01wVWplS0E4OGFBcmQ3RUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1LjM2NjY4NDIxOC4xNzk0OTkzNzI5LjE3OTQ5OTM5MjIuNDAwMDkxNjY5LjE3OTQ5OTM3MjkuMTc5NDk5MzkyMg..*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTUxNzk3MjQkbzIxJGcxJHQxNzk1MTgwODU3JGo1OCRsMCRoMA.."
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17513.pdf"
 			(at 83.82 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7987,7 +7419,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-071KL"
+		(property "Artikelnummer" "0805W8F1001T5E"
 			(at 83.82 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7998,7 +7430,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 83.82 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8776,84 +8208,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 127 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6ce67e2-68a7-43bc-9576-e95b7fd12036")
-		(property "Reference" "#PWR0304"
-			(at 127 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-BAT"
-			(at 127 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "72dd111f-8e4f-472c-94a7-0ef061613902")
-		)
-		(instances
-			(project "CamperPilot Core"
-				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb/392ba35d-7346-4dae-848d-9d265173d5bb"
-					(reference "#PWR0304")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 172.72 125.73 90)
 		(unit 1)
@@ -9108,7 +8462,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*3fu18j*_gcl_aw*R0NMLjE3OTUwMTU5MzYuQ2owS0NRaUF0dlhYQmhDMkFSSXNBSmM4U1VRUmpranlCOVl4ZXN1WDRWYW52WjVEUUd6eHdvdWdtZlRDT0dSMHV5OWRJQ01wVWplS0E4OGFBcmQ3RUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1LjM2NjY4NDIxOC4xNzk0OTkzNzI5LjE3OTQ5OTM5MjIuNDAwMDkxNjY5LjE3OTQ5OTM3MjkuMTc5NDk5MzkyMg..*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTUxNzk3MjQkbzIxJGcxJHQxNzk1MTgwODU3JGo1OCRsMCRoMA.."
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17513.pdf"
 			(at 191.77 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -9130,7 +8484,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-071KL"
+		(property "Artikelnummer" "0805W8F1001T5E"
 			(at 191.77 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -9141,7 +8495,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 191.77 104.14 0)
 			(hide yes)
 			(show_name no)

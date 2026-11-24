@@ -6164,7 +6164,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/3/76/2/GRM21BR71H104KA01_01.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C49678.pdf"
 			(at 22.86 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -6186,7 +6186,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "GRM21BR71H104KA01L"
+		(property "Artikelnummer" "CC0805KRX7R9BB104"
 			(at 22.86 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -6197,7 +6197,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Murata Electronics"
+		(property "Hersteller" "YAGEO"
 			(at 22.86 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -7463,7 +7463,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 93.6752 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7474,7 +7474,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C49678.pdf"
 			(at 92.71 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7496,7 +7496,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "GRM188R71H104KA93D"
+		(property "Artikelnummer" "CC0805KRX7R9BB104"
 			(at 92.71 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7507,7 +7507,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Murata Electronics"
+		(property "Hersteller" "YAGEO"
 			(at 92.71 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7664,7 +7664,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/3/508/1/UPY_GPHC_X7R_6_3V_TO_250V.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C49678.pdf"
 			(at 223.52 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -7686,7 +7686,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Murata Electronics"
+		(property "Hersteller" "YAGEO"
 			(at 223.52 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -7697,7 +7697,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "GRM21BR71H104KA01L"
+		(property "Artikelnummer" "CC0805KRX7R9BB104"
 			(at 223.52 38.1 90)
 			(hide yes)
 			(show_name no)

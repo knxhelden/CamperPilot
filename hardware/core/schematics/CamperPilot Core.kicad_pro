@@ -199,8 +199,7 @@
         0.2,
         0.4,
         0.6,
-        1.5,
-        2.0
+        1.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -682,7 +681,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Value"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -733,7 +732,7 @@
         "uuid": "61c43c18-720a-4ca1-821c-7025a697bbcb"
       }
     ],
-    "used_designators": "TP104",
+    "used_designators": "TP104,J301",
     "variants": []
   },
   "sheets": [
