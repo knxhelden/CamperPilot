@@ -9079,7 +9079,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2,7nF"
+		(property "Value" "2.7nF"
 			(at 88.9 124.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9090,7 +9090,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 86.0552 127 0)
 			(hide yes)
 			(show_name no)
@@ -9101,7 +9101,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/3/72/1/KEM_C1003_C0G_SMD.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1609.pdf"
 			(at 85.09 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9123,7 +9123,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "C0805C272J5GACTU"
+		(property "Artikelnummer" "0603B272K500NT"
 			(at 85.09 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9134,7 +9134,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "KEMET"
+		(property "Hersteller" "FH"
 			(at 85.09 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -9451,7 +9451,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7b1347f4-8cee-4f4c-8848-76a368d3626e")
 		(property "Reference" "C111"
 			(at 51.308 104.394 0)
@@ -9486,7 +9486,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/3/508/1/KEM_C1002_X7R_SMD.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1710.pdf"
 			(at 50.8 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9508,7 +9508,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "C0805C103K5RACTU"
+		(property "Artikelnummer" "CL21B103KBANNNC"
 			(at 50.8 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9519,7 +9519,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "KEMET"
+		(property "Hersteller" "Samsung Electro-Mechanics"
 			(at 50.8 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -10867,7 +10867,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 140.6652 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -10878,7 +10878,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/3/76/4/GRM32ER71E226KE15_04CA.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C12891.pdf"
 			(at 139.7 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -10900,7 +10900,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "GRM32ER71E226KE15L"
+		(property "Artikelnummer" "CL31A226KAHNNNE"
 			(at 139.7 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -10911,7 +10911,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Murata Electronics"
+		(property "Hersteller" "Samsung Electro-Mechanics"
 			(at 139.7 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -11754,7 +11754,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 164.7952 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -11765,7 +11765,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/3/76/4/GRM32ER71E226KE15_04CA.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C12891.pdf"
 			(at 163.83 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -11787,7 +11787,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "GRM32ER71E226KE15L"
+		(property "Artikelnummer" "CL31A226KAHNNNE"
 			(at 163.83 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -11798,7 +11798,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Murata Electronics"
+		(property "Hersteller" "Samsung Electro-Mechanics"
 			(at 163.83 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -11959,7 +11959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 98.7552 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -11970,7 +11970,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/3/72/1/KEM_C1003_C0G_SMD.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1562.pdf"
 			(at 97.79 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -11992,7 +11992,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "C0805C330J5GACTU"
+		(property "Artikelnummer" "0402CG330J500NT"
 			(at 97.79 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -12003,7 +12003,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "KEMET"
+		(property "Hersteller" "FH"
 			(at 97.79 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -13002,7 +13002,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 153.3652 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -13013,7 +13013,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/3/76/4/GRM32ER71E226KE15_04CA.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C12891.pdf"
 			(at 152.4 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13035,7 +13035,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "GRM32ER71E226KE15L"
+		(property "Artikelnummer" "CL31A226KAHNNNE"
 			(at 152.4 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13046,7 +13046,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Murata Electronics"
+		(property "Hersteller" "Samsung Electro-Mechanics"
 			(at 152.4 101.6 0)
 			(hide yes)
 			(show_name no)

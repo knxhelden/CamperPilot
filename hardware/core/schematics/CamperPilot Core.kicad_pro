@@ -682,12 +682,12 @@
           "show": true
         }
       ],
-      "filter_string": "",
+      "filter_string": "R203",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Value"
+      "sort_field": "Reference"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,

@@ -4408,7 +4408,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 60.325 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -4419,7 +4419,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://diotec.com/request/datasheet/1n4148w.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C81598.pdf"
 			(at 64.77 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -4452,7 +4452,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Diotec Semiconductor"
+		(property "Hersteller" "ST(Semtech)"
 			(at 64.77 105.41 90)
 			(hide yes)
 			(show_name no)
@@ -6486,7 +6486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 168.275 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6497,7 +6497,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://diotec.com/request/datasheet/1n4148w.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C81598.pdf"
 			(at 172.72 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6530,7 +6530,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Diotec Semiconductor"
+		(property "Hersteller" "ST(Semtech)"
 			(at 172.72 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -6712,7 +6712,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 61.595 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6723,7 +6723,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://diotec.com/request/datasheet/1n4148w.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C81598.pdf"
 			(at 66.04 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6756,7 +6756,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Diotec Semiconductor"
+		(property "Hersteller" "ST(Semtech)"
 			(at 66.04 41.91 90)
 			(hide yes)
 			(show_name no)
@@ -7818,7 +7818,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 168.275 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -7829,7 +7829,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://diotec.com/request/datasheet/1n4148w.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C81598.pdf"
 			(at 172.72 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -7862,7 +7862,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Diotec Semiconductor"
+		(property "Hersteller" "ST(Semtech)"
 			(at 172.72 105.41 90)
 			(hide yes)
 			(show_name no)

@@ -5292,7 +5292,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2µF"
+		(property "Value" "2.2uF"
 			(at 113.03 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5314,7 +5314,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM188R71A225KE15-04A-EN_PDF_CERAMICCAPACITORSMD"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23630.pdf"
 			(at 109.22 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5336,7 +5336,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "GRM188R71A225KE15D"
+		(property "Artikelnummer" "CL10A225KO8NNNC"
 			(at 109.22 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5347,7 +5347,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Murata Electronics"
+		(property "Hersteller" "Samsung Electro-Mechanics"
 			(at 109.22 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7359,7 +7359,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*1dwe9y*_gcl_aw*R0NMLjE3OTQ4NTg1MjQuQ2owS0NRaUE4T3JYQmhERUFSSXNBRUN0bHg0UHFKM1ZmNUY0bEJrZkVjTXdxWTNlNGp6V1hWZ2plNFVZMVhOSzdwUGJvX1RyRDNhTUtXRWFBaFBTRUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTQ5OTMyNjQkbzEyJGcxJHQxNzk0OTkzMjY5JGo1NSRsMCRoMA.."
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17673.pdf"
 			(at 53.34 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -7381,7 +7381,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-074K7L"
+		(property "Artikelnummer" "0805W8F4701T5E"
 			(at 53.34 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -7392,7 +7392,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 53.34 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -7856,7 +7856,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/3/76/2/GRM188R71H103KA01_01.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C57112.pdf"
 			(at 54.61 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7878,7 +7878,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "GRM188R71H103KA01D"
+		(property "Artikelnummer" "0603B103K500NT"
 			(at 54.61 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7889,7 +7889,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Murata Electronics"
+		(property "Hersteller" "FH"
 			(at 54.61 114.3 0)
 			(hide yes)
 			(show_name no)
