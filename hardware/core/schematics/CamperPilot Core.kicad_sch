@@ -9832,7 +9832,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*oga877*_gcl_aw*R0NMLjE3OTUwMTU5MzYuQ2owS0NRaUF0dlhYQmhDMkFSSXNBSmM4U1VRUmpranlCOVl4ZXN1WDRWYW52WjVEUUd6eHdvdWdtZlRDT0dSMHV5OWRJQ01wVWplS0E4OGFBcmQ3RUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1LjM2NjY4NDIxOC4xNzk0OTkzNzI5LjE3OTQ5OTM5MjIuNDAwMDkxNjY5LjE3OTQ5OTM3MjkuMTc5NDk5MzkyMg..*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTUwOTczNjEkbzE5JGcxJHQxNzk1MDk4NDE4JGo1OCRsMCRoMA.."
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17414.pdf"
 			(at 124.46 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9854,7 +9854,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-0710KL"
+		(property "Artikelnummer" "0805W8F1002T5E"
 			(at 124.46 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9865,7 +9865,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 124.46 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9947,7 +9947,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17520.pdf"
 			(at 97.79 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9969,7 +9969,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "CRCW08052K20FKEA"
+		(property "Artikelnummer" "0805W8F2201T5E"
 			(at 97.79 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9980,7 +9980,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Vishay"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 97.79 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10764,7 +10764,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*oga877*_gcl_aw*R0NMLjE3OTUwMTU5MzYuQ2owS0NRaUF0dlhYQmhDMkFSSXNBSmM4U1VRUmpranlCOVl4ZXN1WDRWYW52WjVEUUd6eHdvdWdtZlRDT0dSMHV5OWRJQ01wVWplS0E4OGFBcmQ3RUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1LjM2NjY4NDIxOC4xNzk0OTkzNzI5LjE3OTQ5OTM5MjIuNDAwMDkxNjY5LjE3OTQ5OTM3MjkuMTc5NDk5MzkyMg..*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTUwOTczNjEkbzE5JGcxJHQxNzk1MDk4NDE4JGo1OCRsMCRoMA.."
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17414.pdf"
 			(at 266.7 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -10786,7 +10786,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 266.7 130.81 90)
 			(hide yes)
 			(show_name no)
@@ -10797,7 +10797,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-0710KL"
+		(property "Artikelnummer" "0805W8F1002T5E"
 			(at 266.7 130.81 90)
 			(hide yes)
 			(show_name no)
@@ -10990,7 +10990,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17710.pdf"
 			(at 62.23 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -11012,7 +11012,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-07470RL"
+		(property "Artikelnummer" "0805W8F4700T5E"
 			(at 62.23 186.69 90)
 			(hide yes)
 			(show_name no)
@@ -11023,7 +11023,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 62.23 186.69 90)
 			(hide yes)
 			(show_name no)
@@ -11651,7 +11651,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17710.pdf"
 			(at 27.94 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -11673,7 +11673,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-07470RL"
+		(property "Artikelnummer" "0805W8F4700T5E"
 			(at 27.94 137.16 90)
 			(hide yes)
 			(show_name no)
@@ -11684,7 +11684,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 27.94 137.16 90)
 			(hide yes)
 			(show_name no)
@@ -12311,7 +12311,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17710.pdf"
 			(at 38.1 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -12333,7 +12333,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-07470RL"
+		(property "Artikelnummer" "0805W8F4700T5E"
 			(at 38.1 171.45 90)
 			(hide yes)
 			(show_name no)
@@ -12344,7 +12344,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 38.1 171.45 90)
 			(hide yes)
 			(show_name no)
@@ -12796,7 +12796,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17710.pdf"
 			(at 83.82 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -12818,7 +12818,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-07470RL"
+		(property "Artikelnummer" "0805W8F4700T5E"
 			(at 83.82 171.45 90)
 			(hide yes)
 			(show_name no)
@@ -12829,7 +12829,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 83.82 171.45 90)
 			(hide yes)
 			(show_name no)

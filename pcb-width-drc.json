@@ -1,0 +1,5398 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-25T16:53:29",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.1",
+    "schematic_parity": [],
+    "source": "CamperPilot Core.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(J301-Pin_2)] von J301",
+                    "pos": {
+                        "x": 82.555,
+                        "y": 30.4475
+                    },
+                    "uuid": "d0ed7455-964d-4d5c-9fe4-1b77d83670f9"
+                },
+                {
+                    "description": "Durchsteckpad 1 [Net-(J301-Pin_2)] von K301",
+                    "pos": {
+                        "x": 85.1746,
+                        "y": 72.5875
+                    },
+                    "uuid": "f3281449-a97a-4ea5-bd7e-3cacfe289b83"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [Net-(D301-A)] von Q301 auf Front",
+                    "pos": {
+                        "x": 335.4665,
+                        "y": 176.479
+                    },
+                    "uuid": "d89af239-cdac-46ac-aea1-01e3a36ca6cf"
+                },
+                {
+                    "description": "Durchsteckpad 2 [Net-(D301-A)] von K301",
+                    "pos": {
+                        "x": 91.1746,
+                        "y": 70.5875
+                    },
+                    "uuid": "1f635187-0c3c-445d-b191-4f5a12390d1f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(D301-A)] von D303",
+                    "pos": {
+                        "x": 339.754,
+                        "y": 197.119
+                    },
+                    "uuid": "7942ac6d-9f65-4d34-b014-a7a16263aa76"
+                },
+                {
+                    "description": "Pad 2 [Net-(D301-A)] von D301 auf Front",
+                    "pos": {
+                        "x": 341.154,
+                        "y": 190.419
+                    },
+                    "uuid": "a60af130-941f-4ebb-b63e-a6d63332a4d5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(D301-A)] von D301 auf Front",
+                    "pos": {
+                        "x": 341.154,
+                        "y": 190.419
+                    },
+                    "uuid": "a60af130-941f-4ebb-b63e-a6d63332a4d5"
+                },
+                {
+                    "description": "Pad 3 [Net-(D301-A)] von Q301 auf Front",
+                    "pos": {
+                        "x": 335.4665,
+                        "y": 176.479
+                    },
+                    "uuid": "d89af239-cdac-46ac-aea1-01e3a36ca6cf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(J301-Pin_1)] von J301",
+                    "pos": {
+                        "x": 87.635,
+                        "y": 30.4475
+                    },
+                    "uuid": "f509ea65-be81-4787-ae3e-80ba6f50c82c"
+                },
+                {
+                    "description": "Durchsteckpad 3 [Net-(J301-Pin_1)] von K301",
+                    "pos": {
+                        "x": 91.1746,
+                        "y": 58.3875
+                    },
+                    "uuid": "72978498-c872-48f8-88c9-2d1d5b186d03"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Leiterbahn [+5V] auf Front, Länge 3,1982 mm",
+                    "pos": {
+                        "x": 136.6031,
+                        "y": 68.326
+                    },
+                    "uuid": "8b348e4a-6cfe-42d6-a6c9-a1b8c6ba70b0"
+                },
+                {
+                    "description": "Durchsteckpad 5 [+5V] von J203",
+                    "pos": {
+                        "x": 163.068,
+                        "y": 51.308
+                    },
+                    "uuid": "bc775547-bacb-4a15-a1be-551911ac8d39"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Leiterbahn [+5V] auf Front, Länge 3,8749 mm",
+                    "pos": {
+                        "x": 154.1351,
+                        "y": 85.858
+                    },
+                    "uuid": "a9b6abdb-a437-4d1b-8264-1264e39555c2"
+                },
+                {
+                    "description": "Durchsteckpad 4 [+5V] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 88.398
+                    },
+                    "uuid": "b04e9229-5249-4a93-85ca-1dde492f33fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von D305 auf Front",
+                    "pos": {
+                        "x": 328.451,
+                        "y": 109.677
+                    },
+                    "uuid": "24689561-2b1f-430e-900f-53f02949454c"
+                },
+                {
+                    "description": "Durchsteckpad 4 [+5V] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 88.398
+                    },
+                    "uuid": "b04e9229-5249-4a93-85ca-1dde492f33fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von D306 auf Front",
+                    "pos": {
+                        "x": 328.451,
+                        "y": 115.147
+                    },
+                    "uuid": "522b40e7-8329-423e-b9c6-07cc7afba3de"
+                },
+                {
+                    "description": "Pad 1 [+5V] von D305 auf Front",
+                    "pos": {
+                        "x": 328.451,
+                        "y": 109.677
+                    },
+                    "uuid": "24689561-2b1f-430e-900f-53f02949454c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von R301 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 175.729
+                    },
+                    "uuid": "3c5132f7-b861-4128-a99b-a39b8e369b5f"
+                },
+                {
+                    "description": "Pad 1 [+5V] von D306 auf Front",
+                    "pos": {
+                        "x": 328.451,
+                        "y": 115.147
+                    },
+                    "uuid": "522b40e7-8329-423e-b9c6-07cc7afba3de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von R302 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 178.679
+                    },
+                    "uuid": "588e4229-0c0d-4d60-b078-3e93a7e6a9de"
+                },
+                {
+                    "description": "Pad 1 [+5V] von R301 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 175.729
+                    },
+                    "uuid": "3c5132f7-b861-4128-a99b-a39b8e369b5f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von R307 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 193.429
+                    },
+                    "uuid": "e525c3d8-ecad-493f-b49c-3fed81974a94"
+                },
+                {
+                    "description": "Pad 1 [+5V] von R302 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 178.679
+                    },
+                    "uuid": "588e4229-0c0d-4d60-b078-3e93a7e6a9de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von R308 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 196.379
+                    },
+                    "uuid": "6d4ed31a-b972-47c2-9114-39b66d1931cc"
+                },
+                {
+                    "description": "Pad 1 [+5V] von R307 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 193.429
+                    },
+                    "uuid": "e525c3d8-ecad-493f-b49c-3fed81974a94"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von D301 auf Front",
+                    "pos": {
+                        "x": 338.354,
+                        "y": 190.419
+                    },
+                    "uuid": "893f4781-3323-464c-9ad9-fc7c2f16adcd"
+                },
+                {
+                    "description": "Pad 1 [+5V] von D302 auf Front",
+                    "pos": {
+                        "x": 338.354,
+                        "y": 193.769
+                    },
+                    "uuid": "a1f184bb-3f57-497e-b0c9-e36939d2c228"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von D301 auf Front",
+                    "pos": {
+                        "x": 338.354,
+                        "y": 190.419
+                    },
+                    "uuid": "893f4781-3323-464c-9ad9-fc7c2f16adcd"
+                },
+                {
+                    "description": "Pad 1 [+5V] von C301 auf Front",
+                    "pos": {
+                        "x": 343.749,
+                        "y": 190.249
+                    },
+                    "uuid": "47082e71-814a-4373-b77e-17955b66ef6a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von D302 auf Front",
+                    "pos": {
+                        "x": 338.354,
+                        "y": 193.769
+                    },
+                    "uuid": "a1f184bb-3f57-497e-b0c9-e36939d2c228"
+                },
+                {
+                    "description": "Pad 1 [+5V] von R307 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 193.429
+                    },
+                    "uuid": "e525c3d8-ecad-493f-b49c-3fed81974a94"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von C302 auf Front",
+                    "pos": {
+                        "x": 343.749,
+                        "y": 193.259
+                    },
+                    "uuid": "74b14aa0-a410-4de2-8f5a-36e5ba9a1d7a"
+                },
+                {
+                    "description": "Pad 1 [+5V] von C301 auf Front",
+                    "pos": {
+                        "x": 343.749,
+                        "y": 190.249
+                    },
+                    "uuid": "47082e71-814a-4373-b77e-17955b66ef6a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von C303 auf Front",
+                    "pos": {
+                        "x": 343.749,
+                        "y": 196.269
+                    },
+                    "uuid": "8677cc3b-5894-477b-b611-b3354124a31f"
+                },
+                {
+                    "description": "Pad 1 [+5V] von C302 auf Front",
+                    "pos": {
+                        "x": 343.749,
+                        "y": 193.259
+                    },
+                    "uuid": "74b14aa0-a410-4de2-8f5a-36e5ba9a1d7a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] von C304 auf Front",
+                    "pos": {
+                        "x": 343.749,
+                        "y": 199.279
+                    },
+                    "uuid": "3b4c24b1-4ca9-45ad-bc0c-df1a4ac9ea1f"
+                },
+                {
+                    "description": "Pad 1 [+5V] von C303 auf Front",
+                    "pos": {
+                        "x": 343.749,
+                        "y": 196.269
+                    },
+                    "uuid": "8677cc3b-5894-477b-b611-b3354124a31f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 145.887,
+                        "y": 88.049
+                    },
+                    "uuid": "018a7526-1b33-438e-858d-80db18036313"
+                },
+                {
+                    "description": "Pad 6 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 147.037,
+                        "y": 89.699
+                    },
+                    "uuid": "5bf561f7-a64a-408b-845a-42dc81baca54"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 147.037,
+                        "y": 89.699
+                    },
+                    "uuid": "5bf561f7-a64a-408b-845a-42dc81baca54"
+                },
+                {
+                    "description": "Pad 7 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 147.537,
+                        "y": 89.699
+                    },
+                    "uuid": "b399dc54-4a81-42a3-9980-ec76bfd1c453"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 10 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 148.187,
+                        "y": 88.549
+                    },
+                    "uuid": "3e2e651d-a519-4eb8-8079-7d5c7fa3d550"
+                },
+                {
+                    "description": "Zone [GND] auf Front und Back, Priorität 0",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "6f29f142-e6b7-4173-9676-d692058ea30a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 10 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 148.187,
+                        "y": 88.549
+                    },
+                    "uuid": "3e2e651d-a519-4eb8-8079-7d5c7fa3d550"
+                },
+                {
+                    "description": "Pad 7 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 147.537,
+                        "y": 89.699
+                    },
+                    "uuid": "b399dc54-4a81-42a3-9980-ec76bfd1c453"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] von R306 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 190.479
+                    },
+                    "uuid": "6b259b03-5043-44bb-8b1a-439086f3a90f"
+                },
+                {
+                    "description": "Pad 1 [GND] von R305 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 187.529
+                    },
+                    "uuid": "bf889dc7-573b-42f6-ac0f-b13e6e67ab5f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] von R306 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 190.479
+                    },
+                    "uuid": "6b259b03-5043-44bb-8b1a-439086f3a90f"
+                },
+                {
+                    "description": "Pad 2 [GND] von Q304 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 190.779
+                    },
+                    "uuid": "ad175b15-7465-4c96-8dbf-5f6183b4a2bd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] von Q301 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 177.429
+                    },
+                    "uuid": "ea3bc23d-ad2b-4aac-8c1f-02b0ccd84ce3"
+                },
+                {
+                    "description": "Pad 1 [GND] von R312 auf Front",
+                    "pos": {
+                        "x": 335.3585,
+                        "y": 117.267
+                    },
+                    "uuid": "6780d74f-ee30-44d6-9cba-c81090abefad"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] von Q302 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 181.879
+                    },
+                    "uuid": "c5265533-19fa-4f61-942e-13435ef847c4"
+                },
+                {
+                    "description": "Pad 2 [GND] von Q301 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 177.429
+                    },
+                    "uuid": "ea3bc23d-ad2b-4aac-8c1f-02b0ccd84ce3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] von Q303 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 186.329
+                    },
+                    "uuid": "66f0c5a6-0a2d-4c1f-b088-907930e02bfd"
+                },
+                {
+                    "description": "Pad 2 [GND] von Q302 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 181.879
+                    },
+                    "uuid": "c5265533-19fa-4f61-942e-13435ef847c4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] von Q304 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 190.779
+                    },
+                    "uuid": "ad175b15-7465-4c96-8dbf-5f6183b4a2bd"
+                },
+                {
+                    "description": "Pad 2 [GND] von Q303 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 186.329
+                    },
+                    "uuid": "66f0c5a6-0a2d-4c1f-b088-907930e02bfd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] von R312 auf Front",
+                    "pos": {
+                        "x": 335.3585,
+                        "y": 117.267
+                    },
+                    "uuid": "6780d74f-ee30-44d6-9cba-c81090abefad"
+                },
+                {
+                    "description": "Pad 1 [GND] von R311 auf Front",
+                    "pos": {
+                        "x": 335.3585,
+                        "y": 114.317
+                    },
+                    "uuid": "0de290f7-d8ba-423f-bf4d-23755fa37a7b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] von R312 auf Front",
+                    "pos": {
+                        "x": 335.3585,
+                        "y": 117.267
+                    },
+                    "uuid": "6780d74f-ee30-44d6-9cba-c81090abefad"
+                },
+                {
+                    "description": "Zone [GND] auf Front und Back, Priorität 0",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "6f29f142-e6b7-4173-9676-d692058ea30a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] von C301 auf Front",
+                    "pos": {
+                        "x": 345.649,
+                        "y": 190.249
+                    },
+                    "uuid": "ff1e3c71-60d4-44c4-a83f-9cb9309a7c6b"
+                },
+                {
+                    "description": "Pad 2 [GND] von Q304 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 190.779
+                    },
+                    "uuid": "ad175b15-7465-4c96-8dbf-5f6183b4a2bd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] von C302 auf Front",
+                    "pos": {
+                        "x": 345.649,
+                        "y": 193.259
+                    },
+                    "uuid": "1f1087e0-dcbf-4ca6-9652-1ba9bc2817d8"
+                },
+                {
+                    "description": "Pad 2 [GND] von C301 auf Front",
+                    "pos": {
+                        "x": 345.649,
+                        "y": 190.249
+                    },
+                    "uuid": "ff1e3c71-60d4-44c4-a83f-9cb9309a7c6b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] von C303 auf Front",
+                    "pos": {
+                        "x": 345.649,
+                        "y": 196.269
+                    },
+                    "uuid": "5203d5fc-d793-4bd0-af1d-94e0813d0634"
+                },
+                {
+                    "description": "Pad 2 [GND] von C302 auf Front",
+                    "pos": {
+                        "x": 345.649,
+                        "y": 193.259
+                    },
+                    "uuid": "1f1087e0-dcbf-4ca6-9652-1ba9bc2817d8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] von C304 auf Front",
+                    "pos": {
+                        "x": 345.649,
+                        "y": 199.279
+                    },
+                    "uuid": "59bdd766-f6f8-45ba-b13b-34a0ad597e79"
+                },
+                {
+                    "description": "Pad 2 [GND] von C303 auf Front",
+                    "pos": {
+                        "x": 345.649,
+                        "y": 196.269
+                    },
+                    "uuid": "5203d5fc-d793-4bd0-af1d-94e0813d0634"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(Q301-G)] von R303 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 181.629
+                    },
+                    "uuid": "7c051e41-8bfa-4495-babe-5075fbd8f8fe"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q301-G)] von R305 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 187.529
+                    },
+                    "uuid": "87b798c4-b216-486f-8209-8ef7faaa9639"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(Q301-G)] von Q301 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 175.529
+                    },
+                    "uuid": "439ce357-164b-4946-9b44-63db5638f425"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q301-G)] von R303 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 181.629
+                    },
+                    "uuid": "7c051e41-8bfa-4495-babe-5075fbd8f8fe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 11 [/GPIO17] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 98.558
+                    },
+                    "uuid": "b941a185-89b7-4f59-978f-2789a5309161"
+                },
+                {
+                    "description": "Pad 1 [/GPIO17] von R303 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 181.629
+                    },
+                    "uuid": "3090ec25-2781-420e-a79f-930c61a17d58"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [+3.3V] von J204",
+                    "pos": {
+                        "x": 41.576,
+                        "y": 28.08
+                    },
+                    "uuid": "dca50500-3e68-4bc1-a898-5479e359191e"
+                },
+                {
+                    "description": "Pad 8 [+3.3V] von IC201 auf Front",
+                    "pos": {
+                        "x": 43.815,
+                        "y": 37.929
+                    },
+                    "uuid": "e414e79a-bae6-4777-93f9-71e7b5839bea"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [+3.3V] von IC201 auf Front",
+                    "pos": {
+                        "x": 43.815,
+                        "y": 37.929
+                    },
+                    "uuid": "e414e79a-bae6-4777-93f9-71e7b5839bea"
+                },
+                {
+                    "description": "Pad 2 [+3.3V] von C201 auf Front",
+                    "pos": {
+                        "x": 33.66,
+                        "y": 35.814
+                    },
+                    "uuid": "ab505ebd-e8f4-4782-9a02-423f4539d333"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [+3.3V] von IC201 auf Front",
+                    "pos": {
+                        "x": 43.815,
+                        "y": 37.929
+                    },
+                    "uuid": "e414e79a-bae6-4777-93f9-71e7b5839bea"
+                },
+                {
+                    "description": "Pad 1 [+3.3V] von TP104 auf Front",
+                    "pos": {
+                        "x": 62.485,
+                        "y": 120.143
+                    },
+                    "uuid": "233fdb2e-3df4-4e24-a19d-a39c3e5864c4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+3.3V] von TP104 auf Front",
+                    "pos": {
+                        "x": 62.485,
+                        "y": 120.143
+                    },
+                    "uuid": "233fdb2e-3df4-4e24-a19d-a39c3e5864c4"
+                },
+                {
+                    "description": "Pad 1 [+3.3V] von R203 auf Front",
+                    "pos": {
+                        "x": 74.8215,
+                        "y": 146.0825
+                    },
+                    "uuid": "2d08923b-aac0-4dcd-8838-56305a8db68e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [+3.3V] von J205",
+                    "pos": {
+                        "x": 71.115,
+                        "y": 152.4325
+                    },
+                    "uuid": "48d77b1d-90e0-46de-912e-abbfdacb00ee"
+                },
+                {
+                    "description": "Pad 1 [+3.3V] von R203 auf Front",
+                    "pos": {
+                        "x": 74.8215,
+                        "y": 146.0825
+                    },
+                    "uuid": "2d08923b-aac0-4dcd-8838-56305a8db68e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+3.3V] von R203 auf Front",
+                    "pos": {
+                        "x": 74.8215,
+                        "y": 146.0825
+                    },
+                    "uuid": "2d08923b-aac0-4dcd-8838-56305a8db68e"
+                },
+                {
+                    "description": "Pad 1 [+3.3V] von C205 auf Front",
+                    "pos": {
+                        "x": 79.055,
+                        "y": 146.0825
+                    },
+                    "uuid": "96237941-7335-43ae-9aa9-92174cf3ad89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+3.3V] von C202 auf Front",
+                    "pos": {
+                        "x": 145.862,
+                        "y": 93.561
+                    },
+                    "uuid": "e840a855-6ac5-4441-a1f7-c6bc77eee394"
+                },
+                {
+                    "description": "Pad 1 [+3.3V] von C203 auf Front",
+                    "pos": {
+                        "x": 146.037,
+                        "y": 97.028
+                    },
+                    "uuid": "4fc54ed7-efb9-43ae-ab67-d4ef0d8a4bc1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+3.3V] von C203 auf Front",
+                    "pos": {
+                        "x": 146.037,
+                        "y": 97.028
+                    },
+                    "uuid": "4fc54ed7-efb9-43ae-ab67-d4ef0d8a4bc1"
+                },
+                {
+                    "description": "Pad 1 [+3.3V] von C204 auf Front",
+                    "pos": {
+                        "x": 146.037,
+                        "y": 100.495
+                    },
+                    "uuid": "4c0e3576-977b-454f-aed5-248bb3867205"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+3.3V] von C204 auf Front",
+                    "pos": {
+                        "x": 146.037,
+                        "y": 100.495
+                    },
+                    "uuid": "4c0e3576-977b-454f-aed5-248bb3867205"
+                },
+                {
+                    "description": "Durchsteckpad 17 [+3.3V] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 106.178
+                    },
+                    "uuid": "4486a910-7947-41e4-9f68-59bf08696512"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [+3.3V] von IC202 auf Front",
+                    "pos": {
+                        "x": 146.537,
+                        "y": 89.699
+                    },
+                    "uuid": "252ec9c9-f798-4587-b1d6-d10e106adbc6"
+                },
+                {
+                    "description": "Pad 8 [+3.3V] von IC202 auf Front",
+                    "pos": {
+                        "x": 148.187,
+                        "y": 89.549
+                    },
+                    "uuid": "9d2eaea7-e7ac-47b2-9d24-2ac4aeaa8614"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [+3.3V] von IC202 auf Front",
+                    "pos": {
+                        "x": 146.537,
+                        "y": 89.699
+                    },
+                    "uuid": "252ec9c9-f798-4587-b1d6-d10e106adbc6"
+                },
+                {
+                    "description": "Pad 1 [+3.3V] von C202 auf Front",
+                    "pos": {
+                        "x": 145.862,
+                        "y": 93.561
+                    },
+                    "uuid": "e840a855-6ac5-4441-a1f7-c6bc77eee394"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [+3.3V] von IC202 auf Front",
+                    "pos": {
+                        "x": 148.187,
+                        "y": 89.549
+                    },
+                    "uuid": "9d2eaea7-e7ac-47b2-9d24-2ac4aeaa8614"
+                },
+                {
+                    "description": "Pad 12 [+3.3V] von IC202 auf Front",
+                    "pos": {
+                        "x": 147.537,
+                        "y": 87.899
+                    },
+                    "uuid": "add9d444-a8e5-4794-a898-f71b845d4d24"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+3.3V] von R105 auf Front",
+                    "pos": {
+                        "x": 151.083,
+                        "y": 152.654
+                    },
+                    "uuid": "134531f1-cdb9-44a8-b4aa-94f764b86454"
+                },
+                {
+                    "description": "Durchsteckpad 17 [+3.3V] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 106.178
+                    },
+                    "uuid": "4486a910-7947-41e4-9f68-59bf08696512"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+3.3V] von R105 auf Front",
+                    "pos": {
+                        "x": 151.083,
+                        "y": 152.654
+                    },
+                    "uuid": "134531f1-cdb9-44a8-b4aa-94f764b86454"
+                },
+                {
+                    "description": "Pad 1 [+3.3V] von C205 auf Front",
+                    "pos": {
+                        "x": 79.055,
+                        "y": 146.0825
+                    },
+                    "uuid": "96237941-7335-43ae-9aa9-92174cf3ad89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+3.3V] von R106 auf Front",
+                    "pos": {
+                        "x": 151.083,
+                        "y": 156.464
+                    },
+                    "uuid": "3ce2b325-66e4-4a7a-8964-44fa075286b6"
+                },
+                {
+                    "description": "Pad 2 [+3.3V] von R105 auf Front",
+                    "pos": {
+                        "x": 151.083,
+                        "y": 152.654
+                    },
+                    "uuid": "134531f1-cdb9-44a8-b4aa-94f764b86454"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [+3.3V] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 85.858
+                    },
+                    "uuid": "a302aadd-6809-4d32-9522-a946cdf94dc7"
+                },
+                {
+                    "description": "Pad 8 [+3.3V] von IC202 auf Front",
+                    "pos": {
+                        "x": 148.187,
+                        "y": 89.549
+                    },
+                    "uuid": "9d2eaea7-e7ac-47b2-9d24-2ac4aeaa8614"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(J205-Pin_2)] von R204 auf Front",
+                    "pos": {
+                        "x": 72.9965,
+                        "y": 141.5105
+                    },
+                    "uuid": "a1749dc6-a06b-41f1-8a57-f48cf7465259"
+                },
+                {
+                    "description": "Pad 2 [Net-(J205-Pin_2)] von R203 auf Front",
+                    "pos": {
+                        "x": 72.9965,
+                        "y": 146.0825
+                    },
+                    "uuid": "816b230b-9f6e-47d8-beb7-36febea67272"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(J205-Pin_2)] von R203 auf Front",
+                    "pos": {
+                        "x": 72.9965,
+                        "y": 146.0825
+                    },
+                    "uuid": "816b230b-9f6e-47d8-beb7-36febea67272"
+                },
+                {
+                    "description": "Durchsteckpad 2 [Net-(J205-Pin_2)] von J205",
+                    "pos": {
+                        "x": 76.195,
+                        "y": 152.4325
+                    },
+                    "uuid": "89894e1c-606d-469e-881d-ec2623428785"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Leiterbahn [Net-(C107-Pad1)] auf Front, Länge 0,7955 mm",
+                    "pos": {
+                        "x": 38.9655,
+                        "y": 95.3045
+                    },
+                    "uuid": "79cd1840-1fac-4d09-ae7b-9aaed80d3f5d"
+                },
+                {
+                    "description": "Pad 1 [Net-(C107-Pad1)] von C107 auf Front",
+                    "pos": {
+                        "x": 44.6825,
+                        "y": 94.742
+                    },
+                    "uuid": "06906e99-5e08-4491-a87d-f56bd3110d57"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U101-COMP)] von R103 auf Front",
+                    "pos": {
+                        "x": 38.8385,
+                        "y": 104.046
+                    },
+                    "uuid": "57100085-f37b-4d9c-97ab-31d68663ad30"
+                },
+                {
+                    "description": "Pad 6 [Net-(U101-COMP)] von U101 auf Front",
+                    "pos": {
+                        "x": 44.958,
+                        "y": 108.458
+                    },
+                    "uuid": "9d4974d5-f4c5-41e5-97f4-a3f0bf816fd8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [Net-(U101-COMP)] von U101 auf Front",
+                    "pos": {
+                        "x": 44.958,
+                        "y": 108.458
+                    },
+                    "uuid": "9d4974d5-f4c5-41e5-97f4-a3f0bf816fd8"
+                },
+                {
+                    "description": "Pad 1 [Net-(U101-COMP)] von C112 auf Front",
+                    "pos": {
+                        "x": 47.945,
+                        "y": 104.046
+                    },
+                    "uuid": "eebc5d90-4622-4875-936f-2de173bf7e74"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [VPP] von TP101 auf Front",
+                    "pos": {
+                        "x": 55.372,
+                        "y": 111.76
+                    },
+                    "uuid": "0c83ed66-4713-4bc1-ace3-3ceb976c4a72"
+                },
+                {
+                    "description": "Pad 3 [VPP] von U101 auf Front",
+                    "pos": {
+                        "x": 44.958,
+                        "y": 113.858
+                    },
+                    "uuid": "3759f332-09d9-48f3-a92e-3fa2207ee8be"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 16 [/GPIO23] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 103.638
+                    },
+                    "uuid": "5f717a11-3307-4745-a95f-df77bee32c73"
+                },
+                {
+                    "description": "Pad 1 [/GPIO23] von R309 auf Front",
+                    "pos": {
+                        "x": 335.3585,
+                        "y": 108.417
+                    },
+                    "uuid": "af887617-36af-45ea-9936-27f8e6976b35"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(Q303-G)] von Q303 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 184.429
+                    },
+                    "uuid": "57472a4b-fa97-48b2-8bd4-fc737899c188"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q303-G)] von R311 auf Front",
+                    "pos": {
+                        "x": 337.1835,
+                        "y": 114.317
+                    },
+                    "uuid": "180f2c23-25f0-48c2-b91d-76d53a2d3628"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(Q303-G)] von R311 auf Front",
+                    "pos": {
+                        "x": 337.1835,
+                        "y": 114.317
+                    },
+                    "uuid": "180f2c23-25f0-48c2-b91d-76d53a2d3628"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q303-G)] von R309 auf Front",
+                    "pos": {
+                        "x": 337.1835,
+                        "y": 108.417
+                    },
+                    "uuid": "ed6f1a60-6a9e-48c4-b9e3-c35b0341126c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(D303-A)] von R301 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 175.729
+                    },
+                    "uuid": "f7948e15-40b2-40d4-a05a-ad1e1ee66fa6"
+                },
+                {
+                    "description": "Durchsteckpad 2 [Net-(D303-A)] von D303",
+                    "pos": {
+                        "x": 342.294,
+                        "y": 197.119
+                    },
+                    "uuid": "1ea75953-b599-4bdb-8f8c-c7f7f42f657b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(Q302-G)] von R304 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 184.579
+                    },
+                    "uuid": "7a3f421f-57eb-4a43-9cab-226be2b86950"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q302-G)] von R306 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 190.479
+                    },
+                    "uuid": "44d91c0b-9682-457c-bbcc-b2f30036c189"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(Q302-G)] von Q302 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 179.979
+                    },
+                    "uuid": "0f308ec9-3fcb-4e73-b7ae-36876c92b35c"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q302-G)] von R304 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 184.579
+                    },
+                    "uuid": "7a3f421f-57eb-4a43-9cab-226be2b86950"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [Net-(D302-A)] von Q302 auf Front",
+                    "pos": {
+                        "x": 335.4665,
+                        "y": 180.929
+                    },
+                    "uuid": "df502157-b63c-4a06-84bd-726744d530b9"
+                },
+                {
+                    "description": "Durchsteckpad 2 [Net-(D302-A)] von K302",
+                    "pos": {
+                        "x": 111.071267,
+                        "y": 70.5875
+                    },
+                    "uuid": "7816ef23-8297-4c21-9b63-d634d24d88ee"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(D302-A)] von D304",
+                    "pos": {
+                        "x": 339.754,
+                        "y": 205.74
+                    },
+                    "uuid": "cf2e8a97-155f-4df4-aa42-dc20a81415ba"
+                },
+                {
+                    "description": "Pad 2 [Net-(D302-A)] von D302 auf Front",
+                    "pos": {
+                        "x": 341.154,
+                        "y": 193.769
+                    },
+                    "uuid": "fe3aa965-e066-4d04-b16d-e180f5e59f5a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(D302-A)] von D302 auf Front",
+                    "pos": {
+                        "x": 341.154,
+                        "y": 193.769
+                    },
+                    "uuid": "fe3aa965-e066-4d04-b16d-e180f5e59f5a"
+                },
+                {
+                    "description": "Pad 3 [Net-(D302-A)] von Q302 auf Front",
+                    "pos": {
+                        "x": 335.4665,
+                        "y": 180.929
+                    },
+                    "uuid": "df502157-b63c-4a06-84bd-726744d530b9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 15 [/GPIO22] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 103.638
+                    },
+                    "uuid": "45093fea-2d88-4446-8645-b42a5d418c5b"
+                },
+                {
+                    "description": "Pad 1 [/GPIO22] von R304 auf Front",
+                    "pos": {
+                        "x": 328.9565,
+                        "y": 184.579
+                    },
+                    "uuid": "bd476480-82bd-477f-83fe-61b4d492506b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U101-FB)] von R102 auf Front",
+                    "pos": {
+                        "x": 40.7905,
+                        "y": 99.822
+                    },
+                    "uuid": "6506b538-c4a4-46d4-911f-f60d5e7bf252"
+                },
+                {
+                    "description": "Leiterbahn [Net-(U101-FB)] auf Front, Länge 2,1140 mm",
+                    "pos": {
+                        "x": 43.7915,
+                        "y": 99.822
+                    },
+                    "uuid": "71de94ad-f262-4943-8e85-2ce724def7a0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [Net-(U101-FB)] von U101 auf Front",
+                    "pos": {
+                        "x": 46.228,
+                        "y": 108.458
+                    },
+                    "uuid": "79dd8d70-39c2-488b-b21c-92a2bde2c025"
+                },
+                {
+                    "description": "Leiterbahn [Net-(U101-FB)] auf Front, Länge 2,1140 mm",
+                    "pos": {
+                        "x": 43.7915,
+                        "y": 99.822
+                    },
+                    "uuid": "71de94ad-f262-4943-8e85-2ce724def7a0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/GPIO19] von R107 auf Front",
+                    "pos": {
+                        "x": 150.9795,
+                        "y": 143.764
+                    },
+                    "uuid": "21c442be-8ef0-40c5-9ea0-1b00cd9e5f59"
+                },
+                {
+                    "description": "Durchsteckpad 35 [/GPIO19] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 129.038
+                    },
+                    "uuid": "f338e32a-b4a0-42b6-94cd-42375f9383be"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(D105-A)] von D105",
+                    "pos": {
+                        "x": 148.082,
+                        "y": 143.764
+                    },
+                    "uuid": "aa08f94f-9b94-46f9-9955-1cc7ce00c6c6"
+                },
+                {
+                    "description": "Pad 2 [Net-(D105-A)] von R107 auf Front",
+                    "pos": {
+                        "x": 152.8045,
+                        "y": 143.764
+                    },
+                    "uuid": "9f59a0f5-39a2-4ab5-b0ad-7158713adf89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(D304-A)] von R302 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 178.679
+                    },
+                    "uuid": "56a74d6f-34e7-4bcc-89e0-57a2b215c379"
+                },
+                {
+                    "description": "Durchsteckpad 2 [Net-(D304-A)] von D304",
+                    "pos": {
+                        "x": 342.294,
+                        "y": 205.74
+                    },
+                    "uuid": "d7725e0a-be42-4e52-b1e1-28b8c2f5bc04"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(D307-A)] von R307 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 193.429
+                    },
+                    "uuid": "80872ebb-d038-4975-a568-ce3d71251229"
+                },
+                {
+                    "description": "Durchsteckpad 2 [Net-(D307-A)] von D307",
+                    "pos": {
+                        "x": 332.391,
+                        "y": 120.617
+                    },
+                    "uuid": "f94602c5-8f4e-434a-abee-e73d31611477"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(J304-Pin_1)] von J304",
+                    "pos": {
+                        "x": 147.8216,
+                        "y": 30.4475
+                    },
+                    "uuid": "356e3f77-8415-4453-abc3-458fba7c2b91"
+                },
+                {
+                    "description": "Durchsteckpad 3 [Net-(J304-Pin_1)] von K304",
+                    "pos": {
+                        "x": 150.8646,
+                        "y": 58.3875
+                    },
+                    "uuid": "137fbd4f-c2f8-4dde-ade2-799fa9e84096"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(J304-Pin_2)] von J304",
+                    "pos": {
+                        "x": 142.7416,
+                        "y": 30.4475
+                    },
+                    "uuid": "de7a47a6-d53f-4adf-9167-f77254547ae5"
+                },
+                {
+                    "description": "Durchsteckpad 1 [Net-(J304-Pin_2)] von K304",
+                    "pos": {
+                        "x": 144.8646,
+                        "y": 72.5875
+                    },
+                    "uuid": "f7389d14-ab94-4e60-a52e-aaadd7e320ae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 3 [Net-(J304-Pin_3)] von J304",
+                    "pos": {
+                        "x": 137.6616,
+                        "y": 30.4475
+                    },
+                    "uuid": "af520d00-2554-44c0-9d67-b2e118ca88fe"
+                },
+                {
+                    "description": "Durchsteckpad 4 [Net-(J304-Pin_3)] von K304",
+                    "pos": {
+                        "x": 138.8646,
+                        "y": 58.3875
+                    },
+                    "uuid": "33e537db-dd09-41d6-8801-8bd4f46eafeb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/GPIO16] von R105 auf Front",
+                    "pos": {
+                        "x": 152.908,
+                        "y": 152.654
+                    },
+                    "uuid": "da353dae-ac57-485a-b17c-503de133bcf2"
+                },
+                {
+                    "description": "Durchsteckpad 36 [/GPIO16] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 129.038
+                    },
+                    "uuid": "81371896-251d-442a-9ea5-8cde9415a6a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 36 [/GPIO16] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 129.038
+                    },
+                    "uuid": "81371896-251d-442a-9ea5-8cde9415a6a8"
+                },
+                {
+                    "description": "Durchsteckpad 9 [/GPIO16] von J203",
+                    "pos": {
+                        "x": 163.068,
+                        "y": 46.228
+                    },
+                    "uuid": "1788664f-df61-45b0-a03b-10655637f3af"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(C113-Pad1)] von R103 auf Front",
+                    "pos": {
+                        "x": 40.6635,
+                        "y": 104.046
+                    },
+                    "uuid": "a36d274e-c2e5-45f3-a5fd-2868f73fc3a5"
+                },
+                {
+                    "description": "Pad 1 [Net-(C113-Pad1)] von C113 auf Front",
+                    "pos": {
+                        "x": 43.373,
+                        "y": 104.046
+                    },
+                    "uuid": "be232cee-2c10-4396-874f-b6d6c2b245e7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(J302-Pin_2)] von J302",
+                    "pos": {
+                        "x": 102.6172,
+                        "y": 30.4475
+                    },
+                    "uuid": "d81a6994-60b3-4178-b5b3-ded7680d0a25"
+                },
+                {
+                    "description": "Durchsteckpad 1 [Net-(J302-Pin_2)] von K302",
+                    "pos": {
+                        "x": 105.071267,
+                        "y": 72.5875
+                    },
+                    "uuid": "7a70ba67-d00d-4749-bcae-3f81cb1df511"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(J302-Pin_1)] von J302",
+                    "pos": {
+                        "x": 107.6972,
+                        "y": 30.4475
+                    },
+                    "uuid": "b7e1af85-05a8-48e1-b5b3-482f306410b1"
+                },
+                {
+                    "description": "Durchsteckpad 3 [Net-(J302-Pin_1)] von K302",
+                    "pos": {
+                        "x": 111.071267,
+                        "y": 58.3875
+                    },
+                    "uuid": "aa2e1fe2-7d8a-47f2-a950-740e08ac5649"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 3 [Net-(J302-Pin_3)] von J302",
+                    "pos": {
+                        "x": 97.5372,
+                        "y": 30.4475
+                    },
+                    "uuid": "887057de-cdcd-40c4-964c-3a9ad8442fc2"
+                },
+                {
+                    "description": "Durchsteckpad 4 [Net-(J302-Pin_3)] von K302",
+                    "pos": {
+                        "x": 99.071267,
+                        "y": 58.3875
+                    },
+                    "uuid": "af866f71-0fbf-4213-91c6-5b92dd8df3b8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(J203-Pin_1)] von F201",
+                    "pos": {
+                        "x": 45.72,
+                        "y": 48.26
+                    },
+                    "uuid": "f50a8f98-77fa-40ff-9ee8-f7b8e1ce0d08"
+                },
+                {
+                    "description": "Durchsteckpad 1 [Net-(J203-Pin_1)] von J203",
+                    "pos": {
+                        "x": 163.068,
+                        "y": 56.388
+                    },
+                    "uuid": "3896abaa-009f-4bd1-81aa-02c231d9c6a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [/GPIO26] von IC202 auf Front",
+                    "pos": {
+                        "x": 145.887,
+                        "y": 89.549
+                    },
+                    "uuid": "3462ddb2-246e-4fc4-aaf3-d7f371cd107c"
+                },
+                {
+                    "description": "Durchsteckpad 37 [/GPIO26] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 131.578
+                    },
+                    "uuid": "4fd05384-814a-48a7-9778-3d9da2fb9311"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 13 [/SCL] von IC202 auf Front",
+                    "pos": {
+                        "x": 147.037,
+                        "y": 87.899
+                    },
+                    "uuid": "1acbce97-116b-4f9a-86fe-ca4cd99fdf2e"
+                },
+                {
+                    "description": "Durchsteckpad 5 [/SCL] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 90.938
+                    },
+                    "uuid": "3a984222-434c-4937-8601-53437cb19cf2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 8 [/SCL] von J203",
+                    "pos": {
+                        "x": 160.528,
+                        "y": 48.768
+                    },
+                    "uuid": "eb86c980-d8dc-4f9b-99e9-5cb31096d667"
+                },
+                {
+                    "description": "Pad 13 [/SCL] von IC202 auf Front",
+                    "pos": {
+                        "x": 147.037,
+                        "y": 87.899
+                    },
+                    "uuid": "1acbce97-116b-4f9a-86fe-ca4cd99fdf2e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 8 [/SCL] von J203",
+                    "pos": {
+                        "x": 160.528,
+                        "y": 48.768
+                    },
+                    "uuid": "eb86c980-d8dc-4f9b-99e9-5cb31096d667"
+                },
+                {
+                    "description": "Durchsteckpad 2 [/SCL] von J204",
+                    "pos": {
+                        "x": 39.076,
+                        "y": 28.08
+                    },
+                    "uuid": "ddca1ff2-3d6f-4d91-a989-c282383bbcbe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 3 [/SDA] von J204",
+                    "pos": {
+                        "x": 36.576,
+                        "y": 28.08
+                    },
+                    "uuid": "0440d732-3746-4c7b-aee8-2bddd40465a9"
+                },
+                {
+                    "description": "Pad 14 [/SDA] von IC202 auf Front",
+                    "pos": {
+                        "x": 146.537,
+                        "y": 87.899
+                    },
+                    "uuid": "e3319d59-6db1-4a69-8867-9043608c8ff5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 14 [/SDA] von IC202 auf Front",
+                    "pos": {
+                        "x": 146.537,
+                        "y": 87.899
+                    },
+                    "uuid": "e3319d59-6db1-4a69-8867-9043608c8ff5"
+                },
+                {
+                    "description": "Durchsteckpad 3 [/SDA] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 88.398
+                    },
+                    "uuid": "ac6d2411-c651-4c60-b3a6-bc430373ed07"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 3 [/SDA] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 88.398
+                    },
+                    "uuid": "ac6d2411-c651-4c60-b3a6-bc430373ed07"
+                },
+                {
+                    "description": "Durchsteckpad 7 [/SDA] von J203",
+                    "pos": {
+                        "x": 163.068,
+                        "y": 48.768
+                    },
+                    "uuid": "5e259e2d-dfa7-4eff-93a5-efd2051e7e08"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/GPIO27] von R204 auf Front",
+                    "pos": {
+                        "x": 74.8215,
+                        "y": 141.5105
+                    },
+                    "uuid": "f4bc3bf3-5a5d-48ee-8024-8e26fae93c2c"
+                },
+                {
+                    "description": "Durchsteckpad 13 [/GPIO27] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 101.098
+                    },
+                    "uuid": "b2c813d0-0b49-47bd-a6bc-d0f0fb6b4bda"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(D305-A)] von D307",
+                    "pos": {
+                        "x": 329.851,
+                        "y": 120.617
+                    },
+                    "uuid": "1fdc3ab7-f929-4258-94d7-dc287f9e5cc4"
+                },
+                {
+                    "description": "Pad 2 [Net-(D305-A)] von D305 auf Front",
+                    "pos": {
+                        "x": 331.251,
+                        "y": 109.677
+                    },
+                    "uuid": "6cec6b4d-8b85-463a-9680-b618d8987688"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(D305-A)] von D307",
+                    "pos": {
+                        "x": 329.851,
+                        "y": 120.617
+                    },
+                    "uuid": "1fdc3ab7-f929-4258-94d7-dc287f9e5cc4"
+                },
+                {
+                    "description": "Pad 3 [Net-(D305-A)] von Q303 auf Front",
+                    "pos": {
+                        "x": 335.4665,
+                        "y": 185.379
+                    },
+                    "uuid": "b72e469b-629d-4b79-99e2-4235547930d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(D305-A)] von D305 auf Front",
+                    "pos": {
+                        "x": 331.251,
+                        "y": 109.677
+                    },
+                    "uuid": "6cec6b4d-8b85-463a-9680-b618d8987688"
+                },
+                {
+                    "description": "Durchsteckpad 2 [Net-(D305-A)] von K303",
+                    "pos": {
+                        "x": 130.967933,
+                        "y": 70.5875
+                    },
+                    "uuid": "47e03002-0ce3-4f28-8805-f6046be8fec3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 18 [/GPIO24] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 106.178
+                    },
+                    "uuid": "e9bac21f-fba6-4d2a-80b3-59e675a450a1"
+                },
+                {
+                    "description": "Pad 1 [/GPIO24] von R310 auf Front",
+                    "pos": {
+                        "x": 335.3585,
+                        "y": 111.367
+                    },
+                    "uuid": "f0483823-878c-4ea1-b4cd-297c36be9dab"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(Q304-G)] von Q304 auf Front",
+                    "pos": {
+                        "x": 333.5915,
+                        "y": 188.879
+                    },
+                    "uuid": "45669d6b-80a2-462d-9871-30c8c04d2676"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q304-G)] von R312 auf Front",
+                    "pos": {
+                        "x": 337.1835,
+                        "y": 117.267
+                    },
+                    "uuid": "4d94f7ab-42c0-42bb-943b-dc41ec9f33e8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(Q304-G)] von R312 auf Front",
+                    "pos": {
+                        "x": 337.1835,
+                        "y": 117.267
+                    },
+                    "uuid": "4d94f7ab-42c0-42bb-943b-dc41ec9f33e8"
+                },
+                {
+                    "description": "Pad 2 [Net-(Q304-G)] von R310 auf Front",
+                    "pos": {
+                        "x": 337.1835,
+                        "y": 111.367
+                    },
+                    "uuid": "ed649b4e-af34-4609-a7db-7fc3b9b5bef1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(D104-A)] von D104",
+                    "pos": {
+                        "x": 148.082,
+                        "y": 156.464
+                    },
+                    "uuid": "ce5cdf0c-1e81-4d8d-9eac-9790ad83b577"
+                },
+                {
+                    "description": "Pad 2 [Net-(D104-A)] von R106 auf Front",
+                    "pos": {
+                        "x": 152.908,
+                        "y": 156.464
+                    },
+                    "uuid": "7e2b3f68-3255-45a5-a09b-7c01598cedf7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/GPIO21] von R109 auf Front",
+                    "pos": {
+                        "x": 150.9795,
+                        "y": 127.762
+                    },
+                    "uuid": "3f86b001-793b-44e9-b736-8f6786ef6eb8"
+                },
+                {
+                    "description": "Durchsteckpad 40 [/GPIO21] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 134.118
+                    },
+                    "uuid": "62b80c68-4892-494b-a540-861867ea32ff"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(D107-A)] von D107",
+                    "pos": {
+                        "x": 148.082,
+                        "y": 127.762
+                    },
+                    "uuid": "d0079f1d-2d2e-497f-8a13-7f1d88003050"
+                },
+                {
+                    "description": "Pad 2 [Net-(D107-A)] von R109 auf Front",
+                    "pos": {
+                        "x": 152.8045,
+                        "y": 127.762
+                    },
+                    "uuid": "a5727628-78dd-42b9-8b56-6300db2f773c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(D306-A)] von D308",
+                    "pos": {
+                        "x": 329.851,
+                        "y": 126.087
+                    },
+                    "uuid": "c008b620-ecab-489b-8501-bde341218b57"
+                },
+                {
+                    "description": "Pad 2 [Net-(D306-A)] von D306 auf Front",
+                    "pos": {
+                        "x": 331.251,
+                        "y": 115.147
+                    },
+                    "uuid": "b6e42044-7b87-44c2-a9d0-61dde21059ad"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(D306-A)] von D308",
+                    "pos": {
+                        "x": 329.851,
+                        "y": 126.087
+                    },
+                    "uuid": "c008b620-ecab-489b-8501-bde341218b57"
+                },
+                {
+                    "description": "Pad 3 [Net-(D306-A)] von Q304 auf Front",
+                    "pos": {
+                        "x": 335.4665,
+                        "y": 189.829
+                    },
+                    "uuid": "611428c4-768f-412e-a58b-06b5bd59d6c5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(D306-A)] von D306 auf Front",
+                    "pos": {
+                        "x": 331.251,
+                        "y": 115.147
+                    },
+                    "uuid": "b6e42044-7b87-44c2-a9d0-61dde21059ad"
+                },
+                {
+                    "description": "Durchsteckpad 2 [Net-(D306-A)] von K304",
+                    "pos": {
+                        "x": 150.8646,
+                        "y": 70.5875
+                    },
+                    "uuid": "867f92e1-684f-4b6f-b022-fefed5d13aa7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 1 [Net-(J303-Pin_1)] von J303",
+                    "pos": {
+                        "x": 127.7594,
+                        "y": 30.4475
+                    },
+                    "uuid": "69c6ca65-cf6d-48f3-87fb-427fda2a56c6"
+                },
+                {
+                    "description": "Durchsteckpad 3 [Net-(J303-Pin_1)] von K303",
+                    "pos": {
+                        "x": 130.967933,
+                        "y": 58.3875
+                    },
+                    "uuid": "fcdfe4c1-d19e-44dc-92d3-de3a1cda9552"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(J303-Pin_2)] von J303",
+                    "pos": {
+                        "x": 122.6794,
+                        "y": 30.4475
+                    },
+                    "uuid": "51102daf-6e88-450f-b974-5ecd4c2545ce"
+                },
+                {
+                    "description": "Durchsteckpad 1 [Net-(J303-Pin_2)] von K303",
+                    "pos": {
+                        "x": 124.967933,
+                        "y": 72.5875
+                    },
+                    "uuid": "55979a34-1334-48b3-93e8-fd14f001752e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 3 [Net-(J303-Pin_3)] von J303",
+                    "pos": {
+                        "x": 117.5994,
+                        "y": 30.4475
+                    },
+                    "uuid": "f7e5c4df-53cb-4f51-adad-7252711df523"
+                },
+                {
+                    "description": "Durchsteckpad 4 [Net-(J303-Pin_3)] von K303",
+                    "pos": {
+                        "x": 118.967933,
+                        "y": 58.3875
+                    },
+                    "uuid": "ee3f6d19-249a-48d0-8fd4-125af9889954"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Peripherie/RS485_A] von D201 auf Front",
+                    "pos": {
+                        "x": 26.956,
+                        "y": 42.352
+                    },
+                    "uuid": "0185cda9-067f-4fa7-9899-f58c374a1cb9"
+                },
+                {
+                    "description": "Pad 2 [/Peripherie/RS485_A] von R202 auf Front",
+                    "pos": {
+                        "x": 35.4565,
+                        "y": 54.356
+                    },
+                    "uuid": "545388ea-bf3e-41a0-a71c-3a409c157cb3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [/Peripherie/RS485_A] von IC201 auf Front",
+                    "pos": {
+                        "x": 46.355,
+                        "y": 37.929
+                    },
+                    "uuid": "85a2cb6d-1697-43cf-9873-60e4d0f086f6"
+                },
+                {
+                    "description": "Pad 2 [/Peripherie/RS485_A] von R202 auf Front",
+                    "pos": {
+                        "x": 35.4565,
+                        "y": 54.356
+                    },
+                    "uuid": "545388ea-bf3e-41a0-a71c-3a409c157cb3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [/Peripherie/RS485_A] von J202",
+                    "pos": {
+                        "x": 60.3382,
+                        "y": 30.48
+                    },
+                    "uuid": "4918a303-1059-45ab-a14f-8c86264b47fc"
+                },
+                {
+                    "description": "Pad 6 [/Peripherie/RS485_A] von IC201 auf Front",
+                    "pos": {
+                        "x": 46.355,
+                        "y": 37.929
+                    },
+                    "uuid": "85a2cb6d-1697-43cf-9873-60e4d0f086f6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [/Peripherie/RS485_A] von J203",
+                    "pos": {
+                        "x": 160.528,
+                        "y": 56.388
+                    },
+                    "uuid": "471d15ce-a873-40f4-a5d3-ae53dbaabcf0"
+                },
+                {
+                    "description": "Durchsteckpad 2 [/Peripherie/RS485_A] von J202",
+                    "pos": {
+                        "x": 60.3382,
+                        "y": 30.48
+                    },
+                    "uuid": "4918a303-1059-45ab-a14f-8c86264b47fc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Peripherie/RS485_B] von D201 auf Front",
+                    "pos": {
+                        "x": 26.956,
+                        "y": 40.452
+                    },
+                    "uuid": "a821040b-f449-49a3-a4da-ed51766f54fc"
+                },
+                {
+                    "description": "Durchsteckpad 2 [/Peripherie/RS485_B] von J201",
+                    "pos": {
+                        "x": 34.544,
+                        "y": 45.974
+                    },
+                    "uuid": "2c143ea0-1e47-4074-b48d-875aa1c3134b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [/Peripherie/RS485_B] von J201",
+                    "pos": {
+                        "x": 34.544,
+                        "y": 45.974
+                    },
+                    "uuid": "2c143ea0-1e47-4074-b48d-875aa1c3134b"
+                },
+                {
+                    "description": "Pad 7 [/Peripherie/RS485_B] von IC201 auf Front",
+                    "pos": {
+                        "x": 45.085,
+                        "y": 37.929
+                    },
+                    "uuid": "91324cec-1566-4540-9e43-af6339d5d16b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [/Peripherie/RS485_B] von IC201 auf Front",
+                    "pos": {
+                        "x": 45.085,
+                        "y": 37.929
+                    },
+                    "uuid": "91324cec-1566-4540-9e43-af6339d5d16b"
+                },
+                {
+                    "description": "Durchsteckpad 3 [/Peripherie/RS485_B] von J202",
+                    "pos": {
+                        "x": 55.3382,
+                        "y": 30.48
+                    },
+                    "uuid": "bbdba4dc-a760-4a2e-87ac-6cd9cafda294"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 3 [/Peripherie/RS485_B] von J203",
+                    "pos": {
+                        "x": 163.068,
+                        "y": 53.848
+                    },
+                    "uuid": "e5988a45-0df2-417b-b937-29a91086b29f"
+                },
+                {
+                    "description": "Durchsteckpad 3 [/Peripherie/RS485_B] von J202",
+                    "pos": {
+                        "x": 55.3382,
+                        "y": 30.48
+                    },
+                    "uuid": "bbdba4dc-a760-4a2e-87ac-6cd9cafda294"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(J201-Pin_1)] von R202 auf Front",
+                    "pos": {
+                        "x": 33.6315,
+                        "y": 54.356
+                    },
+                    "uuid": "f054d15c-0b3b-4474-bc08-08943f4b0f91"
+                },
+                {
+                    "description": "Durchsteckpad 1 [Net-(J201-Pin_1)] von J201",
+                    "pos": {
+                        "x": 34.544,
+                        "y": 48.514
+                    },
+                    "uuid": "d6f5dfa0-09ac-445b-ae9c-62a70ad78552"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(D308-A)] von R308 auf Front",
+                    "pos": {
+                        "x": 330.7815,
+                        "y": 196.379
+                    },
+                    "uuid": "30f6fae2-871b-4968-b6ab-847512115b89"
+                },
+                {
+                    "description": "Durchsteckpad 2 [Net-(D308-A)] von D308",
+                    "pos": {
+                        "x": 332.391,
+                        "y": 126.087
+                    },
+                    "uuid": "f0490112-df50-4e23-8b1f-1a98e24ac4a9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/GPIO20] von R108 auf Front",
+                    "pos": {
+                        "x": 150.9795,
+                        "y": 135.636
+                    },
+                    "uuid": "25b9c307-b5fc-4283-8aab-1b606ce4ddd4"
+                },
+                {
+                    "description": "Durchsteckpad 38 [/GPIO20] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 131.578
+                    },
+                    "uuid": "9b2f46f7-7496-4db1-b504-234277b9d097"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(D106-A)] von D106",
+                    "pos": {
+                        "x": 148.082,
+                        "y": 135.763
+                    },
+                    "uuid": "247bd4ad-e72a-443e-a068-c90777ba5840"
+                },
+                {
+                    "description": "Pad 2 [Net-(D106-A)] von R108 auf Front",
+                    "pos": {
+                        "x": 152.8045,
+                        "y": 135.636
+                    },
+                    "uuid": "a444dd5d-e378-4dc8-a138-98b77fb85d06"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/GPIO15] von R201 auf Front",
+                    "pos": {
+                        "x": 35.56,
+                        "y": 41.402
+                    },
+                    "uuid": "b1a3a8da-2b62-4566-ab45-22e7571e9771"
+                },
+                {
+                    "description": "Pad 2 [/GPIO15] von IC201 auf Front",
+                    "pos": {
+                        "x": 45.085,
+                        "y": 43.351
+                    },
+                    "uuid": "0c514e56-ab7e-427b-ae07-215e77349e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/GPIO15] von IC201 auf Front",
+                    "pos": {
+                        "x": 45.085,
+                        "y": 43.351
+                    },
+                    "uuid": "0c514e56-ab7e-427b-ae07-215e77349e9f"
+                },
+                {
+                    "description": "Pad 3 [/GPIO15] von IC201 auf Front",
+                    "pos": {
+                        "x": 46.355,
+                        "y": 43.351
+                    },
+                    "uuid": "69a8f3c4-8592-4ebe-9587-c3a5c11cf894"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Durchsteckpad 10 [/GPIO15] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 96.018
+                    },
+                    "uuid": "9cc46ee8-223c-4a62-8a6c-ab0a1f406ca5"
+                },
+                {
+                    "description": "Pad 3 [/GPIO15] von IC201 auf Front",
+                    "pos": {
+                        "x": 46.355,
+                        "y": 43.351
+                    },
+                    "uuid": "69a8f3c4-8592-4ebe-9587-c3a5c11cf894"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [/GPIO12] von IC201 auf Front",
+                    "pos": {
+                        "x": 47.625,
+                        "y": 43.351
+                    },
+                    "uuid": "b95d0d0d-7aec-4347-ac94-3bf86d0e5a0d"
+                },
+                {
+                    "description": "Durchsteckpad 32 [/GPIO12] von J102",
+                    "pos": {
+                        "x": 158.01,
+                        "y": 123.958
+                    },
+                    "uuid": "422054d4-20d7-4bcd-9f69-750106a67fe9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/GPIO13] von IC201 auf Front",
+                    "pos": {
+                        "x": 43.815,
+                        "y": 43.351
+                    },
+                    "uuid": "b166dd28-6d22-4ee3-a55b-89acf1093232"
+                },
+                {
+                    "description": "Durchsteckpad 33 [/GPIO13] von J102",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 126.498
+                    },
+                    "uuid": "01c679ac-981f-4011-a1e8-23710845514b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1270 mm)",
+            "items": [
+                {
+                    "description": "Leiterbahn [+5V] auf Front, Länge 23,8760 mm",
+                    "pos": {
+                        "x": 53.745,
+                        "y": 79.756
+                    },
+                    "uuid": "01ad5908-e969-48be-a336-81aae08fc01b"
+                },
+                {
+                    "description": "Leiterbahn [VPP] auf Front, Länge 37,8520 mm",
+                    "pos": {
+                        "x": 55.372,
+                        "y": 111.76
+                    },
+                    "uuid": "0c998372-8dd8-47ce-8455-87d2105263df"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1950 mm)",
+            "items": [
+                {
+                    "description": "Pad 7 [GND] von U101 auf Front",
+                    "pos": {
+                        "x": 43.688,
+                        "y": 108.458
+                    },
+                    "uuid": "091261eb-6664-4adf-aadd-7222ad4610b8"
+                },
+                {
+                    "description": "Leiterbahn [Net-(U101-SW)] auf Front, Länge 5,5220 mm",
+                    "pos": {
+                        "x": 42.418,
+                        "y": 108.458
+                    },
+                    "uuid": "f3c6efdd-21ac-4355-96fd-0e85a145e897"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1270 mm)",
+            "items": [
+                {
+                    "description": "Leiterbahn [VPP] auf Front, Länge 37,8520 mm",
+                    "pos": {
+                        "x": 55.372,
+                        "y": 111.76
+                    },
+                    "uuid": "0c998372-8dd8-47ce-8455-87d2105263df"
+                },
+                {
+                    "description": "Leiterbahn [+5V] auf Front, Länge 1,7961 mm",
+                    "pos": {
+                        "x": 52.475,
+                        "y": 78.486
+                    },
+                    "uuid": "7c24c641-8fd9-4f3c-a56d-1b6478d46472"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1270 mm)",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(D301-A)] von K301",
+                    "pos": {
+                        "x": 91.1746,
+                        "y": 70.5875
+                    },
+                    "uuid": "1f635187-0c3c-445d-b191-4f5a12390d1f"
+                },
+                {
+                    "description": "Leiterbahn [+5V] auf Front, Länge 15,6427 mm",
+                    "pos": {
+                        "x": 81.3016,
+                        "y": 68.4605
+                    },
+                    "uuid": "64138c6e-a805-41b2-9546-f6d82793ea14"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1270 mm)",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(D302-A)] von K302",
+                    "pos": {
+                        "x": 111.071267,
+                        "y": 70.5875
+                    },
+                    "uuid": "7816ef23-8297-4c21-9b63-d634d24d88ee"
+                },
+                {
+                    "description": "Leiterbahn [+5V] auf Front, Länge 15,6427 mm",
+                    "pos": {
+                        "x": 101.198267,
+                        "y": 68.4605
+                    },
+                    "uuid": "a1a20864-7fd0-4627-a386-1fe00364a564"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1120 mm)",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(D303-A)] von D303",
+                    "pos": {
+                        "x": 342.294,
+                        "y": 197.119
+                    },
+                    "uuid": "1ea75953-b599-4bdb-8f8c-c7f7f42f657b"
+                },
+                {
+                    "description": "Pad 1 [+5V] von C303 auf Front",
+                    "pos": {
+                        "x": 343.749,
+                        "y": 196.269
+                    },
+                    "uuid": "8677cc3b-5894-477b-b611-b3354124a31f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint C303",
+                    "pos": {
+                        "x": 344.699,
+                        "y": 196.269
+                    },
+                    "uuid": "5e4433b4-d025-4723-826c-f3a368d201df"
+                },
+                {
+                    "description": "Footprint D303",
+                    "pos": {
+                        "x": 339.754,
+                        "y": 197.119
+                    },
+                    "uuid": "da7a1c9f-7e95-48d3-91d0-c695a129c99c"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint D302",
+                    "pos": {
+                        "x": 339.754,
+                        "y": 193.769
+                    },
+                    "uuid": "9f3959b5-0f39-4d50-82c9-8aa172decdac"
+                },
+                {
+                    "description": "Footprint D303",
+                    "pos": {
+                        "x": 339.754,
+                        "y": 197.119
+                    },
+                    "uuid": "da7a1c9f-7e95-48d3-91d0-c695a129c99c"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint D303",
+                    "pos": {
+                        "x": 339.754,
+                        "y": 197.119
+                    },
+                    "uuid": "da7a1c9f-7e95-48d3-91d0-c695a129c99c"
+                },
+                {
+                    "description": "Footprint C304",
+                    "pos": {
+                        "x": 344.699,
+                        "y": 199.279
+                    },
+                    "uuid": "eed2fc47-f407-4262-9ad7-35959bfec906"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Verbindung der Wärmefalle zur Zone unvollständig (Lage Front; Zone min. Steganzahl 2; tatsächlich 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] auf Front und Back, Priorität 0",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "6f29f142-e6b7-4173-9676-d692058ea30a"
+                },
+                {
+                    "description": "Pad 7 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 147.537,
+                        "y": 89.699
+                    },
+                    "uuid": "b399dc54-4a81-42a3-9980-ec76bfd1c453"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Verbindung der Wärmefalle zur Zone unvollständig (Lage Front; Zone min. Steganzahl 2; tatsächlich 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] auf Front und Back, Priorität 0",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "6f29f142-e6b7-4173-9676-d692058ea30a"
+                },
+                {
+                    "description": "Pad 10 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 148.187,
+                        "y": 88.549
+                    },
+                    "uuid": "3e2e651d-a519-4eb8-8079-7d5c7fa3d550"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Verbindung der Wärmefalle zur Zone unvollständig (Lage Front; Zone min. Steganzahl 2; tatsächlich 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] auf Front und Back, Priorität 0",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "6f29f142-e6b7-4173-9676-d692058ea30a"
+                },
+                {
+                    "description": "Pad 11 [GND] von IC202 auf Front",
+                    "pos": {
+                        "x": 148.187,
+                        "y": 88.049
+                    },
+                    "uuid": "1bd350a1-feda-4edb-a400-e353f21d1388"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Verbindung der Wärmefalle zur Zone unvollständig (Lage Front; Zone min. Steganzahl 2; tatsächlich 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] auf Front und Back, Priorität 0",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "6f29f142-e6b7-4173-9676-d692058ea30a"
+                },
+                {
+                    "description": "Pad 7 [GND] von U101 auf Front",
+                    "pos": {
+                        "x": 43.688,
+                        "y": 108.458
+                    },
+                    "uuid": "091261eb-6664-4adf-aadd-7222ad4610b8"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Vorderseitige Lötstoppöffnung über Elementen mit verschiedenen Netzen",
+            "items": [
+                {
+                    "description": "Durchsteckpad 2 [Net-(D303-A)] von D303",
+                    "pos": {
+                        "x": 342.294,
+                        "y": 197.119
+                    },
+                    "uuid": "1ea75953-b599-4bdb-8f8c-c7f7f42f657b"
+                },
+                {
+                    "description": "Pad 1 [+5V] von C303 auf Front",
+                    "pos": {
+                        "x": 343.749,
+                        "y": 196.269
+                    },
+                    "uuid": "8677cc3b-5894-477b-b611-b3354124a31f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt auf F.Silkscreen",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 73.66
+                    },
+                    "uuid": "3f243375-d192-4e93-bb21-09022f2b5a8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt auf F.Silkscreen",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 20.32
+                    },
+                    "uuid": "9dbe1059-ab17-4a0a-bb74-2816bba89350"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 136.6616,
+                        "y": 20.3375
+                    },
+                    "uuid": "a7a95bd2-6f2d-4043-a9e7-2668565b7908"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 138.4116,
+                        "y": 21.8375
+                    },
+                    "uuid": "6016b1d8-3bab-458c-a87c-f576c36cf717"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 138.6616,
+                        "y": 20.3375
+                    },
+                    "uuid": "e0b2888e-3dcf-4188-89d3-e360d9a4fee2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 141.7416,
+                        "y": 20.3375
+                    },
+                    "uuid": "df38dd7e-035f-4aae-87f4-4f1e3a2b5180"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 143.4916,
+                        "y": 21.8375
+                    },
+                    "uuid": "deaab141-67a4-4a9e-b7df-0b66b4232a03"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 143.7416,
+                        "y": 20.3375
+                    },
+                    "uuid": "e906eb1d-a6d3-4b68-b733-e863573b0afe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 146.8216,
+                        "y": 20.3375
+                    },
+                    "uuid": "c7f3d318-7ca0-4d0f-9514-afdc6135a207"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 148.5716,
+                        "y": 21.8375
+                    },
+                    "uuid": "fa2b62db-aca2-46c7-a4d7-66ce953cac48"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 148.8216,
+                        "y": 20.3375
+                    },
+                    "uuid": "a6f90e59-a003-4071-8e7c-ab3b3465638e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Rechteck von J304 auf F.Silkscreen",
+                    "pos": {
+                        "x": 151.4716,
+                        "y": 32.5575
+                    },
+                    "uuid": "d055fcf0-1fdc-490a-a91c-f35f15b7033e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J101 auf F.Silkscreen",
+                    "pos": {
+                        "x": 35.312,
+                        "y": 162.5425
+                    },
+                    "uuid": "94285d38-ffec-4d72-a950-23eed74afb0f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J101 auf F.Silkscreen",
+                    "pos": {
+                        "x": 35.562,
+                        "y": 161.0425
+                    },
+                    "uuid": "74d41e13-6302-47b7-9708-cf4f1887abdc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J101 auf F.Silkscreen",
+                    "pos": {
+                        "x": 37.312,
+                        "y": 162.5425
+                    },
+                    "uuid": "ff280310-2897-45cf-82f7-bce4a07f16b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J101 auf F.Silkscreen",
+                    "pos": {
+                        "x": 40.392,
+                        "y": 162.5425
+                    },
+                    "uuid": "2382332c-ebc4-4ead-a1fe-255b34bbc93d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J101 auf F.Silkscreen",
+                    "pos": {
+                        "x": 40.642,
+                        "y": 161.0425
+                    },
+                    "uuid": "6b84cd80-74eb-4026-8495-aaf7a12f712f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J101 auf F.Silkscreen",
+                    "pos": {
+                        "x": 42.392,
+                        "y": 162.5425
+                    },
+                    "uuid": "5094bab6-5a6a-4e23-8105-6283338bfa0f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Rechteck von J101 auf F.Silkscreen",
+                    "pos": {
+                        "x": 32.662,
+                        "y": 150.3225
+                    },
+                    "uuid": "eae3d7dd-c2db-47cf-88a4-9be39d90ebac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J301 auf F.Silkscreen",
+                    "pos": {
+                        "x": 81.555,
+                        "y": 20.3375
+                    },
+                    "uuid": "c5df1696-8d7d-4dd0-865c-557e7987f15b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J301 auf F.Silkscreen",
+                    "pos": {
+                        "x": 83.305,
+                        "y": 21.8375
+                    },
+                    "uuid": "73aca54b-401c-4d38-8a9e-79fd7667e04a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J301 auf F.Silkscreen",
+                    "pos": {
+                        "x": 83.555,
+                        "y": 20.3375
+                    },
+                    "uuid": "2efd32c5-a040-489e-a289-be7fcf9f57a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J301 auf F.Silkscreen",
+                    "pos": {
+                        "x": 86.635,
+                        "y": 20.3375
+                    },
+                    "uuid": "d64ffd4e-b189-42d6-919f-1fe2897c6098"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J301 auf F.Silkscreen",
+                    "pos": {
+                        "x": 88.385,
+                        "y": 21.8375
+                    },
+                    "uuid": "7554bc5d-7d28-4932-a6c5-ae7a043cd745"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J301 auf F.Silkscreen",
+                    "pos": {
+                        "x": 88.635,
+                        "y": 20.3375
+                    },
+                    "uuid": "3c5155b8-1748-422d-9400-e673299b2293"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Rechteck von J301 auf F.Silkscreen",
+                    "pos": {
+                        "x": 91.285,
+                        "y": 32.5575
+                    },
+                    "uuid": "fd716de1-249d-4a1c-803c-1386939d8329"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J204 auf F.Silkscreen",
+                    "pos": {
+                        "x": 31.516,
+                        "y": 20.37
+                    },
+                    "uuid": "eee75ae9-8e51-429a-9677-725e6aa85c90"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J204 auf F.Silkscreen",
+                    "pos": {
+                        "x": 37.826,
+                        "y": 20.37
+                    },
+                    "uuid": "015c73d0-506e-4551-8080-721952f0d29e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J204 auf F.Silkscreen",
+                    "pos": {
+                        "x": 37.826,
+                        "y": 20.37
+                    },
+                    "uuid": "504dca8e-0e74-460b-b6ce-8170d84c501d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J204 auf F.Silkscreen",
+                    "pos": {
+                        "x": 44.136,
+                        "y": 20.37
+                    },
+                    "uuid": "447ae06f-8820-47da-94ea-1bd992ac30af"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 70.115,
+                        "y": 162.5425
+                    },
+                    "uuid": "999d44b3-fa70-4f80-9297-e4f52bdd0216"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 70.365,
+                        "y": 161.0425
+                    },
+                    "uuid": "4fbc15ac-ab93-4788-9b33-154938f348f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 72.115,
+                        "y": 162.5425
+                    },
+                    "uuid": "2ceb5429-accc-4545-8f86-cb13bee630df"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 75.195,
+                        "y": 162.5425
+                    },
+                    "uuid": "8101e487-eab8-4a5c-ace8-047446319084"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 75.445,
+                        "y": 161.0425
+                    },
+                    "uuid": "e8ea35db-ad9d-42f5-8b56-c96efe20ce93"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 77.195,
+                        "y": 162.5425
+                    },
+                    "uuid": "75d42ca8-92f8-43de-bfdf-6f1a8800f4cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 80.275,
+                        "y": 162.5425
+                    },
+                    "uuid": "fb6688b4-9e43-4d88-87d9-a32873336e09"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 80.525,
+                        "y": 161.0425
+                    },
+                    "uuid": "5a9d958b-b776-488c-a3cf-21bac3264e11"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 82.275,
+                        "y": 162.5425
+                    },
+                    "uuid": "ed607410-8acb-44d2-8279-05af86b02e0b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Rechteck von J205 auf F.Silkscreen",
+                    "pos": {
+                        "x": 67.465,
+                        "y": 150.3225
+                    },
+                    "uuid": "7187d14a-4c52-4016-a71e-69d8e77cb7df"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 116.5994,
+                        "y": 20.3375
+                    },
+                    "uuid": "568910a9-1567-45e0-8434-c31fce065f90"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 118.3494,
+                        "y": 21.8375
+                    },
+                    "uuid": "1589ff4e-55a8-4d62-a5bb-465cc936929b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 118.5994,
+                        "y": 20.3375
+                    },
+                    "uuid": "b327b9a4-e953-4109-b200-d35100cea045"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 121.6794,
+                        "y": 20.3375
+                    },
+                    "uuid": "69a59d8a-5938-49f2-8468-3b85f46a93c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 123.4294,
+                        "y": 21.8375
+                    },
+                    "uuid": "ea29530c-4e6a-4069-b29c-c86daba51f80"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 123.6794,
+                        "y": 20.3375
+                    },
+                    "uuid": "469329a3-41d6-4859-ae93-661ce21a32f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 126.7594,
+                        "y": 20.3375
+                    },
+                    "uuid": "40253b36-46e3-40ff-bee3-43bd5ccf9b22"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 128.5094,
+                        "y": 21.8375
+                    },
+                    "uuid": "c49f685a-d0ff-4b12-a1ff-26af27779a20"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 128.7594,
+                        "y": 20.3375
+                    },
+                    "uuid": "8e62d150-d6b8-40e8-bd6d-02408b2507ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Rechteck von J303 auf F.Silkscreen",
+                    "pos": {
+                        "x": 131.4094,
+                        "y": 32.5575
+                    },
+                    "uuid": "15575103-3ae7-4974-98b2-33fe5a09560a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 96.5372,
+                        "y": 20.3375
+                    },
+                    "uuid": "8410baa1-258b-4753-9c29-2fd180722bc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 98.2872,
+                        "y": 21.8375
+                    },
+                    "uuid": "009d0522-c01f-4e2a-aded-237618e3ca83"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 98.5372,
+                        "y": 20.3375
+                    },
+                    "uuid": "347e6c2f-0819-4bbc-9d4a-72a9db41c0fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 101.6172,
+                        "y": 20.3375
+                    },
+                    "uuid": "0dd06bf7-2c60-40ff-8a7e-59a75936ae6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 103.3672,
+                        "y": 21.8375
+                    },
+                    "uuid": "55fb3f66-e131-4dc6-abf4-1a5a67ffc94f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 103.6172,
+                        "y": 20.3375
+                    },
+                    "uuid": "fb2f2c3b-4353-43d4-a740-b861d5483f12"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 106.6972,
+                        "y": 20.3375
+                    },
+                    "uuid": "06aec8a7-3e8b-4da7-879d-8f9e218e1222"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 108.4472,
+                        "y": 21.8375
+                    },
+                    "uuid": "edf3f878-d2eb-4bb9-897a-967cd4697f2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 108.6972,
+                        "y": 20.3375
+                    },
+                    "uuid": "806ec268-f25e-46e6-ae34-c87c20ea22e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Rechteck von J302 auf F.Silkscreen",
+                    "pos": {
+                        "x": 111.3472,
+                        "y": 32.5575
+                    },
+                    "uuid": "9db28f6f-303f-4b35-9701-68db20cb9291"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 49.3382,
+                        "y": 20.37
+                    },
+                    "uuid": "b4fb0c27-259b-4061-b522-5c1097438a0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 51.0882,
+                        "y": 21.87
+                    },
+                    "uuid": "3475ff44-c7c4-40fe-878b-21472e006768"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 51.3382,
+                        "y": 20.37
+                    },
+                    "uuid": "bc0523c9-a8a4-4a70-a222-20f508f7f9f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 54.3382,
+                        "y": 20.37
+                    },
+                    "uuid": "5da35a25-36f9-40ea-abde-d6bb7dd96683"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 56.0882,
+                        "y": 21.87
+                    },
+                    "uuid": "f3eeb466-9c63-426b-b0d0-b8de57d70933"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 56.3382,
+                        "y": 20.37
+                    },
+                    "uuid": "872739a1-58e1-4b50-933d-33167942c255"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 59.3382,
+                        "y": 20.37
+                    },
+                    "uuid": "bb6b21a7-6a46-43b4-9d06-902c6c618f14"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 61.0882,
+                        "y": 21.87
+                    },
+                    "uuid": "5a8d5144-8d23-48c7-8c8e-fb74b0428a9e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 61.3382,
+                        "y": 20.37
+                    },
+                    "uuid": "4a702da0-fb97-45c0-9786-69a744bcfd16"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 64.3382,
+                        "y": 20.37
+                    },
+                    "uuid": "556e14bc-8d09-4e7b-9d52-4c0088504345"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 66.0882,
+                        "y": 21.87
+                    },
+                    "uuid": "47cd0fe0-be4c-4d73-aec7-7517970cf9d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Abschnitt von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 66.3382,
+                        "y": 20.37
+                    },
+                    "uuid": "e1cc9d30-dc11-40f6-bfaf-dae399ab1905"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rechteck auf Edge.Cuts",
+                    "pos": {
+                        "x": 20.32,
+                        "y": 20.32
+                    },
+                    "uuid": "16e81f63-931c-4e91-873a-7693e3cceb7e"
+                },
+                {
+                    "description": "Rechteck von J202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 68.9482,
+                        "y": 32.59
+                    },
+                    "uuid": "0e1fe86c-50db-4ff2-863f-e610b5fec4f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Die aktuelle Konfiguration enthält die Footprint-Bibliothek 'CamperPilot' nicht",
+            "items": [
+                {
+                    "description": "Footprint L101",
+                    "pos": {
+                        "x": 28.956,
+                        "y": 101.854
+                    },
+                    "uuid": "0914935f-cc60-4aa5-8752-b40a95eedb1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Die aktuelle Konfiguration enthält die Footprint-Bibliothek 'CamperPilot' nicht",
+            "items": [
+                {
+                    "description": "Footprint IC202",
+                    "pos": {
+                        "x": 147.037,
+                        "y": 88.799
+                    },
+                    "uuid": "513a3322-a2a9-4dc1-9bc7-8672ad6e18ff"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Die aktuelle Konfiguration enthält die Footprint-Bibliothek 'CamperPilot' nicht",
+            "items": [
+                {
+                    "description": "Footprint U101",
+                    "pos": {
+                        "x": 44.323,
+                        "y": 111.158
+                    },
+                    "uuid": "b4802fef-5e97-4995-aaf5-a8a633a92ad6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Die aktuelle Konfiguration enthält die Footprint-Bibliothek 'CamperPilot' nicht",
+            "items": [
+                {
+                    "description": "Footprint D201",
+                    "pos": {
+                        "x": 27.956,
+                        "y": 41.402
+                    },
+                    "uuid": "cb65d9a4-d7f9-43b3-8dda-a0fc999619c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Die aktuelle Konfiguration enthält die Footprint-Bibliothek 'CamperPilot' nicht",
+            "items": [
+                {
+                    "description": "Footprint IC201",
+                    "pos": {
+                        "x": 45.72,
+                        "y": 40.64
+                    },
+                    "uuid": "efbd44fa-96a3-4755-a1a1-6ba99ffb4fd1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R305",
+                    "pos": {
+                        "x": 329.869,
+                        "y": 185.879
+                    },
+                    "uuid": "f9c1d31f-3b56-4bca-afe8-4558a5dc6139"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R303",
+                    "pos": {
+                        "x": 329.869,
+                        "y": 179.979
+                    },
+                    "uuid": "632850e8-f8ec-4d7a-946b-c47a539c278a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R304",
+                    "pos": {
+                        "x": 329.869,
+                        "y": 182.929
+                    },
+                    "uuid": "82e0b593-74f1-440f-b9d7-552547b34fbc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R307",
+                    "pos": {
+                        "x": 329.869,
+                        "y": 191.779
+                    },
+                    "uuid": "3930a43e-9be0-43e2-8417-ff38e0849b2e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von IC202",
+                    "pos": {
+                        "x": 146.812,
+                        "y": 88.799
+                    },
+                    "uuid": "e7d058d6-3870-4370-9aa1-ffd01aa8d9f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von C303",
+                    "pos": {
+                        "x": 344.699,
+                        "y": 194.589
+                    },
+                    "uuid": "fa1abba0-073e-4dc1-8af2-80b6328ca0cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R302",
+                    "pos": {
+                        "x": 329.869,
+                        "y": 177.029
+                    },
+                    "uuid": "161c1653-ce19-4b33-8a29-a95bd872cc2a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R310",
+                    "pos": {
+                        "x": 336.271,
+                        "y": 109.717
+                    },
+                    "uuid": "dd7889d7-52f2-4d0f-ac21-2fa509f29867"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R306",
+                    "pos": {
+                        "x": 329.869,
+                        "y": 188.829
+                    },
+                    "uuid": "a607e69f-9722-4c85-85da-c149adabab5a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von C302",
+                    "pos": {
+                        "x": 344.699,
+                        "y": 191.579
+                    },
+                    "uuid": "afe91bf6-b8fb-4146-bdbe-e7246e635e84"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R308",
+                    "pos": {
+                        "x": 329.869,
+                        "y": 194.729
+                    },
+                    "uuid": "17c8930f-c247-4d76-8eb7-003a7d704240"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R312",
+                    "pos": {
+                        "x": 336.271,
+                        "y": 115.617
+                    },
+                    "uuid": "ad35ed6c-5076-4bdc-b31b-f2f61a2d7f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von D303",
+                    "pos": {
+                        "x": 341.024,
+                        "y": 194.159
+                    },
+                    "uuid": "251e8ef9-827f-466b-a485-649e78ba0316"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von R311",
+                    "pos": {
+                        "x": 336.271,
+                        "y": 112.667
+                    },
+                    "uuid": "3ec5d28f-3c22-47ff-a1e9-677611e90fde"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Referenzfeld von C304",
+                    "pos": {
+                        "x": 344.699,
+                        "y": 197.599
+                    },
+                    "uuid": "ec549053-7dc6-4e7f-82e8-4614246a473d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Abschnitt auf F.Silkscreen",
+                    "pos": {
+                        "x": 60.706,
+                        "y": 104.091
+                    },
+                    "uuid": "2a7998c0-21ea-4b97-965b-ffb86fdb5580"
+                },
+                {
+                    "description": "Footprint-Text von TP103 (TP103)",
+                    "pos": {
+                        "x": 62.484,
+                        "y": 109.474
+                    },
+                    "uuid": "34ed2c9d-f673-4473-b193-302760e3c724"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Abschnitt auf F.Silkscreen",
+                    "pos": {
+                        "x": 60.706,
+                        "y": 104.091
+                    },
+                    "uuid": "2a7998c0-21ea-4b97-965b-ffb86fdb5580"
+                },
+                {
+                    "description": "Footprint-Text von TP104 (TP104)",
+                    "pos": {
+                        "x": 62.484,
+                        "y": 117.856
+                    },
+                    "uuid": "bc4aeaf9-c029-40f1-a764-0a99bf7a12ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Wert-Feld von TP104 (+3.3V)",
+                    "pos": {
+                        "x": 62.484,
+                        "y": 122.682
+                    },
+                    "uuid": "29262400-95b9-46e5-9b2e-79b56f24c964"
+                },
+                {
+                    "description": "Abschnitt auf F.Silkscreen",
+                    "pos": {
+                        "x": 60.706,
+                        "y": 104.091
+                    },
+                    "uuid": "2a7998c0-21ea-4b97-965b-ffb86fdb5580"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Abschnitt von IC202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 145.137,
+                        "y": 88.099
+                    },
+                    "uuid": "c7d3c547-8d2a-4119-a74f-47b418d376cb"
+                },
+                {
+                    "description": "Referenzfeld von IC202",
+                    "pos": {
+                        "x": 146.812,
+                        "y": 88.799
+                    },
+                    "uuid": "e7d058d6-3870-4370-9aa1-ffd01aa8d9f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Kreisbogen von IC202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 145.137,
+                        "y": 88.049
+                    },
+                    "uuid": "0174e3a7-f11c-4662-8683-b3d50197d4c6"
+                },
+                {
+                    "description": "Referenzfeld von IC202",
+                    "pos": {
+                        "x": 146.812,
+                        "y": 88.799
+                    },
+                    "uuid": "e7d058d6-3870-4370-9aa1-ffd01aa8d9f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Kreisbogen von IC202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 145.137,
+                        "y": 88.049
+                    },
+                    "uuid": "0e4f5e68-5d87-4ef0-8704-4088d618a40a"
+                },
+                {
+                    "description": "Referenzfeld von IC202",
+                    "pos": {
+                        "x": 146.812,
+                        "y": 88.799
+                    },
+                    "uuid": "e7d058d6-3870-4370-9aa1-ffd01aa8d9f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Abschnitt von IC202 auf F.Silkscreen",
+                    "pos": {
+                        "x": 145.137,
+                        "y": 87.999
+                    },
+                    "uuid": "a38ad9e1-7cbf-47b5-ac17-4ef2703d908a"
+                },
+                {
+                    "description": "Referenzfeld von IC202",
+                    "pos": {
+                        "x": 146.812,
+                        "y": 88.799
+                    },
+                    "uuid": "e7d058d6-3870-4370-9aa1-ffd01aa8d9f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}
