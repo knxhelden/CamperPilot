@@ -3701,17 +3701,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 83.82 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "be51eeef-d5ba-437b-815c-4d7a43144cf7")
 		)
@@ -3748,7 +3737,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 77.216 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3804,17 +3793,6 @@
 		)
 		(property "Artikelnummer" "0805W8F1002T5E"
 			(at 72.39 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 72.39 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3928,17 +3906,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 209.55 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "3"
 			(uuid "8a94e523-8dd5-4c98-800f-787482c9741f")
 		)
@@ -3969,7 +3936,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -4042,17 +4009,6 @@
 			)
 		)
 		(property "Hersteller" "Phoenix Contact"
-			(at 130.81 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 130.81 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4160,17 +4116,6 @@
 			)
 		)
 		(property "Hersteller" "Aratas"
-			(at 209.55 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 209.55 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -4349,17 +4294,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 191.77 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "c0e07338-93ca-4bbf-9ba0-57d4c5c8f670")
 		)
@@ -4463,17 +4397,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 64.77 105.41 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "9548c6db-cca7-4bba-84bc-1f081300e995")
 		)
@@ -4512,7 +4435,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1µF"
+		(property "Value" "1uF"
 			(at 162.56 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4578,17 +4501,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 158.75 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "b2d79caf-a3b6-4efc-8a0f-2c99d871ff95")
 		)
@@ -4626,7 +4538,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1kΩ"
+		(property "Value" "1k"
 			(at 81.788 105.156 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4786,17 +4698,6 @@
 			)
 		)
 		(property "Hersteller" "Aratas"
-			(at 101.6 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 101.6 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -5073,17 +4974,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 133.35 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "78dd0c22-ee9c-4692-9441-4707bd18eaaa")
 		)
@@ -5321,17 +5211,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 191.77 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "e2484c69-6059-42f1-b019-84c59dbf2ccb")
 		)
@@ -5353,7 +5232,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -5426,17 +5305,6 @@
 			)
 		)
 		(property "Hersteller" "Phoenix Contact"
-			(at 238.76 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 238.76 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5544,17 +5412,6 @@
 			)
 		)
 		(property "Hersteller" "Aratas"
-			(at 99.06 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 99.06 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -5733,17 +5590,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 83.82 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "582f7038-c188-4802-94a1-e6da344c636a")
 		)
@@ -5859,7 +5705,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1kΩ"
+		(property "Value" "1k"
 			(at 189.738 42.926 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5961,7 +5807,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 77.216 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6017,17 +5863,6 @@
 		)
 		(property "Artikelnummer" "0805W8F1002T5E"
 			(at 72.39 132.08 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 72.39 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6177,7 +6012,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C20917.pdf"
 			(at 194.31 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -6200,7 +6035,18 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Artikelnummer" "AO3400A"
+			(at 189.23 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "AOS"
 			(at 189.23 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -6250,7 +6096,7 @@
 				)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "470"
 			(at 64.77 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6315,17 +6161,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 64.77 62.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "e8def485-7c7e-4790-9293-6b5172f9d063")
 		)
@@ -6362,7 +6197,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 185.166 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6418,17 +6253,6 @@
 		)
 		(property "Artikelnummer" "0805W8F1002T5E"
 			(at 180.34 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 180.34 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6541,17 +6365,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 172.72 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "427c669c-0879-45dd-be83-235a0dc6af24")
 		)
@@ -6588,7 +6401,7 @@
 				)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "470"
 			(at 64.77 128.27 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6643,17 +6456,6 @@
 			)
 		)
 		(property "Artikelnummer" "0805W8F4700T5E"
-			(at 64.77 125.73 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 64.77 125.73 90)
 			(hide yes)
 			(show_name no)
@@ -6757,17 +6559,6 @@
 			)
 		)
 		(property "Hersteller" "ST(Semtech)"
-			(at 66.04 41.91 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 66.04 41.91 90)
 			(hide yes)
 			(show_name no)
@@ -6996,7 +6787,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C20917.pdf"
 			(at 194.31 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -7019,7 +6810,18 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Artikelnummer" "AO3400A"
+			(at 189.23 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "AOS"
 			(at 189.23 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -7149,7 +6951,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1µF"
+		(property "Value" "1uF"
 			(at 54.61 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7215,17 +7017,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 50.8 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "2f6c1599-ff3d-4c73-b5b5-fc2f3749abf7")
 		)
@@ -7262,7 +7053,7 @@
 				)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "470"
 			(at 172.72 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7327,17 +7118,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 172.72 62.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "6f248d89-8d83-411f-9852-3963bfca881a")
 		)
@@ -7375,7 +7155,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1kΩ"
+		(property "Value" "1k"
 			(at 81.788 41.656 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7503,7 +7283,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C20917.pdf"
 			(at 86.36 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -7526,7 +7306,18 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Artikelnummer" "AO3400A"
+			(at 81.28 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "AOS"
 			(at 81.28 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -7576,7 +7367,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 185.166 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7641,17 +7432,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 180.34 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "ce4965d2-4adb-4014-8799-642db20cd1ca")
 		)
@@ -7673,7 +7453,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -7746,17 +7526,6 @@
 			)
 		)
 		(property "Hersteller" "Phoenix Contact"
-			(at 238.76 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 238.76 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -7873,17 +7642,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 172.72 105.41 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "d5e7df96-00c2-467e-a746-f3ff91bab5d3")
 		)
@@ -7922,7 +7680,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1µF"
+		(property "Value" "1uF"
 			(at 162.56 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7978,17 +7736,6 @@
 			)
 		)
 		(property "Artikelnummer" "CL21B105KBFNNNE"
-			(at 158.75 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 158.75 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -8115,7 +7862,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1µF"
+		(property "Value" "1uF"
 			(at 55.88 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8181,17 +7928,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 52.07 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "b9742753-65de-48dc-b129-e812af808ebc")
 		)
@@ -8228,7 +7964,7 @@
 				)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "470"
 			(at 172.72 128.27 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8283,17 +8019,6 @@
 			)
 		)
 		(property "Artikelnummer" "0805W8F4700T5E"
-			(at 172.72 125.73 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 172.72 125.73 90)
 			(hide yes)
 			(show_name no)
@@ -8366,7 +8091,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C20917.pdf"
 			(at 86.36 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8389,7 +8114,18 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Artikelnummer" "AO3400A"
+			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "AOS"
 			(at 81.28 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -8440,7 +8176,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1kΩ"
+		(property "Value" "1k"
 			(at 189.738 105.156 0)
 			(show_name no)
 			(do_not_autoplace no)

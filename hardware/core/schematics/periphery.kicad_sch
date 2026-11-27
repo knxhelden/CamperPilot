@@ -1726,8 +1726,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 1.27 7.62 0)
+			(property "Reference" "J203"
+				(at 1.27 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1736,8 +1736,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x05_Top_Bottom"
-				(at 1.27 -7.62 0)
+			(property "Value" "Internal Connector"
+				(at 1.27 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1746,7 +1746,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1769,6 +1769,61 @@
 				)
 			)
 			(property "Description" "Generic connector, double row, 02x05, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer_Name" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer_Part_Number" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Mouser Price/Stock" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1924,7 +1979,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -1942,7 +1997,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -1960,7 +2015,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -1978,7 +2033,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -1996,7 +2051,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at 7.62 5.08 180)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -2014,7 +2069,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 5.08 180)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -2032,7 +2087,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 2.54 180)
+					(at 7.62 0 180)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
@@ -2050,7 +2105,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
+					(at 7.62 2.54 180)
 					(length 3.81)
 					(name "Pin_8"
 						(effects
@@ -2068,7 +2123,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -2.54 180)
+					(at 7.62 -5.08 180)
 					(length 3.81)
 					(name "Pin_9"
 						(effects
@@ -2086,7 +2141,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -5.08 180)
+					(at 7.62 -2.54 180)
 					(length 3.81)
 					(name "Pin_10"
 						(effects
@@ -4445,7 +4500,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CamperPilot:SOT95P230X117-3N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 161.29 5.41 0)
 			(hide yes)
 			(show_name no)
@@ -4480,66 +4535,6 @@
 				)
 			)
 		)
-		(property "Height" "1.17"
-			(at 161.29 -294.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "652-CDSOT23-SM712"
-			(at 161.29 -394.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CDSOT23-SM712?qs=FuI%252BOVLl4%2FLTY%2FGQ265RLA%3D%3D"
-			(at 161.29 -494.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Bourns"
-			(at 161.29 -594.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CDSOT23-SM712"
-			(at 161.29 -694.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
 		(property "Artikelnummer" "CDSOT23-SM712"
 			(at 177.8 100.33 0)
 			(hide yes)
@@ -4552,17 +4547,6 @@
 			)
 		)
 		(property "Hersteller" "Bourns"
-			(at 177.8 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 177.8 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4813,17 +4797,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 113.03 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "3"
 			(uuid "4d651a9b-9f3a-4d46-bf70-abac2178c7f1")
 		)
@@ -4866,7 +4839,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 174.752 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4922,17 +4895,6 @@
 		)
 		(property "Artikelnummer" "0805W8F1002T5E"
 			(at 179.07 63.5 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 179.07 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5358,17 +5320,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 109.22 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "43c04cd9-a968-470e-85a6-d81c395b9eb8")
 		)
@@ -5416,7 +5367,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical"
 			(at 246.38 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5427,7 +5378,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C53202172.pdf"
 			(at 246.38 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5449,7 +5400,18 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Artikelnummer" "254PM-2x5P-V"
+			(at 246.38 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "LXWCONN"
 			(at 246.38 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5767,7 +5729,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CamperPilot:ICM42670P"
+		(property "Footprint" "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y"
 			(at 83.82 143.18 0)
 			(hide yes)
 			(show_name no)
@@ -5779,7 +5741,7 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://3cfeqx1hf82y3xcoull08ihx-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/DS-000451-ICM-42670-P-v1.0.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3288646.pdf"
 			(at 83.82 243.18 0)
 			(hide yes)
 			(show_name no)
@@ -5813,18 +5775,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "TDK"
-			(at 41.91 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Hersteller" "TDK InvenSense"
 			(at 41.91 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6208,17 +6159,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 22.86 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "38aae95f-bbe1-4a99-8d7e-78076e4b751c")
 		)
@@ -6435,7 +6375,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C53055672.pdf"
 			(at 237.49 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -6457,7 +6397,18 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Artikelnummer" "254PZ-1x2P-V"
+			(at 237.49 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "LXWCONN"
 			(at 237.49 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -6644,7 +6595,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6726,17 +6677,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 69.85 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "db06f686-4e0e-4d12-a404-269a312d5291")
 		)
@@ -6787,7 +6727,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CamperPilot:SOIC127P600X175-8N"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 210.82 141.91 0)
 			(hide yes)
 			(show_name no)
@@ -6799,7 +6739,7 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/THVD1410"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2671345.pdf"
 			(at 210.82 241.91 0)
 			(hide yes)
 			(show_name no)
@@ -6822,8 +6762,8 @@
 				)
 			)
 		)
-		(property "Height" "1.75"
-			(at 210.82 441.91 0)
+		(property "Artikelnummer" "THVD1410DR"
+			(at 189.23 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6831,58 +6771,9 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" "595-THVD1410DR"
-			(at 210.82 541.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/THVD1410DR?qs=chTDxNqvsylen%252BY7bN3dRQ%3D%3D"
-			(at 210.82 641.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 210.82 741.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "THVD1410DR"
-			(at 210.82 841.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Hersteller" "TI"
 			(at 189.23 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -6932,7 +6823,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -7005,17 +6896,6 @@
 			)
 		)
 		(property "Hersteller" "Phoenix Contact"
-			(at 199.39 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 199.39 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7224,7 +7104,7 @@
 				)
 			)
 		)
-		(property "Value" "220Ω"
+		(property "Value" "220"
 			(at 45.72 168.91 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7245,7 +7125,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*g4u90j*_gcl_aw*R0NMLjE3OTQ4NTg1MjQuQ2owS0NRaUE4T3JYQmhERUFSSXNBRUN0bHg0UHFKM1ZmNUY0bEJrZkVjTXdxWTNlNGp6V1hWZ2plNFVZMVhOSzdwUGJvX1RyRDNhTUtXRWFBaFBTRUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTQ5OTMyNjQkbzEyJGcxJHQxNzk0OTkzNDAyJGoyNiRsMCRoMA.."
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17557.pdf"
 			(at 45.72 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -7267,7 +7147,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-07220RL"
+		(property "Artikelnummer" "0805W8F2200T5E"
 			(at 45.72 166.37 90)
 			(hide yes)
 			(show_name no)
@@ -7278,18 +7158,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
-			(at 45.72 166.37 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Hersteller" "UNI-ROYAL"
 			(at 45.72 166.37 90)
 			(hide yes)
 			(show_name no)
@@ -7337,7 +7206,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4,7kΩ"
+		(property "Value" "4.7k"
 			(at 54.864 158.496 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7393,17 +7262,6 @@
 			)
 		)
 		(property "Hersteller" "UNI-ROYAL"
-			(at 53.34 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 53.34 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -7508,17 +7366,6 @@
 			)
 		)
 		(property "Hersteller" "YAGEO"
-			(at 92.71 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 92.71 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7698,17 +7545,6 @@
 			)
 		)
 		(property "Artikelnummer" "CC0805KRX7R9BB104"
-			(at 223.52 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 223.52 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -7900,17 +7736,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 54.61 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "b744bf07-837c-4774-a1cf-95e9680df8b3")
 		)
@@ -8069,17 +7894,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 190.5 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "f631ff82-24db-43f9-8777-7c100ba95327")
 		)
@@ -8196,7 +8010,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120Ω"
+		(property "Value" "120"
 			(at 233.68 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8218,7 +8032,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf?_gl=1*1kxor6c*_gcl_aw*R0NMLjE3OTUwMTU5MzYuQ2owS0NRaUF0dlhYQmhDMkFSSXNBSmM4U1VRUmpranlCOVl4ZXN1WDRWYW52WjVEUUd6eHdvdWdtZlRDT0dSMHV5OWRJQ01wVWplS0E4OGFBcmQ3RUFMd193Y0I.*_gcl_au*MjA3MTU4NjczMi4xNzk0NDI5MjY1LjM2NjY4NDIxOC4xNzk0OTkzNzI5LjE3OTQ5OTM5MjIuNDAwMDkxNjY5LjE3OTQ5OTM3MjkuMTc5NDk5MzkyMg..*_ga*ODE4NDQ1NzUxLjE3ODEyMTEzODg.*_ga_15W4STQT4T*czE3OTUwOTczNjEkbzE5JGcxJHQxNzk1MDk4NjM2JGo1NCRsMCRoMA.."
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17437.pdf"
 			(at 231.14 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8240,7 +8054,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "YAGEO"
+		(property "Hersteller" "UNI-ROYAL"
 			(at 231.14 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8251,18 +8065,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "RC0805FR-07120RL"
-			(at 231.14 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Artikelnummer" "0805W8F1200T5E"
 			(at 231.14 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8344,17 +8147,6 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 234.95 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 234.95 87.63 0)
 			(hide yes)
 			(show_name no)

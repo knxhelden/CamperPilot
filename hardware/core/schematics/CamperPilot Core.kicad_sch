@@ -4611,6 +4611,12 @@
 		(uuid "06735b74-d62e-4f9e-84af-1957507638ba")
 	)
 	(junction
+		(at 124.46 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ddca528-000b-4043-8546-ebdbc5b75a1d")
+	)
+	(junction
 		(at 44.45 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4621,12 +4627,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "214c6f0e-de67-41e7-9a93-0c908b4de337")
-	)
-	(junction
-		(at 124.46 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2353e987-a2b7-4f8f-8eca-0c5205db13c3")
 	)
 	(junction
 		(at 97.79 50.8)
@@ -4755,12 +4755,6 @@
 		(uuid "aff09460-3fbc-4682-803f-ab4acffefcb8")
 	)
 	(junction
-		(at 111.76 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c1116d16-e201-4048-a011-2ddc9abbce6c")
-	)
-	(junction
 		(at 267.97 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4777,6 +4771,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cffba9db-d0bf-4a1f-9042-751fb474abef")
+	)
+	(junction
+		(at 111.76 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6e7e8a0-2b1a-4ca6-969a-dba7f5192536")
 	)
 	(junction
 		(at 254 38.1)
@@ -4893,16 +4893,6 @@
 			(type default)
 		)
 		(uuid "07e8d2cb-4a9f-4829-9465-ba9df382e796")
-	)
-	(wire
-		(pts
-			(xy 124.46 105.41) (xy 124.46 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08fb72ce-f693-4646-8858-9afcd5c87c5e")
 	)
 	(wire
 		(pts
@@ -5043,6 +5033,16 @@
 			(type default)
 		)
 		(uuid "1cf84a8d-6a4b-4edc-98bd-223243021d3d")
+	)
+	(wire
+		(pts
+			(xy 124.46 105.41) (xy 124.46 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f7334e0-fd20-47d9-bc3a-7b961e686519")
 	)
 	(wire
 		(pts
@@ -5316,16 +5316,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 107.95) (xy 124.46 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f241723-0b22-40e7-980d-5cf74ad9de40")
-	)
-	(wire
-		(pts
 			(xy 59.69 57.15) (xy 63.5 53.34)
 		)
 		(stroke
@@ -5336,6 +5326,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 114.3) (xy 124.46 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fa9daea-a44b-4380-8073-5b07e514eb90")
+	)
+	(wire
+		(pts
 			(xy 107.95 40.64) (xy 102.87 40.64)
 		)
 		(stroke
@@ -5343,6 +5343,16 @@
 			(type default)
 		)
 		(uuid "44413151-a249-466f-a853-0c89d78741dc")
+	)
+	(wire
+		(pts
+			(xy 111.76 115.57) (xy 111.76 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4556b918-1958-47c2-b587-04684c80fb7f")
 	)
 	(wire
 		(pts
@@ -5613,6 +5623,16 @@
 			(type default)
 		)
 		(uuid "68ce7ef9-1842-412c-b712-9bb2ad191769")
+	)
+	(wire
+		(pts
+			(xy 124.46 115.57) (xy 124.46 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69777e17-1eb3-4122-8d95-dbc12bd1d55c")
 	)
 	(wire
 		(pts
@@ -6326,7 +6346,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 116.84) (xy 124.46 119.38)
+			(xy 124.46 124.46) (xy 124.46 127)
 		)
 		(stroke
 			(width 0)
@@ -6576,7 +6596,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 107.95) (xy 124.46 107.95)
+			(xy 111.76 115.57) (xy 124.46 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6993,17 +7013,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 44.45 50.8 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "2683e9e7-05a1-4f75-b312-d6be2fc75730")
 		)
@@ -7106,17 +7115,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 19.05 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "077baf90-33d2-46bb-a580-2660fb1d2f78")
 		)
@@ -7138,7 +7136,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -7201,17 +7199,6 @@
 			)
 		)
 		(property "Artikelnummer" "Rasberry Pi 4 Model B"
-			(at 219.71 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 219.71 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7439,17 +7426,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 163.83 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "b2730dc1-54fc-41a8-9a83-baa44d63011f")
 		)
@@ -7552,17 +7528,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 97.79 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "4dbed37c-c155-4493-be84-96f731872ae1")
 		)
@@ -7639,17 +7604,6 @@
 		)
 		(property "Description" "test point"
 			(at 143.51 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 143.51 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7892,17 +7846,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 30.48 49.53 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "76591ddf-4494-4b43-bc5c-e81216749fd5")
 		)
@@ -7952,7 +7895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 107.95 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -7963,7 +7906,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://diotec.com/request/datasheet/bzt52c2v4.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C19077410.pdf"
 			(at 107.95 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -7996,18 +7939,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Diotec Semiconductor"
-			(at 107.95 45.72 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Hersteller" "R+O"
 			(at 107.95 45.72 90)
 			(hide yes)
 			(show_name no)
@@ -8197,17 +8129,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 69.85 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "77205ade-35d1-4763-ae80-a43e31e6b2ee")
 		)
@@ -8224,6 +8145,110 @@
 			(project "CamperPilot Core"
 				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
 					(reference "FL101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ad28a45-be93-4c5c-bf17-060e00a796d9")
+		(property "Reference" "R110"
+			(at 127 109.2199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.7k"
+			(at 127 111.7599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 122.682 110.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17530.pdf"
+			(at 124.46 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 124.46 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Artikelnummer" "0805W8F2701T5E"
+			(at 124.46 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Hersteller" "UNI-ROYAL"
+			(at 124.46 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8dd18dba-4e0b-4b3c-8aae-0e09a61a4554")
+		)
+		(pin "2"
+			(uuid "498f19b3-2fb5-486f-b702-8afbaa401bed")
+		)
+		(instances
+			(project "CamperPilot Core"
+				(path "/61c43c18-720a-4ca1-821c-7025a697bbcb"
+					(reference "R110")
 					(unit 1)
 				)
 			)
@@ -8285,17 +8310,6 @@
 		)
 		(property "Description" "test point"
 			(at 254 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 254 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8371,17 +8385,6 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 49.53 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
 			(at 49.53 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -8627,17 +8630,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 73.66 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "b8365a83-2529-4e90-84ac-cf620669931a")
 		)
@@ -8710,17 +8702,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 111.76 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 111.76 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -9145,17 +9126,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 85.09 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "310ee3c9-a6a7-4d02-94d4-ef4c16eb687d")
 		)
@@ -9350,7 +9320,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "53,6kΩ"
+		(property "Value" "51k"
 			(at 127 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9372,7 +9342,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17737.pdf"
 			(at 124.46 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -9394,7 +9364,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "CRCW080553K6FKEA"
+		(property "Artikelnummer" "0805W8F5102T5E"
 			(at 124.46 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -9405,18 +9375,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Vishay"
-			(at 124.46 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Hersteller" "UNI-ROYAL"
 			(at 124.46 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -9520,17 +9479,6 @@
 			)
 		)
 		(property "Hersteller" "Samsung Electro-Mechanics"
-			(at 50.8 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 50.8 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9789,7 +9737,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 124.46 113.03 0)
+		(at 124.46 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9800,7 +9748,7 @@
 		(fields_autoplaced yes)
 		(uuid "84906be5-63de-4c2e-bf99-eab3ef960a20")
 		(property "Reference" "R104"
-			(at 127 111.7599 0)
+			(at 127 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9810,8 +9758,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
-			(at 127 114.2999 0)
+		(property "Value" "10k"
+			(at 127 121.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9822,7 +9770,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 122.682 113.03 90)
+			(at 122.682 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9833,7 +9781,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C17414.pdf"
-			(at 124.46 113.03 0)
+			(at 124.46 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9844,7 +9792,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 124.46 113.03 0)
+			(at 124.46 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9855,7 +9803,7 @@
 			)
 		)
 		(property "Artikelnummer" "0805W8F1002T5E"
-			(at 124.46 113.03 0)
+			(at 124.46 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9866,18 +9814,7 @@
 			)
 		)
 		(property "Hersteller" "UNI-ROYAL"
-			(at 124.46 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 124.46 113.03 0)
+			(at 124.46 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9925,7 +9862,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2,2kΩ"
+		(property "Value" "2.2k"
 			(at 100.33 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9981,17 +9918,6 @@
 			)
 		)
 		(property "Hersteller" "UNI-ROYAL"
-			(at 97.79 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 97.79 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10271,7 +10197,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10µF/50V"
+		(property "Value" "10uF"
 			(at 17.526 95.758 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10327,17 +10253,6 @@
 			)
 		)
 		(property "Hersteller" "Samsung Electro-Mechanics"
-			(at 19.05 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 19.05 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -10506,17 +10421,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 267.97 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "57c1a2ab-783b-4170-a578-d3bf61f2b9a1")
 		)
@@ -10574,7 +10478,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://toshiba.semicon-storage.com/info/CUHZ30V_datasheet_en_20210917.pdf?did=70664&prodName=CUHZ30V"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C6493455.pdf"
 			(at 123.19 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -10608,17 +10512,6 @@
 			)
 		)
 		(property "Hersteller" "Toshiba"
-			(at 123.19 45.72 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 123.19 45.72 90)
 			(hide yes)
 			(show_name no)
@@ -10743,7 +10636,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 266.7 133.35 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10808,17 +10701,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 266.7 130.81 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "857383b6-775d-4f3c-b569-dc67712639e3")
 		)
@@ -10856,7 +10738,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22µF"
+		(property "Value" "22uF"
 			(at 138.176 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10922,17 +10804,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 139.7 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "574ef05c-872c-4a94-9be9-95ad00fd6998")
 		)
@@ -10969,7 +10840,7 @@
 				)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "470"
 			(at 62.23 189.484 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11227,7 +11098,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10µF/50V"
+		(property "Value" "10uF"
 			(at 85.598 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11283,17 +11154,6 @@
 			)
 		)
 		(property "Hersteller" "Samsung Electro-Mechanics"
-			(at 82.55 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 82.55 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -11518,7 +11378,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/datasheet/download/AP64501Q.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5248549.pdf"
 			(at 68.58 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11551,18 +11411,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Diodes Incorporated"
-			(at 68.58 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Hersteller" "DIODES"
 			(at 68.58 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11695,17 +11544,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 27.94 137.16 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "a4462905-33ea-42e3-a7cd-18767a274566")
 		)
@@ -11743,7 +11581,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22µF"
+		(property "Value" "22uF"
 			(at 162.306 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11799,17 +11637,6 @@
 			)
 		)
 		(property "Hersteller" "Samsung Electro-Mechanics"
-			(at 163.83 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 163.83 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -11893,17 +11720,6 @@
 		)
 		(property "Description" "test point"
 			(at 100.33 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 100.33 60.96 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12014,17 +11830,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 97.79 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "ee487f10-fba7-4b2d-9f60-397540c6365e")
 		)
@@ -12063,7 +11868,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100µF"
+		(property "Value" "100uF"
 			(at 146.05 51.1809 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12119,17 +11924,6 @@
 			)
 		)
 		(property "Hersteller" "Panasonic Industry"
-			(at 142.24 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 142.24 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12243,17 +12037,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 44.45 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "38dcd6a7-fb36-407e-8673-fb6852a4b475")
 		)
@@ -12290,7 +12073,7 @@
 				)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "470"
 			(at 38.1 174.244 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12434,28 +12217,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 39.37 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 39.37 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "ca32ef77-395a-4baa-925a-f27ad649b13a")
 		)
@@ -12550,17 +12311,6 @@
 			)
 		)
 		(property "Hersteller" "YAGEO"
-			(at 91.44 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
 			(at 91.44 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -12728,17 +12478,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 95.25 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "552b3ff2-0aa8-4d8d-af5e-594ae91b7884")
 		)
@@ -12775,7 +12514,7 @@
 				)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "470"
 			(at 83.82 174.244 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12877,7 +12616,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10µF/50V"
+		(property "Value" "10uF"
 			(at 30.226 95.758 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12943,17 +12682,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 31.75 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "9782838d-f9c9-4c47-bb65-d8a5c6594e3e")
 		)
@@ -12991,7 +12719,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22µF"
+		(property "Value" "22uF"
 			(at 150.876 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13057,17 +12785,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 152.4 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "b9011225-997c-4d92-a3ad-13cc92afc7c4")
 		)
@@ -13085,7 +12802,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 119.38 0)
+		(at 124.46 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13096,7 +12813,7 @@
 		(fields_autoplaced yes)
 		(uuid "ef9b6e11-fe5f-4e8c-b087-5057d928712b")
 		(property "Reference" "#PWR0114"
-			(at 124.46 125.73 0)
+			(at 124.46 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13107,7 +12824,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 124.46 0)
+			(at 124.46 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13117,7 +12834,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 119.38 0)
+			(at 124.46 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13128,7 +12845,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 119.38 0)
+			(at 124.46 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13139,7 +12856,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 119.38 0)
+			(at 124.46 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13261,7 +12978,7 @@
 				)
 			)
 		)
-		(property "Value" "4,7µH"
+		(property "Value" "4,7uH"
 			(at 105.41 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13271,7 +12988,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CamperPilot:WE-LHMI_104048"
+		(property "Footprint" "CamperPilot:INDPM108102X400N"
 			(at 105.41 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -13282,7 +12999,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/74437368047.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C845077.pdf"
 			(at 105.41 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -13304,7 +13021,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "74437368047"
+		(property "Artikelnummer" "IHLP4040DZER4R7M01"
 			(at 105.41 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -13315,18 +13032,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Wurth Elektronik"
-			(at 105.41 95.25 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Hersteller" "VISHAY"
 			(at 105.41 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -13375,7 +13081,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15,8kΩ"
+		(property "Value" "15k"
 			(at 87.63 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13397,7 +13103,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17475.pdf"
 			(at 85.09 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -13419,7 +13125,7 @@
 				)
 			)
 		)
-		(property "Artikelnummer" "CRCW080515K8FKEA"
+		(property "Artikelnummer" "0805W8F1502T5E"
 			(at 85.09 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -13430,18 +13136,7 @@
 				)
 			)
 		)
-		(property "Hersteller" "Vishay"
-			(at 85.09 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
+		(property "Hersteller" "UNI-ROYAL"
 			(at 85.09 111.76 0)
 			(hide yes)
 			(show_name no)
